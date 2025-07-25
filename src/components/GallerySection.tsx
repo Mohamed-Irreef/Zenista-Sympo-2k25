@@ -177,12 +177,12 @@ const GallerySection = () => {
               </button>
 
               {/* Close Button */}
-              <button
+              {/* <button
                 onClick={() => setIsModalOpen(false)}
                 className="absolute top-4 right-4 bg-background/80 hover:bg-background/90 p-2 rounded-full transition-colors"
               >
                 <X className="text-foreground" size={20} />
-              </button>
+              </button> */}
 
               {/* Image Info */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/90 to-transparent p-6">

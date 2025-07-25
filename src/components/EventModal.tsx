@@ -56,8 +56,8 @@ if (!event) return null;
     <AnimatePresence>
       {isOpen && (
         <Dialog open={isOpen} onOpenChange={onClose} >
-          <DialogContent className="max-w-4xl max-h-[90vh] bg-card border-time-portal/20 overflow-visible p-0">
-            <div className="max-h-[80vh] overflow-y-auto pr-4 pl-4 py-6 custom-scrollbar">
+          <DialogContent className="max-w-4xl max-h-[90vh] bg-card border-time-portal/20 overflow-visible">
+            <div className="max-h-[80vh] overflow-y-auto pr-4 pl-4 py-6 custom-scrollbar border-2 border-white">
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -180,9 +180,10 @@ if (!event) return null;
                   <Button
                     onClick={handleRegister}
                     className="time-gradient hover:scale-105 transform transition-all duration-300 text-lg px-8 py-3"
+                    disabled={true}
                   >
-                    <ExternalLink className="mr-2" size={20} />
-                    Register Now
+                    {/* <ExternalLink className="mr-2" size={20} /> */}
+                    Registration Comming Soon
                   </Button>
                   <p className="text-sm text-muted-foreground mt-2">
                     Click to register via Google Forms

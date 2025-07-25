@@ -41,3 +41,8 @@
   color: #888;
 }
 
+.popup-scroll{    
+  overflow-y: scroll;
+  border: 10px solid #fff;
+  border-radius: 20px;
+}
