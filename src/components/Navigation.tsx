@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Clock } from 'lucide-react';
+import logo from '@/assets/zenista.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,7 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <motion.div 
             className="flex items-center space-x-2"
@@ -51,6 +52,7 @@ const Navigation = () => {
             {/* <Clock className="text-time-portal" size={24} /> */}
             <span className="text-2xl font-bold text-glow">ZENISTA</span>
             <span className="text-time-glow text-sm">2025</span>
+            {/* <img className='w-20 h-20 rounded-full' src={logo} alt="" /> */}
           </motion.div>
 
           {/* Desktop Navigation */}
