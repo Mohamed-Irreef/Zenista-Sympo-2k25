@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Clock } from 'lucide-react';
-<<<<<<< HEAD
-import logo from '@/assets/zenista.png';
-=======
 import logo from '@/assets/Zenista.png';
->>>>>>> changes1
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,12 +49,6 @@ const Navigation = () => {
             className="flex items-center space-x-4"
             whileHover={{ scale: 1.05 }}
           >
-<<<<<<< HEAD
-            {/* <Clock className="text-time-portal" size={24} /> */}
-            <span className="text-2xl font-bold text-glow">ZENISTA</span>
-            <span className="text-time-glow text-sm">2025</span>
-            {/* <img className='w-20 h-20 rounded-full' src={logo} alt="" /> */}
-=======
             {/* <img 
               src={logo} 
               alt="Zenista 2025 Logo" 
@@ -68,7 +58,6 @@ const Navigation = () => {
               <span className="text-2xl font-bold text-glow leading-none">ZENISTA</span>
               <span className="text-time-glow text-sm leading-none">2025</span>
             </div>
->>>>>>> changes1
           </motion.div>
 
           {/* Desktop Navigation */}
