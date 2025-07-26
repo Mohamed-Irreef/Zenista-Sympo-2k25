@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Clock, MapPin, Phone, Mail, ExternalLink, Calendar, Users, Award } from 'lucide-react';
+import { Clock, MapPin, Phone, Mail, ExternalLink, Calendar, Users, Award, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const contactInfo = [
@@ -63,6 +63,13 @@ const Footer = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
+  };
+
+  const openWhatsApp = () => {
+    const phoneNumber = "919942003192"; // Remove + and spaces
+    const message = "Hi! I'm interested in ZENISTA 2025. Can you help me with information about the events?";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -184,6 +191,27 @@ const Footer = () => {
                 </p>
                 <p className="text-sm font-semibold text-foreground">
                   +91 98765 43210 (24/7)
+                </p>
+              </div>
+
+              {/* WhatsApp Contact */}
+              <div className="bg-green-500/10 rounded-lg p-4 border border-green-500/20">
+                <div className="flex items-center gap-3 mb-2">
+                  <MessageCircle className="text-green-500" size={20} />
+                  <h5 className="font-semibold text-green-500">WhatsApp Support</h5>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Get instant help for ZENISTA 2025 queries
+                </p>
+                <button
+                  onClick={openWhatsApp}
+                  className="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md transition-colors duration-200 flex items-center justify-center gap-2"
+                >
+                  <MessageCircle size={16} />
+                  <span>Chat on WhatsApp</span>
+                </button>
+                <p className="text-xs text-muted-foreground mt-2 text-center">
+                  +91 99420 03192
                 </p>
               </div>
             </motion.div>
