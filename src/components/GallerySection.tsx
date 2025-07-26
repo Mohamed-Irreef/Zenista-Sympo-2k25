@@ -181,7 +181,7 @@ const GallerySection = () => {
                 onClick={() => setIsModalOpen(false)}
                 className="absolute top-4 right-4 bg-background/80 hover:bg-background/90 p-2 rounded-full transition-colors"
               >
-                <X className="text-foreground" size={20} />
+                {/* <X className="text-foreground" size={20} /> */}
               </button>
 
               {/* Image Info */}
