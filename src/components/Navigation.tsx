@@ -49,11 +49,11 @@ const Navigation = () => {
             className="flex items-center space-x-4"
             whileHover={{ scale: 1.05 }}
           >
-            <img 
+            {/* <img 
               src={logo} 
               alt="Zenista 2025 Logo" 
               className="h-16 w-16 object-contain"
-            />
+            /> */}
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-glow leading-none">ZENISTA</span>
               <span className="text-time-glow text-sm leading-none">2025</span>

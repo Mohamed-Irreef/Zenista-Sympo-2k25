@@ -147,13 +147,14 @@ const ChatBot = () => {
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-6 right-4 md:right-6 z-50"
       >
         <Button
           onClick={() => setIsOpen(true)}
-          className="w-16 h-16 rounded-full time-gradient shadow-lg hover:scale-110 transition-transform"
+          className="w-14 h-14 md:w-16 md:h-16 rounded-full time-gradient shadow-lg hover:scale-110 transition-transform"
         >
-          <MessageCircle size={24} />
+          <MessageCircle size={20} className="md:hidden" />
+          <MessageCircle size={24} className="hidden md:block" />
         </Button>
       </motion.div>
 
@@ -164,7 +165,7 @@ const ChatBot = () => {
             initial={{ opacity: 0, y: 100, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 100, scale: 0.8 }}
-            className="fixed bottom-24 right-6 w-96 h-[500px] z-50"
+            className="fixed bottom-24 right-4 left-4 md:left-auto md:right-6 w-auto md:w-96 h-[500px] max-h-[80vh] z-50"
           >
             <Card className="h-full flex flex-col bg-card/95 backdrop-blur-md border-time-portal/30">
               {/* Header */}
@@ -233,7 +234,7 @@ const ChatBot = () => {
                       key={option}
                       variant="outline"
                       size="sm"
-                      className="text-xs h-7 border-time-portal/30 hover:bg-time-portal/10"
+                      className="text-xs h-7 px-2 border-time-portal/30 hover:bg-time-portal/10 flex-shrink-0"
                       onClick={() => handleSendMessage(option)}
                     >
                       {option}
@@ -243,19 +244,19 @@ const ChatBot = () => {
               </div>
 
               {/* Input */}
-              <div className="p-4 border-t border-time-portal/20">
+              <div className="p-3 md:p-4 border-t border-time-portal/20">
                 <div className="flex gap-2">
                   <Input
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="Ask about ZENISTA 2025..."
-                    className="flex-1 border-time-portal/30 focus:border-time-portal"
+                    className="flex-1 border-time-portal/30 focus:border-time-portal text-sm"
                     onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
                   />
                   <Button
                     onClick={() => handleSendMessage()}
                     disabled={!inputValue.trim()}
-                    className="time-gradient px-3"
+                    className="time-gradient px-3 flex-shrink-0"
                   >
                     <Send size={16} />
                   </Button>
