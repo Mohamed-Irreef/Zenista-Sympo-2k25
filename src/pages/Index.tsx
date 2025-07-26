@@ -11,10 +11,13 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import ChatBot from '@/components/ChatBot';
 import ContactForm from '@/components/ContactForm';
-import WhatsAppButton from '@/components/WhatsAppButton';
 import SmoothScrollProvider from '@/components/SmoothScrollProvider';
+<<<<<<< HEAD
 import EventRegistrationPopup from '@/components/EventRegistrationPopup';
 import timePortalBg from '@/assets/time-portal-bg.jpg';
+=======
+import cosmicPattern from '@/assets/cosmic-pattern.jpg';
+>>>>>>> changes1
 
 const Index = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -219,8 +222,6 @@ const Index = () => {
               
               {/* Interactive Components */}
               <ChatBot />
-              <WhatsAppButton />
-              <EventRegistrationPopup />
             </motion.div>
           )}
         </AnimatePresence>

@@ -20,7 +20,7 @@ const FAQSection = () => {
     },
     {
       question: "How can I register for the events?",
-      answer: "Registration for each event is done through individual Google Forms. You can find the registration links by clicking on the event cards on our website. Early registration is recommended as seats are limited for most events."
+      answer: "Registration for each event is done through our integrated registration forms. You can find the registration forms by clicking on the event cards on our website. Early registration is recommended as seats are limited for most events."
     },
     {
       question: "What are the participation fees?",

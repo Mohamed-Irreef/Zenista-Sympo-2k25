@@ -414,6 +414,12 @@ All colors MUST be HSL.
     background: linear-gradient(135deg, hsl(var(--time-glow)), hsl(var(--time-portal)));
   }
   
+  /* Firefox scrollbar support */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--time-portal)) hsl(var(--muted));
+  }
+  
   /* Smooth scrolling for sections */
   html {
     scroll-behavior: smooth;

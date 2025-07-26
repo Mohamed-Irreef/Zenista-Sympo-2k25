@@ -70,18 +70,23 @@ const ChatBot = () => {
     "Date & venue",
     "Technical events",
     "Non-technical events",
-    "Team requirements"
+    "Team requirements",
+    "Chess tournament",
+    "Chess rules"
   ];
 
   const botResponses = {
-    "event details": "ZENISTA 2025 features 9 exciting events: 6 technical (STRIKE-IT!!, Circuit Symphony, Code Chronos, Signal Quest, Robo Temporal, Quantum Bridge) and 3 non-technical (Time Capsule Trivia, Chrono Debates, Retro Gaming Arena). Each event has unique challenges and prizes!",
+    "event details": "ZENISTA 2025 features 9 exciting events: 6 technical (CLOCKS AND KINGS - Chess Tournament, Circuit Symphony, Code Chronos, Signal Quest, Robo Temporal, Quantum Bridge) and 3 non-technical (Time Capsule Trivia, Chrono Debates, Retro Gaming Arena). Each event has unique challenges and prizes!",
     "registration process": "Registration is simple! Click on any event card to view details and use the registration link. Make sure to register before the deadline and bring your college ID on the event day.",
     "prize information": "Total prizes worth ₹60,500+! Technical events offer ₹6,000-₹12,000 prizes, non-technical events offer ₹4,000-₹6,000. All participants receive certificates!",
     "contact details": "For queries, contact our coordinators at +91 93617 57753 or +91 99420 03192. You can also use the WhatsApp button for quick assistance.",
     "date & venue": "ZENISTA 2025 is on 8th August 2025 at Sri Sairam Engineering College, Sai Leo Nagar, West Tambaram, Chennai – 600044.",
-    "technical events": "Technical events include: STRIKE-IT!! (₹10,000), Circuit Symphony (₹8,000), Code Chronos (₹7,500), Signal Quest (₹6,000), Robo Temporal (₹12,000), and Quantum Bridge (₹9,000).",
+    "technical events": "Technical events include: CLOCKS AND KINGS - Chess Tournament (₹10,000), Circuit Symphony (₹8,000), Code Chronos (₹7,500), Signal Quest (₹6,000), Robo Temporal (₹12,000), and Quantum Bridge (₹9,000).",
     "non-technical events": "Non-technical events include: Time Capsule Trivia (₹5,000), Chrono Debates (₹4,000), and Retro Gaming Arena (₹6,000).",
-    "team requirements": "Team sizes vary by event: 1-4 members depending on the event. Check individual event details for specific team requirements."
+    "team requirements": "Team sizes vary by event: 1-4 members depending on the event. Check individual event details for specific team requirements.",
+    "chess tournament": "CLOCKS AND KINGS is our chess tournament! Round 1: Blitz War (5+1 format), Round 2: Rapid Realm (10+0 format). Individual participation with Round Robin format. Prize: ₹10,000 + certificates!",
+    "clocks and kings": "Step into the time portal where kings clash and seconds vanish! Our chess tournament features Blitz War (5+1) and Rapid Realm (10+0) rounds. Individual competition with ₹10,000 prize pool.",
+    "chess rules": "Standard FIDE chess rules apply. Touch-move rule enforced. Round Robin format with scoring: Win=1 point, Draw=0.5, Loss=0. Arbiter's decision is final."
   };
 
   const generateBotResponse = (userMessage: string): string => {
@@ -142,13 +147,14 @@ const ChatBot = () => {
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-6 right-4 md:right-6 z-50"
       >
         <Button
           onClick={() => setIsOpen(true)}
-          className="w-16 h-16 rounded-full time-gradient shadow-lg hover:scale-110 transition-transform"
+          className="w-14 h-14 md:w-16 md:h-16 rounded-full time-gradient shadow-lg hover:scale-110 transition-transform"
         >
-          <MessageCircle size={24} />
+          <MessageCircle size={20} className="md:hidden" />
+          <MessageCircle size={24} className="hidden md:block" />
         </Button>
       </motion.div>
 
@@ -159,7 +165,7 @@ const ChatBot = () => {
             initial={{ opacity: 0, y: 100, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 100, scale: 0.8 }}
-            className="fixed bottom-24 right-6 w-96 h-[500px] z-50"
+            className="fixed bottom-24 right-4 left-4 md:left-auto md:right-6 w-auto md:w-96 h-[500px] max-h-[80vh] z-50"
           >
             <Card className="h-full flex flex-col bg-card/95 backdrop-blur-md border-time-portal/30">
               {/* Header */}
@@ -228,7 +234,7 @@ const ChatBot = () => {
                       key={option}
                       variant="outline"
                       size="sm"
-                      className="text-xs h-7 border-time-portal/30 hover:bg-time-portal/10"
+                      className="text-xs h-7 px-2 border-time-portal/30 hover:bg-time-portal/10 flex-shrink-0"
                       onClick={() => handleSendMessage(option)}
                     >
                       {option}
@@ -238,19 +244,19 @@ const ChatBot = () => {
               </div>
 
               {/* Input */}
-              <div className="p-4 border-t border-time-portal/20">
+              <div className="p-3 md:p-4 border-t border-time-portal/20">
                 <div className="flex gap-2">
                   <Input
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="Ask about ZENISTA 2025..."
-                    className="flex-1 border-time-portal/30 focus:border-time-portal"
+                    className="flex-1 border-time-portal/30 focus:border-time-portal text-sm"
                     onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
                   />
                   <Button
                     onClick={() => handleSendMessage()}
                     disabled={!inputValue.trim()}
-                    className="time-gradient px-3"
+                    className="time-gradient px-3 flex-shrink-0"
                   >
                     <Send size={16} />
                   </Button>

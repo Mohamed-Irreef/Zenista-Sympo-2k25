@@ -3,6 +3,8 @@ import { Calendar, MapPin, Users, Award, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import collegeLogo from '@/assets/sec.png';
 import leoLogo from '@/assets/leo.png';
+import zenistaLogo from '@/assets/Zenista.png';
+import backgroundVideo from '@/assets/Space_Time_Travel_Video_Generated.mp4';
 
 const HeroSection = () => {
   const eventDetails = [
@@ -34,8 +36,30 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Time-Travel Animated Background */}
-      <div className="absolute inset-0">
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        style={{ 
+          filter: 'brightness(0.4) contrast(1.2)'
+        }}
+        ref={(video) => {
+          if (video) {
+            video.playbackRate = 0.65;
+          }
+        }}
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
+
+      {/* Video Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/30 z-10" />
+
+      {/* Time-Travel Animated Background (overlay on video) */}
+      <div className="absolute inset-0 z-20">
         {/* Parallax Grid */}
         <motion.div
           animate={{ 
@@ -89,7 +113,7 @@ const HeroSection = () => {
       </div>
 
       {/* Floating Particles */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-25">
         {Array.from({ length: 30 }).map((_, i) => (
           <motion.div
             key={i}
@@ -113,7 +137,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <div className="relative z-30 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         {/* College Header */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -170,7 +194,32 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="mb-1"
         >
-         
+          {/* Zenista Logo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 1.0 }}
+            className="flex justify-center mb-8"
+          >
+            <motion.img
+              src={zenistaLogo}
+              alt="Zenista Logo"
+              className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-2xl"
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              animate={{
+                filter: [
+                  'drop-shadow(0 0 20px hsl(188 100% 60% / 0.6))',
+                  'drop-shadow(0 0 30px hsl(276 100% 70% / 0.8))',
+                  'drop-shadow(0 0 20px hsl(188 100% 60% / 0.6))'
+                ]
+              }}
+              transition={{ 
+                scale: { duration: 0.3 },
+                rotate: { duration: 0.3 },
+                filter: { duration: 3, repeat: Infinity }
+              }}
+            />
+          </motion.div>
           
           <motion.h1
             className="text-7xl md:text-8xl font-bold text-glow mb-4 tracking-wider"
