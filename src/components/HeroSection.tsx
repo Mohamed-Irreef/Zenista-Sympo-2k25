@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { useCountdown } from '@/hooks/use-countdown';
 import collegeLogo from '@/assets/sec.png';
 import leoLogo from '@/assets/leo.png';
-import zenistaLogo from '@/assets/Zenista1.png';
+import zenistaLogo from '@/assets/zenista1.png';
 import backgroundVideo from '@/assets/Space_Time_Travel_Video_Generated.mp4';
 
 const HeroSection = () => {

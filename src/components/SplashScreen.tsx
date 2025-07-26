@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import zenistaLogo from '@/assets/Zenista1.png';
+import zenistaLogo from '@/assets/zenista1.png';
 import loadingVideo from '@/assets/Video_Generation_Complete_Link.mp4';
 
 interface SplashScreenProps {
