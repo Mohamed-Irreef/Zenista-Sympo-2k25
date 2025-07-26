@@ -27,73 +27,23 @@ const EventsSection = () => {
 
   const technicalEvents = [
     {
-      title: "STRIKE-IT!!",
-      description: "An exciting dual-challenge event combining BingoBlitz and Debug Duel to test your knowledge and debugging skills.",
-      logo: strikeItLogo,
-      fullDescription: `STRIKE-IT!! is an innovative event that combines the thrill of bingo with the challenge of debugging. This event includes two major activities:
-
-BingoBlitz: Participants answer questions to complete the word ZENISTA on a 7x7 bingo grid. Questions cover Electronics, Programming, Sustainable Development Goals (SDG), and Space topics.
-
-Debug Duel: Participants choose either the electronics or coding stream to debug circuits or code respectively. This tests practical problem-solving skills and technical expertise.
-
-The event is designed to test both theoretical knowledge and practical application skills, making it a comprehensive challenge for engineering students.`,
-      category: 'technical' as const,
-      participants: "Maximum 2 members",
-      duration: "3 hours",
-      prize: "₹10,000 + Certificates",
-      rules: [
-        "A team can have a maximum of 2 members",
-        "Engineering students from any discipline and year can participate",
-        "Participants must bring their college ID",
-        "The judges' decisions will be final and binding",
-        "Any form of cheating will result in disqualification",
-        "All participants will receive participation certificates",
-        "Winners will be awarded cash prizes and certificates"
-      ],
-      activities: [
-        {
-          name: "BingoBlitz",
-          description: "Answer questions to complete ZENISTA on a 7x7 bingo grid covering Electronics, Programming, SDG, and Space topics"
-        },
-        {
-          name: "Debug Duel", 
-          description: "Choose electronics or coding stream to debug circuits or code respectively"
-        }
-      ],
-      coordinators: [
-        {
-          name: "Arjun Krishnan",
-          role: "Lead" as const,
-          phone: "+91 9876543210",
-          image: "/api/placeholder/100/100"
-        },
-        {
-          name: "Priya Sharma",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543211",
-          image: "/api/placeholder/100/100"
-        }
-      ],
-      registrationLink: "https://forms.google.com/strike-it"
-    },
-    {
-      title: "CIRCUIT SYMPHONY",
-      description: "Design and simulate complex electronic circuits with real-world applications in this hands-on technical challenge.",
+      title: "PAPER PRESENTATION",
+      description: "Present your innovative research and technical solutions in a competitive academic environment.",
       logo: circuitSymphonyLogo,
-      fullDescription: `Circuit Symphony challenges participants to design, simulate, and optimize electronic circuits for real-world applications. This event tests your understanding of circuit analysis, component selection, and system optimization.
+      fullDescription: `Paper Presentation challenges participants to showcase their research, innovations, and technical solutions through comprehensive presentations and documentation.
 
-Participants will work on progressive challenges starting from basic circuits to complex systems. The event combines theoretical knowledge with practical implementation skills, making it perfect for electronics enthusiasts.`,
+This event provides a platform for students to demonstrate their analytical thinking, research capabilities, and presentation skills. Participants will present their work to a panel of expert judges and receive valuable feedback.`,
       category: 'technical' as const,
       participants: "1-3 members",
       duration: "4 hours",
       prize: "₹8,000 + Certificates",
       rules: [
         "Teams can have 1-3 members",
-        "Basic knowledge of circuit analysis required",
-        "Simulation software will be provided",
-        "Original designs only - plagiarism will lead to disqualification",
-        "Participants must present their solutions",
-        "Time management is crucial for completion"
+        "Original research work required",
+        "Maximum 2 files can be uploaded per registration",
+        "Supported formats: PDF, DOC, DOCX, PPT, PPTX (max 10MB each)",
+        "15-20 minute presentation followed by Q&A",
+        "Plagiarism will lead to disqualification"
       ],
       coordinators: [
         {
@@ -109,7 +59,7 @@ Participants will work on progressive challenges starting from basic circuits to
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: "https://forms.google.com/circuit-symphony"
+      registrationLink: import.meta.env.VITE_PAPER_PRESENTATION_FORM_URL || "https://forms.gle/YOUR_PAPER_PRESENTATION_FORM_ID"
     },
     {
       title: "CODE CHRONOS",
@@ -144,7 +94,7 @@ This event tests algorithmic thinking, code optimization, and adaptability to di
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: "https://forms.google.com/code-chronos"
+      registrationLink: import.meta.env.VITE_CODE_CHRONOS_FORM_URL || "https://forms.gle/YOUR_CODE_CHRONOS_FORM_ID"
     },
     {
       title: "SIGNAL QUEST",
@@ -179,7 +129,7 @@ The event covers analog and digital signal processing, modulation techniques, an
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: "https://forms.google.com/signal-quest"
+      registrationLink: import.meta.env.VITE_SIGNAL_QUEST_FORM_URL || "https://forms.gle/YOUR_SIGNAL_QUEST_FORM_ID"
     },
     {
       title: "ROBO TEMPORAL",
@@ -214,7 +164,7 @@ This event combines mechanical design, electronics integration, and programming 
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: "https://forms.google.com/robo-temporal"
+      registrationLink: import.meta.env.VITE_ROBO_TEMPORAL_FORM_URL || "https://forms.gle/YOUR_ROBO_TEMPORAL_FORM_ID"
     },
     {
       title: "QUANTUM BRIDGE",
@@ -249,11 +199,83 @@ This cutting-edge event covers quantum gates, quantum circuits, and quantum algo
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: "https://forms.google.com/quantum-bridge"
+      registrationLink: import.meta.env.VITE_QUANTUM_BRIDGE_FORM_URL || "https://forms.gle/YOUR_QUANTUM_BRIDGE_FORM_ID"
     }
   ];
 
   const nonTechnicalEvents = [
+    {
+      title: "CLOCKS AND KINGS",
+      description: "Step into the time portal where kings clash and seconds vanish. A thrilling chess tournament with blitz and rapid formats.",
+      logo: strikeItLogo,
+      fullDescription: `Step into the time portal where kings clash and seconds vanish.
+
+Round 1: Blitz War (5+1)
+Time Format: 5 minutes + 1 second increment
+
+A battle of speed and nerves – fast decisions, fierce plays.
+Think quickly, act instantly – no second chances.
+Every move is a choice, every second is a sacrifice.
+Only the swift and smart survive the first storm of the clock.
+
+Round 2: Rapid Realm (10+0)
+Time Format: 10 minutes per player, no increment
+
+Slower, deeper – strategy now trumps speed.
+Mistakes are harder to forgive – precision is power.
+You've crossed into a heavier timeline – think wisely.
+It's still a war—but now, the battlefield is wider and deadlier.
+
+General Rules:
+• Follow standard FIDE chess rules
+• Touch-move applies – if you touch, you move
+• Use the same hand to move and press the clock
+• Illegal moves may result in a loss or time penalty
+
+Round Robin Format:
+• Everyone plays against every other player in their group
+• Win = 1 point, Draw = 0.5, Loss = 0
+• Arbiter's decision is final in all disputes`,
+      category: 'non-technical' as const,
+      participants: "Individual players",
+      duration: "4 hours",
+      prize: "₹10,000 + Certificates",
+      rules: [
+        "Individual participation only",
+        "Follow standard FIDE chess rules",
+        "Touch-move applies – if you touch, you move",
+        "Use the same hand to move and press the clock",
+        "Illegal moves may result in a loss or time penalty",
+        "Round Robin Format: Everyone plays against every other player",
+        "Win = 1 point, Draw = 0.5, Loss = 0",
+        "Arbiter's decision is final in all disputes"
+      ],
+      activities: [
+        {
+          name: "Blitz War (5+1)",
+          description: "5 minutes + 1 second increment - A battle of speed and nerves with fast decisions and fierce plays"
+        },
+        {
+          name: "Rapid Realm (10+0)", 
+          description: "10 minutes per player, no increment - Slower, deeper gameplay where strategy trumps speed"
+        }
+      ],
+      coordinators: [
+        {
+          name: "Arjun Krishnan",
+          role: "Lead" as const,
+          phone: "+91 9876543210",
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Priya Sharma",
+          role: "Co-Lead" as const,
+          phone: "+91 9876543211",
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      registrationLink: import.meta.env.VITE_CLOCKS_AND_KINGS_FORM_URL || "https://forms.gle/YOUR_CLOCKS_AND_KINGS_FORM_ID"
+    },
     {
       title: "TIME CAPSULE TRIVIA",
       description: "A thrilling quiz competition covering general knowledge, current affairs, and historical events across different time periods.",
@@ -287,7 +309,7 @@ The competition includes multiple rounds with increasing difficulty levels. Part
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: "https://forms.google.com/time-capsule-trivia"
+      registrationLink: import.meta.env.VITE_TIME_CAPSULE_TRIVIA_FORM_URL || "https://forms.gle/YOUR_TIME_CAPSULE_TRIVIA_FORM_ID"
     },
     {
       title: "CHRONO DEBATES",
@@ -322,7 +344,7 @@ This event tests communication skills, critical thinking, and the ability to pre
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: "https://forms.google.com/chrono-debates"
+      registrationLink: import.meta.env.VITE_CHRONO_DEBATES_FORM_URL || "https://forms.gle/YOUR_CHRONO_DEBATES_FORM_ID"
     },
     {
       title: "RETRO GAMING ARENA",
@@ -357,7 +379,7 @@ The event includes retro arcade games, classic console games, and modern competi
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: "https://forms.google.com/retro-gaming"
+      registrationLink: import.meta.env.VITE_RETRO_GAMING_FORM_URL || "https://forms.gle/YOUR_RETRO_GAMING_FORM_ID"
     }
   ];
 

@@ -8,6 +8,19 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    // Add CORS proxy for Google Apps Script during development
+    proxy: mode === 'development' ? {
+      '/api/registration': {
+        target: 'https://script.google.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/registration/, ''),
+        configure: (proxy, options) => {
+          proxy.on('proxyReq', (proxyReq, req, res) => {
+            proxyReq.setHeader('Access-Control-Allow-Origin', '*');
+          });
+        }
+      }
+    } : undefined,
   },
   plugins: [
     react(),

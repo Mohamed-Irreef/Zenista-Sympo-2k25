@@ -70,18 +70,23 @@ const ChatBot = () => {
     "Date & venue",
     "Technical events",
     "Non-technical events",
-    "Team requirements"
+    "Team requirements",
+    "Chess tournament",
+    "Chess rules"
   ];
 
   const botResponses = {
-    "event details": "ZENISTA 2025 features 9 exciting events: 6 technical (STRIKE-IT!!, Circuit Symphony, Code Chronos, Signal Quest, Robo Temporal, Quantum Bridge) and 3 non-technical (Time Capsule Trivia, Chrono Debates, Retro Gaming Arena). Each event has unique challenges and prizes!",
+    "event details": "ZENISTA 2025 features 9 exciting events: 6 technical (CLOCKS AND KINGS - Chess Tournament, Circuit Symphony, Code Chronos, Signal Quest, Robo Temporal, Quantum Bridge) and 3 non-technical (Time Capsule Trivia, Chrono Debates, Retro Gaming Arena). Each event has unique challenges and prizes!",
     "registration process": "Registration is simple! Click on any event card to view details and use the registration link. Make sure to register before the deadline and bring your college ID on the event day.",
     "prize information": "Total prizes worth ₹60,500+! Technical events offer ₹6,000-₹12,000 prizes, non-technical events offer ₹4,000-₹6,000. All participants receive certificates!",
     "contact details": "For queries, contact our coordinators at +91 93617 57753 or +91 99420 03192. You can also use the WhatsApp button for quick assistance.",
     "date & venue": "ZENISTA 2025 is on 8th August 2025 at Sri Sairam Engineering College, Sai Leo Nagar, West Tambaram, Chennai – 600044.",
-    "technical events": "Technical events include: STRIKE-IT!! (₹10,000), Circuit Symphony (₹8,000), Code Chronos (₹7,500), Signal Quest (₹6,000), Robo Temporal (₹12,000), and Quantum Bridge (₹9,000).",
+    "technical events": "Technical events include: CLOCKS AND KINGS - Chess Tournament (₹10,000), Circuit Symphony (₹8,000), Code Chronos (₹7,500), Signal Quest (₹6,000), Robo Temporal (₹12,000), and Quantum Bridge (₹9,000).",
     "non-technical events": "Non-technical events include: Time Capsule Trivia (₹5,000), Chrono Debates (₹4,000), and Retro Gaming Arena (₹6,000).",
-    "team requirements": "Team sizes vary by event: 1-4 members depending on the event. Check individual event details for specific team requirements."
+    "team requirements": "Team sizes vary by event: 1-4 members depending on the event. Check individual event details for specific team requirements.",
+    "chess tournament": "CLOCKS AND KINGS is our chess tournament! Round 1: Blitz War (5+1 format), Round 2: Rapid Realm (10+0 format). Individual participation with Round Robin format. Prize: ₹10,000 + certificates!",
+    "clocks and kings": "Step into the time portal where kings clash and seconds vanish! Our chess tournament features Blitz War (5+1) and Rapid Realm (10+0) rounds. Individual competition with ₹10,000 prize pool.",
+    "chess rules": "Standard FIDE chess rules apply. Touch-move rule enforced. Round Robin format with scoring: Win=1 point, Draw=0.5, Loss=0. Arbiter's decision is final."
   };
 
   const generateBotResponse = (userMessage: string): string => {
