@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
+
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -57,13 +58,8 @@ if (!event) return null;
     <AnimatePresence>
       {isOpen && (
         <Dialog open={isOpen} onOpenChange={onClose} >
-<<<<<<< HEAD
-          <DialogContent className="max-w-4xl max-h-[90vh] bg-card border-time-portal/20 overflow-visible">
-            <div className="max-h-[80vh] overflow-y-auto pr-4 pl-4 py-6 custom-scrollbar border-2 border-white">
-=======
-          <DialogContent className="max-w-4xl max-h-[90vh] bg-card border-time-portal/20 overflow-hidden p-0">
-            <div className="max-h-[80vh] overflow-y-auto pr-4 pl-4 py-6 custom-scrollbar" onWheel={(e) => e.stopPropagation()}>
->>>>>>> changes1
+ <DialogContent className="max-w-4xl max-h-[90vh] bg-card border-time-portal/20 overflow-hidden p-0">
+    <div className="max-h-[80vh] overflow-y-auto pr-4 pl-4 py-6 custom-scrollbar" onWheel={(e) => e.stopPropagation()}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
