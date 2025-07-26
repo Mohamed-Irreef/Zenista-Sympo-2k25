@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SplashScreen from '@/components/SplashScreen';
 import Navigation from '@/components/Navigation';
@@ -14,204 +14,187 @@ import ContactForm from '@/components/ContactForm';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import SmoothScrollProvider from '@/components/SmoothScrollProvider';
 import EventRegistrationPopup from '@/components/EventRegistrationPopup';
+import timePortalBg from '@/assets/time-portal-bg.jpg';
+
 const Index = () => {
-  const [showIntro, setShowIntro] = useState(true);
-  const [showSplash, setShowSplash] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
-  const videoRef = useRef(null);
 
   useEffect(() => {
-    // Start with the intro video
-    if (videoRef.current) {
-      // Set playback speed to make video last exactly 15 seconds
-      videoRef.current.playbackRate = 1.5; // Adjust this value based on original video length
-      videoRef.current.play();
-
-      // Force end after 15 seconds regardless of video length
-      const timer = setTimeout(() => {
-        setShowIntro(false);
-        setShowSplash(true);
-        setIsLoaded(true);
-      }, 15000);
-      
-      // Listen for video end (backup)
-      videoRef.current.addEventListener('ended', () => {
-        setShowIntro(false);
-        setShowSplash(true);
-        setIsLoaded(true);
-      });
-
-      return () => clearTimeout(timer);
-    }
+    // Preload images
+    const images = [timePortalBg];
+    let loadedCount = 0;
+    
+    images.forEach(src => {
+      const img = new Image();
+      img.onload = () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          setIsLoaded(true);
+        }
+      };
+      img.src = src;
+    });
   }, []);
 
   const handleSplashComplete = () => {
     setShowSplash(false);
   };
 
-  if (showIntro) {
-    return (
-      <div className="fixed inset-0 bg-black">
-        <video 
-          ref={videoRef}
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-          style={{
-            filter: 'brightness(0.8) contrast(1.2)'
-          }}
-        >
-          <source src="/src/assets/bg.mp4" type="video/mp4" />
-        </video>
-        <div 
-          className="fixed inset-0 pointer-events-none"
-          style={{
-            background: 'radial-gradient(circle at 50% 50%, transparent 30%, rgba(0, 0, 25, 0.97) 100%)',
-            mixBlendMode: 'multiply'
-          }}
-        />
-      </div>
-    );
-  }
-
   return (
     <SmoothScrollProvider>
       <div className="min-h-screen bg-background text-foreground relative overflow-x-hidden">
-        {/* Deep Space Background */}
+        {/* Lab Background */}
+        <div 
+          className="fixed inset-0 pointer-events-none overflow-hidden"
+          style={{
+            background: 'linear-gradient(180deg, #000510 0%, #000B2E 50%, #000510 100%)',
+            opacity: 0.98
+          }}
+        />
+
+        {/* Floor Grid */}
         <div 
           className="fixed inset-0 pointer-events-none"
           style={{
             background: `
-              radial-gradient(circle at center,
-                hsl(250, 70%, 8%) 0%,
-                hsl(245, 70%, 6%) 50%,
-                hsl(240, 70%, 4%) 100%
-              )
+              linear-gradient(90deg, rgba(0,212,255,0.05) 1px, transparent 1px) 0 0 / 100px 100px,
+              linear-gradient(0deg, rgba(0,212,255,0.05) 1px, transparent 1px) 0 0 / 100px 100px,
+              radial-gradient(circle at 50% 50%, rgba(0,0,20,0.3) 0%, rgba(0,0,40,0.6) 100%)
             `,
-            zIndex: -6
+            animation: 'circuitPower 15s infinite linear',
+            mixBlendMode: 'screen'
           }}
         />
 
-        {/* Starfield Layer */}
-        <div 
-          className="fixed inset-0 pointer-events-none"
-          style={{
-            background: `
-              radial-gradient(1px 1px at 20% 30%, white 0%, transparent 100%),
-              radial-gradient(1px 1px at 40% 70%, white 0%, transparent 100%),
-              radial-gradient(1.5px 1.5px at 60% 40%, white 0%, transparent 100%),
-              radial-gradient(1.5px 1.5px at 80% 60%, white 0%, transparent 100%),
-              radial-gradient(2px 2px at 50% 50%, white 0%, transparent 100%)
-            `,
-            opacity: 0.4,
-            animation: 'twinkle 4s ease-in-out infinite alternate',
-            zIndex: -5
-          }}
-        />
-
-        {/* Time Spiral */}
+        {/* Time Machine Core */}
         <div 
           className="fixed inset-0 pointer-events-none"
           style={{
             position: 'fixed',
             top: '50%',
             left: '50%',
-            width: '200vh',
-            height: '200vh',
+            width: '300px',
+            height: '300px',
             background: `
-              conic-gradient(
-                from 0deg at 50% 50%,
-                hsla(240, 100%, 50%, 0) 0%,
-                hsla(240, 100%, 60%, 0.2) 20%,
-                hsla(240, 100%, 70%, 0.4) 40%,
-                hsla(260, 100%, 70%, 0.6) 60%,
-                hsla(280, 100%, 60%, 0.4) 80%,
-                hsla(280, 100%, 50%, 0) 100%
+              radial-gradient(circle at 50% 50%, 
+                rgba(0,255,255,0.4) 0%,
+                rgba(128,0,255,0.3) 30%,
+                transparent 70%
               )
             `,
-            transform: 'translate(-50%, -50%)',
-            animation: 'timeSpiral 20s linear infinite',
+            animation: 'machinePulse 4s infinite ease-in-out',
             mixBlendMode: 'screen',
-            filter: 'blur(4px) brightness(1.5)',
-            zIndex: -4
+            transform: 'translate(-50%, -50%)'
           }}
         />
 
-        {/* Digital Circuit Patterns */}
-        <div 
-          className="fixed inset-0 pointer-events-none"
-          style={{
-            background: `
-              linear-gradient(90deg,
-                transparent 49.5%,
-                hsla(240, 100%, 80%, 0.05) 49.5%,
-                hsla(240, 100%, 80%, 0.05) 50.5%,
-                transparent 50.5%
-              ),
-              linear-gradient(0deg,
-                transparent 49.5%,
-                hsla(240, 100%, 80%, 0.05) 49.5%,
-                hsla(240, 100%, 80%, 0.05) 50.5%,
-                transparent 50.5%
-              )
-            `,
-            backgroundSize: '60px 60px',
-            animation: 'circuitFlow 15s linear infinite',
-            zIndex: -3
-          }}
-        />
-
-        {/* Floating Time Elements */}
+        {/* Energy Rings */}
         <div 
           className="fixed inset-0 pointer-events-none"
           style={{
             position: 'fixed',
             top: '50%',
             left: '50%',
-            width: '150vh',
-            height: '150vh',
+            width: '400px',
+            height: '400px',
             background: `
-              radial-gradient(circle at 75% 25%, hsla(240, 100%, 70%, 0.2) 0%, transparent 20%),
-              radial-gradient(circle at 25% 75%, hsla(260, 100%, 70%, 0.2) 0%, transparent 20%),
-              radial-gradient(circle at 85% 85%, hsla(280, 100%, 70%, 0.2) 0%, transparent 20%),
-              radial-gradient(circle at 15% 15%, hsla(220, 100%, 70%, 0.2) 0%, transparent 20%)
-            `,
-            transform: 'translate(-50%, -50%)',
-            animation: 'timeElements 30s ease-in-out infinite',
-            mixBlendMode: 'screen',
-            zIndex: -2
-          }}
-        />
-
-        {/* Energy Waves */}
-        <div 
-          className="fixed inset-0 pointer-events-none"
-          style={{
-            background: `
-              repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 200px,
-                hsla(240, 100%, 70%, 0.03) 200px,
-                hsla(240, 100%, 70%, 0.03) 400px
+              repeating-radial-gradient(circle at 50% 50%,
+                rgba(0,255,255,0.1) 0px,
+                transparent 2px,
+                rgba(128,0,255,0.1) 4px,
+                transparent 6px
               )
             `,
-            animation: 'energyWaves 10s linear infinite',
-            zIndex: -1
+            animation: 'energyRing 20s infinite linear',
+            mixBlendMode: 'screen',
+            transform: 'translate(-50%, -50%)'
           }}
         />
 
-        {/* Cinematic Vignette */}
+        {/* Mechanical Gears */}
         <div 
           className="fixed inset-0 pointer-events-none"
           style={{
-            background: 'radial-gradient(circle at center, transparent 30%, rgba(0, 0, 20, 0.97) 100%)',
-            mixBlendMode: 'multiply',
-            zIndex: -1
+            position: 'fixed',
+            top: '50%',
+            left: '50%',
+            width: '350px',
+            height: '350px',
+            background: `
+              conic-gradient(from 0deg at 50% 50%,
+                rgba(255,215,0,0.15) 0deg 10deg,
+                transparent 10deg 30deg,
+                rgba(255,215,0,0.15) 30deg 40deg,
+                transparent 40deg 60deg,
+                rgba(255,215,0,0.15) 60deg 70deg,
+                transparent 70deg 360deg
+              )
+            `,
+            animation: 'gearSystem 30s infinite linear',
+            mixBlendMode: 'screen',
+            transform: 'translate(-50%, -50%)'
           }}
         />
 
+        {/* Temporal Energy Waves */}
+        <div 
+          className="fixed inset-0 pointer-events-none"
+          style={{
+            position: 'fixed',
+            top: '50%',
+            left: '50%',
+            width: '100%',
+            height: '100%',
+            background: `
+              radial-gradient(circle at 50% 50%,
+                rgba(0,255,255,0.2) 0%,
+                rgba(128,0,255,0.1) 30%,
+                transparent 70%
+              )
+            `,
+            animation: 'temporalWave 8s infinite ease-out',
+            mixBlendMode: 'screen',
+            transform: 'translate(-50%, -50%)'
+          }}
+        />
 
+        {/* Floating Time Symbols */}
+        <div 
+          className="fixed inset-0 pointer-events-none"
+          style={{
+            background: `
+              radial-gradient(circle at 30% 40%, rgba(0,255,255,0.15) 0%, transparent 5%),
+              radial-gradient(circle at 70% 60%, rgba(128,0,255,0.15) 0%, transparent 5%),
+              radial-gradient(circle at 20% 20%, rgba(255,215,0,0.1) 0%, transparent 5%),
+              radial-gradient(circle at 80% 80%, rgba(0,255,255,0.15) 0%, transparent 5%)
+            `,
+            animation: 'clockFloat 10s infinite ease-in-out',
+            mixBlendMode: 'screen'
+          }}
+        />
+
+        {/* Circuit Details */}
+        <div 
+          className="fixed inset-0 pointer-events-none"
+          style={{
+            background: `
+              linear-gradient(45deg, transparent 48%, rgba(0,212,255,0.1) 49%, rgba(128,0,255,0.1) 51%, transparent 52%) 0 0 / 100px 100px,
+              linear-gradient(-45deg, transparent 48%, rgba(0,212,255,0.1) 49%, rgba(128,0,255,0.1) 51%, transparent 52%) 0 0 / 100px 100px
+            `,
+            animation: 'symbolGlow 6s infinite ease-in-out',
+            mixBlendMode: 'screen'
+          }}
+        />
+
+        {/* Lab Atmosphere */}
+        <div 
+          className="fixed inset-0 pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle at center, transparent 30%, rgba(0,0,40,0.8) 100%)',
+            mixBlendMode: 'multiply'
+          }}
+        />
         
         <AnimatePresence mode="wait">
           {showSplash ? (
