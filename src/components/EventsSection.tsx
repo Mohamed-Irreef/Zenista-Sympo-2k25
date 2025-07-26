@@ -13,7 +13,6 @@ import signalQuestLogo from '@/assets/event-signal-quest.jpg';
 import roboTemporalLogo from '@/assets/event-robo-temporal.jpg';
 import quantumBridgeLogo from '@/assets/event-quantum-bridge.jpg';
 import timeCapsuleTriviaLogo from '@/assets/event-time-capsule-trivia.jpg';
-import chronoDebatesLogo from '@/assets/event-chrono-debates.jpg';
 import retroGamingLogo from '@/assets/event-retro-gaming.jpg';
 
 const EventsSection = () => {
@@ -27,359 +26,650 @@ const EventsSection = () => {
 
   const technicalEvents = [
     {
-      title: "PAPER PRESENTATION",
-      description: "Present your innovative research and technical solutions in a competitive academic environment.",
+      title: "GENZVERSE",
+      description: "A Trend-Tech Puzzle Showdown - Battle through tech + trend-based quizzes, tackle memory challenges, and justify tech logic through debates.",
       logo: circuitSymphonyLogo,
-      fullDescription: `Paper Presentation challenges participants to showcase their research, innovations, and technical solutions through comprehensive presentations and documentation.
+      fullDescription: `GenZverse is your ticket to a wild ride through the world of trends, tech, and time! Get ready to flex your brain, test your memory, and outsmart your peers in this high-energy, non-technical challenge inspired by the coolest innovations and pop culture of the decade.
 
-This event provides a platform for students to demonstrate their analytical thinking, research capabilities, and presentation skills. Participants will present their work to a panel of expert judges and receive valuable feedback.`,
+In this electrifying experience, participants will:
+🧠 Battle through tech + trend-based quizzes
+🔒 Tackle memory and timeline challenges  
+💬 Justify tech logic through debates
+
+A perfect blend of retro nostalgia and futuristic chaos, GenZverse is more than just a quiz — it's a vibe.
+
+Think logic, memes, memory games, debates, and a sprinkle of timeline turbulence!
+
+ROUND 1: GenZ Intellect
+"Swipe Smart or Scroll Out!"
+📱 Mode: Online
+🧩 Type: Objective Quiz
+🎯 Objective: Score high and qualify for the offline twisty rounds!
+
+ROUND 2: GenZ ChronoCache
+"Memory is Your Power. Time is Your Puzzle."
+📱 Mode: Offline
+🧠 Challenges:
+• 3 memory-based visual & verbal recall tasks
+• 1 thematic timeline question (arrange key GenZ events/tech in order)
+🎯 Objective: Tap into your memory and pattern skills to keep your timeline intact.
+
+ROUND 3: GenZ Decrypt
+"Decode, Decide, Defend."
+📱 Mode: Offline
+🧩 Task: Given two tech-related statements, teams must choose the correct one and justify their reasoning with logic and flair.
+🎯 Focus: Critical thinking + communication + trend awareness
+
+Why Join GenZverse?
+🎮 Blend of tech, memory, and pop culture fun
+🔥 Compete like never before with your bestie
+🏆 Win exciting prizes and street cred as the ultimate GenZ champs
+⚡ Experience the perfect mix of brain and buzz
+
+Ready to rise, recall, and rule the GenZverse?
+💡 Buzz in. Think fast. Rule smart.
+Let the timeline chaos begin!`,
       category: 'technical' as const,
-      participants: "1-3 members",
+      participants: "2 members",
       duration: "4 hours",
       prize: "₹8,000 + Certificates",
       rules: [
-        "Teams can have 1-3 members",
-        "Original research work required",
-        "Maximum 2 files can be uploaded per registration",
-        "Supported formats: PDF, DOC, DOCX, PPT, PPTX (max 10MB each)",
-        "15-20 minute presentation followed by Q&A",
-        "Plagiarism will lead to disqualification"
+        "Teams must have exactly 2 members",
+        "Open to all departments - It's all about that GenZ energy!",
+        "Round 1: Online objective quiz to qualify",
+        "Round 2: Offline memory and timeline challenges",
+        "Round 3: Tech logic justification with debates",
+        "Focus on critical thinking, communication, and trend awareness"
       ],
       coordinators: [
         {
-          name: "Rajesh Kumar",
+          name: "Varshini G",
           role: "Lead" as const,
-          phone: "+91 9876543212",
+          phone: "+91 8754599496",
           image: "/api/placeholder/100/100"
         },
         {
-          name: "Anjali Reddy",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543213",
+          name: "Vidhyashree V",
+          role: "Lead" as const,
+          phone: "+91 7708554298",
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: import.meta.env.VITE_PAPER_PRESENTATION_FORM_URL || "https://forms.gle/YOUR_PAPER_PRESENTATION_FORM_ID"
+      volunteers: [
+        {
+          name: "Keerthika B",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Surekha E",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Nivetha S",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Mithula R",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Madhavan V",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      registrationLink: import.meta.env.VITE_GENVERSE_FORM_URL || "https://forms.gle/YOUR_GENVERSE_FORM_ID"
     },
     {
-      title: "CODE CHRONOS",
-      description: "Travel through different programming paradigms and solve algorithmic challenges across multiple time periods.",
+      title: "TESSERACT",
+      description: "Enter the Fourth Dimension of Tech Challenges - A Multi-Domain Tech Gauntlet across ECE, Physics, and Computer Science.",
       logo: codeChronosLogo,
-      fullDescription: `Code Chronos takes you on a journey through the evolution of programming. Participants solve challenges that represent different eras of computing, from basic algorithms to modern AI implementations.
+      fullDescription: `TESSERACT is not just a competition — it's a three-dimensional technical odyssey crafted to push the boundaries of logic, analysis, and applied skills across domains like ECE, Physics, and Computer Science.
 
-This event tests algorithmic thinking, code optimization, and adaptability to different programming paradigms. Perfect for those who love coding challenges and want to test their skills across various domains.`,
-      category: 'technical' as const,
-      participants: "1-2 members",
-      duration: "3.5 hours",
-      prize: "₹7,500 + Certificates",
-      rules: [
-        "Individual or pair participation allowed",
-        "Any programming language can be used",
-        "Internet access for documentation only",
-        "Code must be original and written during the event",
-        "Judging based on correctness, efficiency, and code quality",
-        "Time penalties for late submissions"
-      ],
-      coordinators: [
-        {
-          name: "Vikram Patel",
-          role: "Lead" as const,
-          phone: "+91 9876543214",
-          image: "/api/placeholder/100/100"
-        },
-        {
-          name: "Sneha Gupta",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543215",
-          image: "/api/placeholder/100/100"
-        }
-      ],
-      registrationLink: import.meta.env.VITE_CODE_CHRONOS_FORM_URL || "https://forms.gle/YOUR_CODE_CHRONOS_FORM_ID"
-    },
-    {
-      title: "SIGNAL QUEST",
-      description: "Explore the world of signal processing and communication systems through practical experiments and simulations.",
-      logo: signalQuestLogo,
-      fullDescription: `Signal Quest dives deep into the fascinating world of signal processing and communication systems. Participants work with real signals, implement filters, and design communication protocols.
+In this challenge, teams will transition through time-locked quizzes, encrypted clues, and circuit battles - where only the most versatile minds will break through the dimensional layers to emerge victorious.
 
-The event covers analog and digital signal processing, modulation techniques, and communication system design. It's perfect for students interested in telecommunications and signal processing applications.`,
-      category: 'technical' as const,
-      participants: "2-3 members",
-      duration: "4 hours",
-      prize: "₹6,000 + Certificates",
-      rules: [
-        "Teams must have 2-3 members",
-        "Basic knowledge of signals and systems required",
-        "MATLAB/Python will be available for simulations",
-        "Report submission along with implementation",
-        "Presentation of results is mandatory",
-        "Innovation in approach will be rewarded"
-      ],
-      coordinators: [
-        {
-          name: "Deepak Nair",
-          role: "Lead" as const,
-          phone: "+91 9876543216",
-          image: "/api/placeholder/100/100"
-        },
-        {
-          name: "Kavya Krishnan",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543217",
-          image: "/api/placeholder/100/100"
-        }
-      ],
-      registrationLink: import.meta.env.VITE_SIGNAL_QUEST_FORM_URL || "https://forms.gle/YOUR_SIGNAL_QUEST_FORM_ID"
-    },
-    {
-      title: "ROBO TEMPORAL",
-      description: "Build and program robots to navigate through time-based challenges and autonomous missions.",
-      logo: roboTemporalLogo,
-      fullDescription: `Robo Temporal challenges teams to build and program robots capable of navigating complex time-based scenarios. Robots must complete autonomous missions while adapting to changing environmental conditions.
+ROUND 1: Mentimeter Mania
+"Fast Minds, Faster Fingers"
+📱 Online MCQ Round via Mentimeter
+📚 Subjects Covered: ECE, Physics, Computer Science
+🎯 Description: A fast-paced, timed quiz designed to test your core understanding of multiple technical domains. Only those with both speed and precision will qualify.
 
-This event combines mechanical design, electronics integration, and programming skills. Teams will face challenges that test their robot's ability to make decisions and complete tasks in dynamic environments.`,
-      category: 'technical' as const,
-      participants: "3-4 members",
-      duration: "5 hours",
-      prize: "₹12,000 + Certificates",
-      rules: [
-        "Teams must have 3-4 members",
-        "Basic robotics knowledge required",
-        "Standard robotics kits will be provided",
-        "Robots must be autonomous during missions",
-        "Safety protocols must be followed",
-        "Innovative solutions will receive bonus points"
-      ],
-      coordinators: [
-        {
-          name: "Arun Sagar",
-          role: "Lead" as const,
-          phone: "+91 9876543218",
-          image: "/api/placeholder/100/100"
-        },
-        {
-          name: "Meera Joshi",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543219",
-          image: "/api/placeholder/100/100"
-        }
-      ],
-      registrationLink: import.meta.env.VITE_ROBO_TEMPORAL_FORM_URL || "https://forms.gle/YOUR_ROBO_TEMPORAL_FORM_ID"
-    },
-    {
-      title: "QUANTUM BRIDGE",
-      description: "Explore quantum computing concepts and implement quantum algorithms in simulation environments.",
-      logo: quantumBridgeLogo,
-      fullDescription: `Quantum Bridge introduces participants to the fascinating world of quantum computing. Teams work with quantum simulators to implement quantum algorithms and solve complex computational problems.
+✅ Shortlisting Criteria:
+Top 10 teams based on accuracy + response time
 
-This cutting-edge event covers quantum gates, quantum circuits, and quantum algorithms. Perfect for students interested in the future of computing and quantum technologies.`,
+ROUND 2: Crack-a-Doc
+"Decode. Unlock. Advance."
+📱 Encryption-Decryption Challenge with Sequential PDFs
+🧩 Description: Each team starts with an initial PDF. Solving the embedded challenge reveals the key to access the next encrypted file. Continue the chain using logic, teamwork, and analytical decoding.
+
+⏱️ Scoring: Based on the number of PDFs decrypted within the time limit
+
+ROUND 3: Circuit Clash
+"Replicate. Race. Rule."
+📱 Offline Circuit Design Face-Off
+
+🔧 Format:
+• Two teams compete side-by-side
+• A circuit diagram is displayed for 30 seconds
+• Teams must replicate the circuit in 3 minutes
+
+🏆 Scoring:
+• First correct circuit earns highest points
+• Accuracy > Speed if both teams finish close
+
+Why Join TESSERACT?
+🧠 Multidisciplinary tech challenge across theory and application
+💡 Build problem-solving and collaboration skills under pressure
+🔥 Prizes for the sharpest minds and most versatile teams
+⚡ Engage in a dynamic mix of quiz, code, and circuitry!
+
+Are you ready to crack codes, clash circuits, and collapse timelines?
+Step into the TESSERACT — where logic defies dimensions.`,
       category: 'technical' as const,
-      participants: "2-3 members",
+      participants: "2 to 3 members",
       duration: "4 hours",
       prize: "₹9,000 + Certificates",
       rules: [
-        "Teams can have 2-3 members",
-        "Basic knowledge of quantum mechanics helpful",
-        "Quantum simulators will be provided",
-        "Theoretical understanding will be tested",
-        "Implementation of quantum circuits required",
-        "Documentation of approach necessary"
+        "Teams must have 2-3 members per team",
+        "Open to all departments",
+        "Round 1: Online MCQ via Mentimeter covering ECE, Physics, Computer Science",
+        "Round 2: Encryption-Decryption challenge with sequential PDFs",
+        "Round 3: Offline circuit design face-off",
+        "Top 10 teams from Round 1 advance based on accuracy + response time",
+        "Final scoring based on problem-solving speed and technical accuracy"
       ],
       coordinators: [
         {
-          name: "Karthik Menon",
+          name: "Varsha R",
           role: "Lead" as const,
-          phone: "+91 9876543220",
+          phone: "+91 9843929112",
           image: "/api/placeholder/100/100"
         },
         {
-          name: "Divya Pillai",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543221",
+          name: "Cyril Bendict P S",
+          role: "Lead" as const,
+          phone: "+91 9345309818",
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: import.meta.env.VITE_QUANTUM_BRIDGE_FORM_URL || "https://forms.gle/YOUR_QUANTUM_BRIDGE_FORM_ID"
+      volunteers: [
+        {
+          name: "NARMATHA V",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Daranya R",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Sruthi R",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Vijayan S",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "PACKIYA NISHMITHA J",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "ANU SHREE M",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        }
+
+      ],
+      registrationLink: import.meta.env.VITE_TESSERACT_FORM_URL || "https://forms.gle/YOUR_TESSERACT_FORM_ID"
+    },
+    {
+      title: "CIRCUTRICKS",
+      description: "Let Your Circuits Speak Louder Than Words! - The Ultimate Tech + Logic Challenge where wires twist, logic sparks, and your brain becomes the circuit breaker!",
+      logo: signalQuestLogo,
+      fullDescription: `Welcome to CircuTricks, where wires twist, logic sparks, and your brain becomes the circuit breaker!
+
+This electrifying, non-stop logic event tests your engineering instincts through three thrilling rounds. From tracking down glitches in virtual circuits to simulating designs on Tinkercad and building real-time prototypes, CircuTricks is the ultimate playground for all logic lovers, tinkerers, and hardware hustlers.
+
+If you're someone who can sniff out a short circuit from a mile away, or if simulation feels like second nature — this is your arena to outwit, outbuild, and outshine.
+
+ROUND 1: GlitchQuest
+"Decode the Glitch. Save the Circuit."
+📱 Mode: Online
+🔍 Task: Participants will be presented with faulty or buggy circuit problems. You must analyze, debug, and identify the glitch using logic and deduction.
+
+🧠 Skills Tested:
+• Circuit diagnosis
+• Logical thinking
+• Error spotting under time pressure
+
+ROUND 2: SimuLogic
+"Design with Precision. Simulate with Vision."
+📱 Mode: Offline
+🖥️ Platform: Tinkercad
+🔧 Task: Teams will simulate real-world electronic circuits using Tinkercad based on given design prompts.
+
+🧠 Skills Tested:
+• Circuit design logic
+• Simulation accuracy
+• Component familiarity
+
+ROUND 3: ProtoPlay
+"Think. Build. Power it Up!"
+📱 Mode: Offline
+🔨 Task: This is the ultimate hands-on prototyping challenge. Teams must build a functional mini-circuit model based on the problem statement using provided basic materials.
+
+🧠 Skills Tested:
+• Practical electronics
+• Creativity & implementation
+• Team coordination
+
+Why Join CircuTricks?
+💡 A complete journey from thinking to tinkering
+🎯 Showcase your debugging, designing, and building skills
+🏆 Win cool prizes and get recognized as the circuit champions
+🤝 Collaborate, create, and compete with fellow enthusiasts
+
+Do you have what it takes to beat the glitch and build brilliance?
+Get ready to spark the circuit inside you.
+Join CircuTricks – Where Logic Comes to Life!`,
+      category: 'technical' as const,
+      participants: "2 to 3 members",
+      duration: "4 hours",
+      prize: "₹7,000 + Certificates",
+      rules: [
+        "Teams must have 2-3 members per team",
+        "Open to all tech enthusiasts - Circuits don't discriminate!",
+        "Round 1: Online circuit debugging and glitch identification",
+        "Round 2: Offline circuit simulation using Tinkercad platform",
+        "Round 3: Hands-on prototyping challenge with provided materials",
+        "Skills tested: Circuit diagnosis, logical thinking, simulation accuracy, practical implementation",
+        "Final judging based on problem-solving approach, creativity, and technical execution"
+      ],
+      coordinators: [
+        {
+          name: "Nivetha G",
+          role: "Lead" as const,
+          phone: "+91 8925067560",
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Priyanka S",
+          role: "Lead" as const,
+          phone: "+91 8248756885",
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      registrationLink: import.meta.env.VITE_CIRCUTRICKS_FORM_URL || "https://forms.gle/YOUR_CIRCUTRICKS_FORM_ID"
+    },
+    {
+      title: "TIMECYPHER",
+      description: "Travel Through Time. Decode with Mind. - A Time-Travel Adventure Through ECE designed to test your technical knowledge, logical reasoning, and team coordination.",
+      logo: roboTemporalLogo,
+      fullDescription: `TimeCypher is a fun-filled, brain-teasing three-round event designed to test your technical knowledge, logical reasoning, and team coordination — all set within the thrilling backdrop of time travel in the ECE domain.
+
+Gear up to jump across timelines — from ancient communication methods to futuristic tech puzzles — in a quest to prove your team's synergy and smarts!
+
+ROUND 1: TimeQuizzer
+"Think Fast. Travel Far."
+📱 Mode: Online
+🧩 Type: Objective Quiz
+🎯 Goal: Score high to enter the portal to the next round!
+
+ROUND 2: Connection Craze
+"Link the Clues. Unlock the Time."
+📱 Mode: Offline
+🔗 Type: Connections Game
+🔧 Task: Identify the common link between a set of clues (images, symbols, components, or terms) — all related to ECE and time-travel concepts.
+🎯 Goal: Spot patterns, form logical links, and decode the hidden theme.
+
+ROUND 3: Cypher Jam
+"Decode the Past. Act the Future."
+📱 Mode: Offline
+🎭 Activities:
+• Morse Code Decode — Interpret and translate hidden messages
+• Tech Dumb Charades — Act out and guess technical terms without words!
+🎯 Goal: Showcase teamwork, creativity, and technical understanding in this dynamic, high-energy round.
+
+Why Join TimeCypher?
+🧠 A unique blend of tech, time, and teamwork
+⚡ Sharpen your logic and communication skills
+🏆 Win exciting prizes and recognition
+🤝 Bond with fellow time-traveling techies
+
+Time is ticking... Do you have the code to crack it?
+Join TimeCypher and embark on a journey where logic transcends time!`,
+      category: 'technical' as const,
+      participants: "3 members",
+      duration: "4 hours",
+      prize: "₹8,500 + Certificates",
+      rules: [
+        "Teams must have exactly 3 members per team",
+        "Open to all ECE enthusiasts & logic lovers",
+        "Round 1: Online objective quiz on ECE and time-travel concepts",
+        "Round 2: Offline connections game linking ECE concepts and symbols",
+        "Round 3: Dynamic activities including Morse code decoding and tech charades",
+        "Skills tested: Technical knowledge, logical reasoning, pattern recognition, teamwork",
+        "Final scoring based on speed, accuracy, creativity, and team coordination"
+      ],
+      coordinators: [
+        {
+          name: "Bhavadharene M",
+          role: "Lead" as const,
+          phone: "+91 9444521120",
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "DHAANISH AHMED J",
+          role: "Lead" as const,
+          phone: "+91 7305811665",
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      registrationLink: import.meta.env.VITE_TIMECYPHER_FORM_URL || "https://forms.gle/YOUR_TIMECYPHER_FORM_ID"
+    },
+    {
+      title: "PAST FORWARD",
+      description: "Innovate Across Timelines. Present Beyond Time. - A Paper-Cum-Project Presentation on Time-Altering Tech where visionaries bend time with their ideas.",
+      logo: quantumBridgeLogo,
+      fullDescription: `Past Forward invites visionaries and innovators to bend time with their ideas. In this paper-cum-project presentation, participants will explore the untapped potential of technology across past timelines.
+
+Use your technical knowledge and creative thinking to present innovations that could have rewritten history, solved age-old challenges, or reshaped the future. Whether it's introducing AI during the Industrial Revolution or equipping Nikola Tesla with Arduino, this is your chance to blur the lines between what was, what is, and what could have been.
+
+Bring stories to life. Let your ideas ripple across centuries.
+
+EVENT FORMAT:
+📝 Single Round – Presentation Round (Offline)
+📋 Type: Paper with optional prototype or visual aid (model, simulation, or storyboard)
+⏰ Presentation time: ~6-8 minutes per team
+📢 No filtration or prelims
+
+SAMPLE CONCEPTS:
+• GPS in World War II
+• AI during the Industrial Revolution
+• Arduino kits for Tesla
+• Drones in ancient architecture
+• Blockchain in early trade systems
+
+JUDGING CRITERIA:
+⭐ Originality & Creativity
+🔧 Technical Feasibility
+🕰️ Relevance to Time Travel Theme
+📢 Presentation Clarity
+💡 Innovation Impact
+
+Why Participate?
+🌍 Explore the unexplored possibilities of time & tech
+🎤 Present in front of an engaged, tech-driven audience
+🏆 Prizes, recognition, and the thrill of being a time-traveling innovator
+🤝 Collaborate with like-minded thinkers and creators
+
+Ready to send your tech through time?
+Present the project that could've changed history — only at Past Forward.`,
+      category: 'technical' as const,
+      participants: "2 to 4 members",
+      duration: "3 hours",
+      prize: "₹10,000 + Certificates",
+      rules: [
+        "Teams must have 2-4 members per team",
+        "Open to all departments - Interdisciplinary & creative teams encouraged",
+        "Single presentation round - No preliminary filtering required",
+        "Presentation duration: 6-8 minutes per team",
+        "Paper presentation with optional prototype/visual aid (model, simulation, storyboard)",
+        "Registration fee: ₹100 per team",
+        "Online registration open until slots fill",
+        "Focus on technical feasibility, creativity, and time-travel theme relevance"
+      ],
+      coordinators: [
+        {
+          name: "Thenmozhi A",
+          role: "Lead" as const,
+          phone: "+91 7200248449",
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Solai Ganesh",
+          role: "Lead" as const,
+          phone: "+91 7904857230",
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      registrationLink: import.meta.env.VITE_PAST_FORWARD_FORM_URL || "https://forms.gle/YOUR_PAST_FORWARD_FORM_ID"
     }
   ];
 
   const nonTechnicalEvents = [
     {
       title: "CLOCKS AND KINGS",
-      description: "Step into the time portal where kings clash and seconds vanish. A thrilling chess tournament with blitz and rapid formats.",
+      description: "Every Move Matters. Every Second Counts. - The ultimate time-travel-themed chess battle where strategy meets speed across the 64-square timeline.",
       logo: strikeItLogo,
-      fullDescription: `Step into the time portal where kings clash and seconds vanish.
+      fullDescription: `Welcome to Clocks & Kings, the ultimate time-travel-themed chess battle where strategy meets speed across the 64-square timeline.
 
-Round 1: Blitz War (5+1)
-Time Format: 5 minutes + 1 second increment
+This isn't just chess, it's a race against the clock and a duel across centuries. With each move, you shift the course of time, testing not just your skills but your ability to stay calm under pressure. From lightning-fast blitz battles to intense rapid matches, this event will crown only the most focused and fearless chess master.
 
-A battle of speed and nerves – fast decisions, fierce plays.
-Think quickly, act instantly – no second chances.
-Every move is a choice, every second is a sacrifice.
-Only the swift and smart survive the first storm of the clock.
+Will you reign on the board — or be lost to time?
 
-Round 2: Rapid Realm (10+0)
-Time Format: 10 minutes per player, no increment
+ROUND 1: The Speed Loop
+"Fast, Fierce, and Relentless."
+⚡ Online Blitz Chess
+🎯 Goal: Secure points through fast-paced matchups to qualify for the final timeline.
 
-Slower, deeper – strategy now trumps speed.
-Mistakes are harder to forgive – precision is power.
-You've crossed into a heavier timeline – think wisely.
-It's still a war—but now, the battlefield is wider and deadlier.
+ROUND 2: The Long Turn
+"Think Deep. Play Bold."
+⚡ Offline Rapid Chess
+🎯 Goal: Outthink your opponent in a pure strategy battle to claim the Time Crown.
 
-General Rules:
-• Follow standard FIDE chess rules
-• Touch-move applies – if you touch, you move
-• Use the same hand to move and press the clock
-• Illegal moves may result in a loss or time penalty
+RULES & REGULATIONS:
+♟️ Standard FIDE Chess Rules apply
+♟️ Touch-move rule is enforced – if you touch, you move
+♟️ Use the same hand to move and press the clock
+♟️ 2 Illegal moves lead to loss
+♟️ Win = 1, Draw = 0.5, Loss = 0
+♟️ Arbiter's decision is final in all disputes
 
-Round Robin Format:
-• Everyone plays against every other player in their group
-• Win = 1 point, Draw = 0.5, Loss = 0
-• Arbiter's decision is final in all disputes`,
+Why Join Clocks & Kings?
+🧠 Put your strategy and reflexes to the ultimate test
+⏰ Experience the thrill of time-bound chess battles
+🏆 Win exciting rewards and the Crown of the Board
+👑 Become the king of minds in a battlefield where each second shapes your fate
+
+Prepare your board, ready your mind —
+Enter the Clocks & Kings arena and battle through timelines for glory.`,
       category: 'non-technical' as const,
-      participants: "Individual players",
+      participants: "Solo Event",
       duration: "4 hours",
       prize: "₹10,000 + Certificates",
       rules: [
-        "Individual participation only",
-        "Follow standard FIDE chess rules",
-        "Touch-move applies – if you touch, you move",
+        "Solo Event - Individual participation only",
+        "Open to all strategists & chess enthusiasts",
+        "Swiss Mode tournament format",
+        "Standard FIDE Chess Rules apply",
+        "Touch-move rule enforced – if you touch, you move",
         "Use the same hand to move and press the clock",
-        "Illegal moves may result in a loss or time penalty",
-        "Round Robin Format: Everyone plays against every other player",
-        "Win = 1 point, Draw = 0.5, Loss = 0",
+        "2 illegal moves lead to loss",
+        "Win = 1 point, Draw = 0.5 points, Loss = 0 points",
         "Arbiter's decision is final in all disputes"
       ],
       activities: [
         {
-          name: "Blitz War (5+1)",
-          description: "5 minutes + 1 second increment - A battle of speed and nerves with fast decisions and fierce plays"
+          name: "Round 1: The Speed Loop",
+          description: "Online Blitz Chess - Fast, fierce, and relentless matchups to qualify for the final timeline"
         },
         {
-          name: "Rapid Realm (10+0)", 
-          description: "10 minutes per player, no increment - Slower, deeper gameplay where strategy trumps speed"
+          name: "Round 2: The Long Turn", 
+          description: "Offline Rapid Chess - Think deep, play bold in pure strategy battles to claim the Time Crown"
         }
       ],
       coordinators: [
         {
-          name: "Arjun Krishnan",
+          name: "Kaviya I",
           role: "Lead" as const,
-          phone: "+91 9876543210",
+          phone: "+91 9342455315",
           image: "/api/placeholder/100/100"
         },
         {
-          name: "Priya Sharma",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543211",
+          name: "Kishore Kumar D",
+          role: "Lead" as const,
+          phone: "+91 7358647144",
           image: "/api/placeholder/100/100"
         }
       ],
       registrationLink: import.meta.env.VITE_CLOCKS_AND_KINGS_FORM_URL || "https://forms.gle/YOUR_CLOCKS_AND_KINGS_FORM_ID"
     },
     {
-      title: "TIME CAPSULE TRIVIA",
-      description: "A thrilling quiz competition covering general knowledge, current affairs, and historical events across different time periods.",
+      title: "CHRONOS MANDATE",
+      description: "Rewrite the Past. Decode the Future. - A mission through fractured time where Temporal Agents restore balance to broken timelines through logic, storytelling, and creativity.",
       logo: timeCapsuleTriviaLogo,
-      fullDescription: `Time Capsule Trivia is an engaging quiz competition that tests participants' knowledge across various domains and time periods. From ancient civilizations to modern technology, this quiz covers it all.
+      fullDescription: `Chronos Mandate isn't just an event — it's a mission through fractured time!
 
-The competition includes multiple rounds with increasing difficulty levels. Participants will face questions on history, science, literature, current affairs, and pop culture. It's the perfect event for knowledge enthusiasts and quiz lovers.`,
+Step into the boots of a Temporal Agent, assigned with the daunting task of restoring balance to broken timelines. Whether it's decoding cryptic present-day anomalies or reimagining the rise and fall of civilizations, this non-technical, immersive adventure challenges your logic, storytelling, and creativity like never before.
+
+In this dimension-bending quest, participants will:
+🧠 Crack codes from the present
+🔧 Reconstruct alternate timelines
+🎨 Build symbolic props from basic materials
+📖 Craft tales that stitch time back together
+
+ROUND 1: ChronoPulse
+"Decipher the Now to Save Tomorrow"
+📱 Type: Logic + Quiz Round
+🧩 Challenges Include:
+• Time-based decoding puzzles
+• Present-era paradox questions
+• Logic-driven brain teasers
+• Visual + textual clues
+
+🎯 Objective: Decode the signals from the present to identify the source of timeline disturbances. Only teams with quick minds and sharper instincts will qualify for the next mission phase.
+
+ROUND 2: ChronosCraft
+"Build the Story. Repair the Rift."
+📱 Type: Creative Simulation Round
+🏗️ Scenario Types:
+• PAST PARADOX – Fix a historical event gone wrong
+• FUTURE FRACTURE – Solve a crisis yet to come
+
+🎭 Tasks:
+• Develop a creative, logical story-driven solution to the scenario
+• Design and present a symbolic prop or object using basic provided materials (e.g., paper, cardboard, thread, plastic items)
+
+🏆 Judging Criteria:
+⭐ Creativity & Originality
+🧠 Logical Consistency
+📚 Storytelling Clarity & Immersion
+🎯 Relevance of the Prop to the Scenario
+
+⚡ Bonus: Points for team synergy and presentation flair!
+
+Why Join Chronos Mandate?
+🌌 Unique blend of logic + storytelling + design
+🚀 Travel through imagination and intellect
+🏆 Win exciting prizes and eternal Temporal Agent glory
+
+Ready to fix time?
+🔓 Unlock the anomalies. 📜 Rewrite history. 🌟 Shape the future.
+Join the mandate — Chronos awaits.`,
       category: 'non-technical' as const,
-      participants: "2-3 members",
-      duration: "2.5 hours",
-      prize: "₹5,000 + Certificates",
+      participants: "3 to 4 members",
+      duration: "3.5 hours",
+      prize: "₹7,500 + Certificates",
       rules: [
-        "Teams must have 2-3 members",
-        "No electronic devices allowed during quiz",
-        "Questions cover multiple domains and time periods",
-        "Tie-breaker rounds will determine winners",
-        "Fair play and sportsmanship expected",
-        "Quiz master's decision is final"
+        "Teams must have 3-4 members per team",
+        "Open to all departments - Unleash the power of interdisciplinary minds!",
+        "Round 1: Logic + Quiz round with time-based puzzles and paradox questions",
+        "Round 2: Creative simulation with story-driven solutions and prop design",
+        "Materials provided for prop creation (paper, cardboard, thread, plastic items)",
+        "Skills tested: Logic, creativity, storytelling, teamwork, presentation",
+        "Judging based on creativity, logical consistency, storytelling clarity, prop relevance",
+        "Bonus points for team synergy and presentation flair"
       ],
       coordinators: [
         {
-          name: "Rohit Aggarwal",
+          name: "Aarthi V S",
           role: "Lead" as const,
-          phone: "+91 9876543222",
+          phone: "+91 9384842346",
           image: "/api/placeholder/100/100"
         },
         {
-          name: "Pooja Bhatt",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543223",
+          name: "Aakash P S",
+          role: "Lead" as const,
+          phone: "+91 7358107416",
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: import.meta.env.VITE_TIME_CAPSULE_TRIVIA_FORM_URL || "https://forms.gle/YOUR_TIME_CAPSULE_TRIVIA_FORM_ID"
+      registrationLink: import.meta.env.VITE_CHRONOS_MANDATE_FORM_URL || "https://forms.gle/YOUR_CHRONOS_MANDATE_FORM_ID"
     },
     {
-      title: "CHRONO DEBATES",
-      description: "Engage in thought-provoking debates on topics spanning past, present, and future scenarios.",
-      logo: chronoDebatesLogo,
-      fullDescription: `Chrono Debates brings together the art of argumentation with fascinating topics that span across time. Participants engage in structured debates on historical decisions, current dilemmas, and future possibilities.
+      title: "ACT 0'CLOCK",
+      description: "Relive the Reels. Race Against Time. - A Time-Hopping Cinematic Challenge where you race through time and cinema in a thrilling 3-round challenge.",
+      logo: retroGamingLogo,
+      fullDescription: `Lights, camera... rewind!
 
-This event tests communication skills, critical thinking, and the ability to present compelling arguments. Topics range from historical what-ifs to future technology ethics, making it intellectually stimulating for all participants.`,
+Act 0'Clock throws you into a whirlwind of Bollywood & Kollywood nostalgia, challenging your memory, movie knowledge, and acting chops in a time-ticking setup.
+
+From legendary classics to box-office bangers, it's a race through time and cinema, where each second counts and every performance brings you closer to victory.
+
+Decode the hero, describe the flick, and dramatize without a script — all in this thrilling 3-round challenge designed for film buffs and performers alike!
+
+ROUND 1: Star Sprint – Name the Films
+"Know the Star, List the Art."
+🎬 Task: A popular actor's name is given. Your team must list 4 movies they've acted in within 10 seconds.
+🎯 Focus: Speed, accuracy, film knowledge
+
+ROUND 2: Silent Script – Guess the Movie by Clue
+"Speak, But Don't Act!"
+🎬 Task: One member gives verbal-only clues (no actions or gestures) to describe a movie. The other teammate must guess the movie within 30 seconds.
+🎯 Focus: Communication skills, cinematic recall
+
+ROUND 3: Drama Decode – Act It Out
+"Act Without Words. Let Them Guess."
+🎬 Task: One member silently acts out a scene or iconic moment from a movie. The other member must guess it correctly within 45 seconds.
+🎯 Focus: Expressiveness, teamwork, Bollywood/Kollywood knowledge
+
+Why Join Act 0'Clock?
+🎬 Celebrate the magic of Indian cinema
+⏰ Thrill of acting, guessing, and thinking on your feet
+🏆 Win exciting prizes and applause-worthy glory
+🤝 Strengthen your team bond with fun and drama!
+
+Are you ready to rewind, perform, and conquer the clock?
+Step into the Act 0'Clock time machine — where every second is a scene to remember!`,
       category: 'non-technical' as const,
       participants: "2 members",
       duration: "3 hours",
-      prize: "₹4,000 + Certificates",
+      prize: "₹6,500 + Certificates",
       rules: [
-        "Teams must have exactly 2 members",
-        "Topics will be revealed 30 minutes before debates",
-        "Standard debate format will be followed",
-        "Both participants must speak in each round",
-        "Judging based on content, delivery, and rebuttal skills",
-        "Respectful discourse is mandatory"
+        "Teams must have exactly 2 members per team",
+        "Open to all departments - Movie lovers, actors, mimers — this one's for you!",
+        "Round 1: Name 4 movies of a given actor within 10 seconds",
+        "Round 2: Verbal-only movie description clues (no actions/gestures)",
+        "Round 3: Silent acting of movie scenes or iconic moments",
+        "Focus on Bollywood/Kollywood cinema knowledge",
+        "Skills tested: Film knowledge, communication, expressiveness, teamwork",
+        "Time limits strictly enforced for each round"
       ],
       coordinators: [
         {
-          name: "Siddhant Rao",
+          name: "Sasi kumar S",
           role: "Lead" as const,
-          phone: "+91 9876543224",
+          phone: "+91 8110970109",
           image: "/api/placeholder/100/100"
         },
         {
-          name: "Riya Malhotra",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543225",
-          image: "/api/placeholder/100/100"
-        }
-      ],
-      registrationLink: import.meta.env.VITE_CHRONO_DEBATES_FORM_URL || "https://forms.gle/YOUR_CHRONO_DEBATES_FORM_ID"
-    },
-    {
-      title: "RETRO GAMING ARENA",
-      description: "Compete in classic games and modern esports tournaments while experiencing gaming evolution through different eras.",
-      logo: retroGamingLogo,
-      fullDescription: `Retro Gaming Arena celebrates the evolution of gaming from classic arcade games to modern esports. Participants compete in tournaments featuring games from different gaming eras.
-
-The event includes retro arcade games, classic console games, and modern competitive gaming. It's a nostalgic journey through gaming history while showcasing skills in various gaming genres.`,
-      category: 'non-technical' as const,
-      participants: "1-2 members",
-      duration: "4 hours",
-      prize: "₹6,000 + Certificates",
-      rules: [
-        "Individual or pair participation allowed",
-        "Multiple gaming categories available",
-        "Fair play and sportsmanship required",
-        "No external gaming peripherals allowed",
-        "Tournament bracket system will be used",
-        "Gaming experience across eras preferred"
-      ],
-      coordinators: [
-        {
-          name: "Aryan Kapoor",
+          name: "Lochan Narayanan",
           role: "Lead" as const,
-          phone: "+91 9876543226",
-          image: "/api/placeholder/100/100"
-        },
-        {
-          name: "Aditi Singh",
-          role: "Co-Lead" as const,
-          phone: "+91 9876543227",
+          phone: "+91 9940321809",
           image: "/api/placeholder/100/100"
         }
       ],
-      registrationLink: import.meta.env.VITE_RETRO_GAMING_FORM_URL || "https://forms.gle/YOUR_RETRO_GAMING_FORM_ID"
+      registrationLink: import.meta.env.VITE_ACT_OCLOCK_FORM_URL || "https://forms.gle/YOUR_ACT_OCLOCK_FORM_ID"
     }
   ];
 

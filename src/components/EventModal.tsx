@@ -12,6 +12,12 @@ interface Coordinator {
   image: string;
 }
 
+interface Volunteer {
+  name: string;
+  role: 'Volunteer';
+  image: string;
+}
+
 interface EventModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -26,6 +32,7 @@ interface EventModalProps {
     rules: string[];
     activities?: { name: string; description: string }[];
     coordinators: Coordinator[];
+    volunteers?: Volunteer[];
     registrationLink: string;
   } | null;
 }
@@ -175,6 +182,29 @@ if (!event) return null;
                     ))}
                   </div>
                 </div>
+
+                {/* Volunteers */}
+                {event.volunteers && event.volunteers.length > 0 && (
+                  <div>
+                    <h3 className="text-xl font-semibold text-time-glow mb-4">Event Volunteers</h3>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                      {event.volunteers.map((volunteer, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: index * 0.05 }}
+                          className="bg-card/60 border border-time-glow/20 rounded-lg p-3 text-center"
+                        >
+                          <h4 className="font-medium text-foreground text-sm">{volunteer.name}</h4>
+                          <Badge className="mt-1 bg-time-glow/20 text-time-glow text-xs">
+                            {volunteer.role}
+                          </Badge>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Registration Button */}
                 <div className="text-center pt-6 border-t border-time-portal/20">

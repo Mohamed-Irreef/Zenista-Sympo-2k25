@@ -17,17 +17,16 @@ ZENISTA 2025 is a premier National Level Technical Symposium featuring cutting-e
 ## 🎯 Events Lineup
 
 ### 🔧 Technical Events
-- **CLOCKS AND KINGS** - Chess Tournament (₹10,000)
-- **Circuit Symphony** - Electronics Design (₹8,000)
-- **Code Chronos** - Programming Competition (₹7,500)
-- **Signal Quest** - Signal Processing (₹6,000)
-- **Robo Temporal** - Robotics Challenge (₹12,000)
-- **Quantum Bridge** - Advanced Tech (₹9,000)
+1. **GenZverse** - Next-Gen Technology Challenge
+2. **Tesseract** - Advanced Engineering Solutions
+3. **CircuTricks** - Circuit Design Competition
+4. **TimeCypher** - Cryptography & Security
+5. **Past Forward** - Innovation & Future Tech
 
 ### 🎪 Non-Technical Events
-- **Time Capsule Trivia** - Quiz Competition (₹5,000)
-- **Chrono Debates** - Debate Competition (₹4,000)
-- **Retro Gaming Arena** - Gaming Tournament (₹6,000)
+6. **Act 0'clock** - Performance & Drama
+7. **Clocks and Kings** - Chess Tournament
+8. **Chronos Mandate** - General Quiz & Trivia
 
 ## 🛠️ Tech Stack
 
@@ -95,9 +94,15 @@ The website uses **Google Forms** for event registration to ensure:
 1. Create Google Forms for each event
 2. Update the `.env` file with form URLs:
    ```env
-   VITE_PAPER_PRESENTATION_FORM_URL=https://forms.gle/YOUR_FORM_ID
-   VITE_CODE_CHRONOS_FORM_URL=https://forms.gle/YOUR_FORM_ID
-   # ... add all 9 event form URLs
+   VITE_GENZVERSE_FORM_URL=https://forms.gle/YOUR_FORM_ID
+   VITE_TESSERACT_FORM_URL=https://forms.gle/YOUR_FORM_ID
+   VITE_CIRCUTRICKS_FORM_URL=https://forms.gle/YOUR_FORM_ID
+   VITE_TIMECYPHER_FORM_URL=https://forms.gle/YOUR_FORM_ID
+   VITE_PAST_FORWARD_FORM_URL=https://forms.gle/YOUR_FORM_ID
+   VITE_ACT_OCLOCK_FORM_URL=https://forms.gle/YOUR_FORM_ID
+   VITE_CLOCKS_AND_KINGS_FORM_URL=https://forms.gle/YOUR_FORM_ID
+   VITE_CHRONOS_MANDATE_FORM_URL=https://forms.gle/YOUR_FORM_ID
+   # ... add all 8 event form URLs
    ```
 
 ## 🎨 Design Features
