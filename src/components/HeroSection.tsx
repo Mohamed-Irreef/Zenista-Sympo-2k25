@@ -335,7 +335,7 @@ const HeroSection = () => {
                   </motion.div>
                 ) : (
                   /* Plain Digital Timer */
-                  <div className="flex items-center justify-center gap-2 md:gap-4 lg:gap-8 mb-4">
+                  <div className="flex items-center justify-center gap-4 md:gap-4 lg:gap-10 mb-4">
                     {[
                       { label: 'DAYS', value: timeLeft.days },
                       { label: 'HRS', value: timeLeft.hours },
