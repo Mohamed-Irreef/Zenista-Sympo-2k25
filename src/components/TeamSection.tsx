@@ -6,6 +6,7 @@ import profile1 from '@/assets/profile-1.jpg';
 import profile2 from '@/assets/profile-2.jpg';
 import profile3 from '@/assets/profile-3.jpg';
 import profile from '@/assets/member2.png';
+import thilakImage from '@/assets/thilak.jpg';
 
 const TeamSection = () => {
   const [ref, inView] = useInView({
@@ -104,14 +105,22 @@ const TeamSection = () => {
     }
   ];
 
-  const webDeveloper = {
-    name: "Aditya Sharma",
-    role: "Web Developer",
-    designation: "Full Stack Developer",
-    department: "Technology Team",
-    linkedinId: "aditya-sharma-dev",
-    image: profile3
-  };
+  const webDeveloper = [
+    {
+      name: "Mohamed Irreef S",
+      role: "Web Developer",
+      designation: "Full Stack Developer",
+      department: "Technology Team",
+      image: profile3
+    },
+    {
+      name: "Thilak S",
+      role: "Web Developer", 
+      designation: "Frontend Developer",
+      department: "Technology Team",
+      image: thilakImage
+    }
+  ];
 
   const designTeam = [
     {
@@ -262,14 +271,15 @@ const TeamSection = () => {
           className="mb-16"
         >
           <h3 className="text-3xl font-bold text-cosmic-blue text-center mb-8">Web Developer</h3>
-          <div className="flex justify-center">
-            <div className="w-full max-w-sm">
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            {webDeveloper.map((person, index) => (
               <ProfileCard
-                {...webDeveloper}
-                index={0}
+                key={person.name}
+                {...person}
+                index={index}
                 category="developer"
               />
-            </div>
+            ))}
           </div>
         </motion.div>
 

@@ -308,6 +308,38 @@ Join CircuTricks – Where Logic Comes to Life!`,
           image: "/api/placeholder/100/100"
         }
       ],
+      volunteers: [
+        {
+          name: "Aarthi K",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Nirupama M ",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "SUJITHA E",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Jenita regi KG",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "DEVENDRANATH G",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Muthu Selvi S",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        }
+      ],
       registrationLink: import.meta.env.VITE_CIRCUTRICKS_FORM_URL || "https://forms.gle/YOUR_CIRCUTRICKS_FORM_ID"
     },
     {
@@ -371,6 +403,38 @@ Join TimeCypher and embark on a journey where logic transcends time!`,
           name: "DHAANISH AHMED J",
           role: "Lead" as const,
           phone: "+91 7305811665",
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      volunteers: [
+        {
+          name: "ASHWATHY S",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "DEEPIKA D",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "SWETHA A",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "ANANDRAJ N",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "SHANMATHI SN",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "GAYATHRI C",
+          role: "3rd Year" as const,
           image: "/api/placeholder/100/100"
         }
       ],
@@ -439,6 +503,38 @@ Present the project that could've changed history — only at Past Forward.`,
           name: "Solai Ganesh",
           role: "Lead" as const,
           phone: "+91 7904857230",
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      volunteers: [
+        {
+          name: "Thiriphura Sundari C S",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "THRISHA SRI C",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "NITHYA  SHREE L",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Sai sandhiya G",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Tharani V",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Suguna A K",
+          role: "3rd Year" as const,
           image: "/api/placeholder/100/100"
         }
       ],
@@ -519,6 +615,38 @@ Enter the Clocks & Kings arena and battle through timelines for glory.`,
           name: "Kishore Kumar D",
           role: "Lead" as const,
           phone: "+91 7358647144",
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      volunteers: [
+        {
+          name: "Kavya S K",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Monika M",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Sana Fathima S",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Shakthi V",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Porkodi P",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Malini K",
+          role: "3rd Year" as const,
           image: "/api/placeholder/100/100"
         }
       ],
@@ -604,6 +732,43 @@ Join the mandate — Chronos awaits.`,
           image: "/api/placeholder/100/100"
         }
       ],
+      volunteers: [
+        {
+          name: "HAMSIKHA RAJAGOPAL",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "ATCHAYA R",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "SANTHOSH S",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "DIVYA A",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "VIJAYALAKSHMI D S",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "DEEPTHI P",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "MANEESHA S",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        }
+      ],
       registrationLink: import.meta.env.VITE_CHRONOS_MANDATE_FORM_URL || "https://forms.gle/YOUR_CHRONOS_MANDATE_FORM_ID"
     },
     {
@@ -666,6 +831,33 @@ Step into the Act 0'Clock time machine — where every second is a scene to reme
           name: "Lochan Narayanan",
           role: "Lead" as const,
           phone: "+91 9940321809",
+          image: "/api/placeholder/100/100"
+        }
+      ],
+      volunteers: [
+        {
+          name: "Meenaloshni.E",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Monikha .k",
+          role: "4th Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "ABHINESH V",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Praneet M S",
+          role: "3rd Year" as const,
+          image: "/api/placeholder/100/100"
+        },
+        {
+          name: "Rudramoorthy L",
+          role: "4th Year" as const,
           image: "/api/placeholder/100/100"
         }
       ],

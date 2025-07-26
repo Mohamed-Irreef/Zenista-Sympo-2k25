@@ -1,12 +1,17 @@
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Users, Award, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useCountdown } from '@/hooks/use-countdown';
 import collegeLogo from '@/assets/sec.png';
 import leoLogo from '@/assets/leo.png';
 import zenistaLogo from '@/assets/Zenista.png';
 import backgroundVideo from '@/assets/Space_Time_Travel_Video_Generated.mp4';
 
 const HeroSection = () => {
+  // Countdown to August 8th, 2025 at 9:00 AM (IST)
+  const targetDate = '2025-08-08T09:00:00+05:30';
+  const timeLeft = useCountdown(targetDate);
+
   const eventDetails = [
     {
       icon: Calendar,
@@ -222,7 +227,7 @@ const HeroSection = () => {
           </motion.div>
           
           <motion.h1
-            className="text-7xl md:text-8xl font-bold text-glow mb-4 tracking-wider"
+            className="text-6xl md:text-7xl font-bold text-glow mb-4 tracking-wider"
             animate={{
               textShadow: [
                 '0 0 20px hsl(188 100% 60% / 0.6)',
@@ -252,13 +257,145 @@ const HeroSection = () => {
           >
             National Level Technical Symposium
           </motion.p>
+          
+          {/* Tagline */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.4, duration: 0.8 }}
+            className="text-lg md:text-xl text-time-glow mb-12 font-medium"
+          >
+            Where Time Bends, Talent Ascends
+          </motion.p>
+        </motion.div>
+
+        {/* Countdown Timer */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.6, duration: 0.8 }}
+          className="mb-8 md:mb-12 px-2"
+        >
+          <div className="relative">
+            {/* Cosmic Clock Background - Hidden on mobile for cleaner look */}
+            <div className="absolute inset-0 items-center justify-center hidden md:flex">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                className="w-80 h-80 md:w-96 md:h-96 rounded-full border border-time-portal/20 opacity-30"
+              />
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
+                className="absolute w-64 h-64 md:w-80 md:h-80 rounded-full border border-time-glow/20 opacity-20"
+              />
+            </div>
+            
+            {/* Timer Content */}
+            <div className="relative z-10 text-center">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 1.8, duration: 0.8 }}
+                className="mx-auto max-w-sm md:max-w-4xl"
+              >
+                <div className="flex items-center justify-center gap-2 mb-4 md:mb-6">
+                  <Clock className="text-time-portal animate-pulse" size={20} />
+                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-glow">
+                    {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 
+                      ? "Event is Live!" 
+                      : "Event Begins In"
+                    }
+                  </h3>
+                </div>
+                
+                {/* Conditional Display: Timer or "The Time is Now" */}
+                {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 ? (
+                  /* "The Time is Now" Display */
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8 }}
+                    className="flex items-center justify-center mb-4"
+                  >
+                    <div 
+                      className="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-bold leading-none tracking-wider text-center"
+                      style={{
+                        color: '#00d9ff',
+                        textShadow: '0 0 10px #00d9ff, 0 0 20px #00d9ff',
+                        fontFamily: 'monospace, "Courier New"'
+                      }}
+                    >
+                      THE TIME IS NOW
+                    </div>
+                  </motion.div>
+                ) : (
+                  /* Plain Digital Timer */
+                  <div className="flex items-center justify-center gap-2 md:gap-4 lg:gap-8 mb-4">
+                    {[
+                      { label: 'DAYS', value: timeLeft.days },
+                      { label: 'HRS', value: timeLeft.hours },
+                      { label: 'MIN', value: timeLeft.minutes },
+                      { label: 'SEC', value: timeLeft.seconds }
+                    ].map((unit, index) => (
+                      <motion.div
+                        key={unit.label}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 2 + index * 0.1, duration: 0.6 }}
+                        className="flex flex-col items-center"
+                      >
+                        {/* Digital Display Numbers */}
+                        <motion.div
+                          key={unit.value}
+                          initial={{ scale: 1.1 }}
+                          animate={{ scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          <div 
+                            className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl font-mono font-bold leading-none tracking-wider"
+                            style={{
+                              color: '#00d9ff',
+                              textShadow: '0 0 5px #00d9ff',
+                              fontFamily: 'monospace, "Courier New"'
+                            }}
+                          >
+                            {unit.value.toString().padStart(2, '0')}
+                          </div>
+                        </motion.div>
+                        
+                        {/* Label */}
+                        <div className="text-xs md:text-sm lg:text-base text-time-glow font-medium tracking-wider mt-1 md:mt-2">
+                          {unit.label}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                )}
+                
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 2.5, duration: 0.8 }}
+                  className="mt-4 md:mt-6 text-muted-foreground"
+                >
+                  <p className="text-sm md:text-lg lg:text-xl font-medium">
+                    August 8th, 2025 • 9:00 AM
+                  </p>
+                  <p className="text-xs md:text-sm lg:text-base mt-1">
+                    Sri Sairam Engineering College, Chennai
+                  </p>
+                </motion.div>
+              </motion.div>
+            </div>
+          </div>
         </motion.div>
 
         {/* Event Details Grid */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.8 }}
+          transition={{ delay: 2.8, duration: 0.8 }}
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12"
         >
           {eventDetails.map((detail, index) => (
@@ -266,7 +403,7 @@ const HeroSection = () => {
               key={detail.label}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2 + index * 0.1, duration: 0.8 }}
+              transition={{ delay: 3 + index * 0.1, duration: 0.8 }}
               className="bg-card/80 backdrop-blur-sm border border-time-portal/20 rounded-lg p-6 hover:border-time-portal/40 transition-all duration-300 time-warp"
             >
               <detail.icon className="text-time-portal mx-auto mb-3" size={28} />
@@ -298,7 +435,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.8, duration: 0.8 }}
+          transition={{ delay: 3.5, duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Button
