@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import zenistaLogo from '@/assets/Zenista.png';
+import zenistaLogo from '@/assets/Zenista1.png';
 import loadingVideo from '@/assets/Video_Generation_Complete_Link.mp4';
 
 interface SplashScreenProps {
@@ -57,12 +57,13 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="flex justify-center mb-8"
+          className="flex justify-center mb-0"
         >
-          <motion.img
+          <div className="w-40 h-40 mb-4">
+            <motion.img
             src={zenistaLogo}
             alt="Zenista Logo"
-            className="w-40 h-40 md:w-48 md:h-48 object-contain drop-shadow-2xl"
+            className="w-64 h-64 md:w-48 md:h-48 object-contain drop-shadow-2xl"
             animate={{
               filter: [
                 'drop-shadow(0 0 20px hsl(188 100% 60% / 0.8))',
@@ -74,6 +75,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
               filter: { duration: 3, repeat: Infinity }
             }}
           />
+          </div>
         </motion.div>
 
         {/* Title */}
@@ -81,7 +83,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="text-5xl md:text-6xl font-bold text-glow mb-4"
+          className="text-5xl md:text-6xl font-bold text-glow mb-0"
         >
           ZENISTA
         </motion.h1>

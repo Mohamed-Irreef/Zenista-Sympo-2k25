@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { useCountdown } from '@/hooks/use-countdown';
 import collegeLogo from '@/assets/sec.png';
 import leoLogo from '@/assets/leo.png';
-import zenistaLogo from '@/assets/Zenista.png';
+import zenistaLogo from '@/assets/Zenista1.png';
 import backgroundVideo from '@/assets/Space_Time_Travel_Video_Generated.mp4';
 
 const HeroSection = () => {
@@ -148,7 +148,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mb-12 mt-8"
+          className="mb-1 mt-8"
         >
           <div className="flex items-center justify-center md:gap-8 gap-2 mb-8 mt-24">
             <motion.img
@@ -182,12 +182,14 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-lg text-muted-foreground mb-8 text-center"
+            className="text-lg text-muted-foreground mb-0 text-center"
           >
             Department of Electronics and Communication Engineering
-            <p className=" text-xs md:text-xl text-muted-foreground">
-            Presents
-          </p>
+            
+           <small className="block text-sm md:text-xl  text-muted-foreground">
+    Presents
+  </small>
+          
           </motion.p>
           
         </motion.div>
@@ -204,12 +206,13 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 1.0 }}
-            className="flex justify-center mb-8"
+            className="flex justify-center mb-1"
           >
-            <motion.img
+            <div className="w-40 h-40 md:w-64 md:h-64 mt-8 md:mt-12 flex items-center justify-center ">
+              <motion.img
               src={zenistaLogo}
               alt="Zenista Logo"
-              className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-2xl"
+              className="w-64 h-64  md:w-96 md:h-96 rounded-full object-contain drop-shadow-2xl"
               whileHover={{ scale: 1.1, rotate: 5 }}
               animate={{
                 filter: [
@@ -224,6 +227,7 @@ const HeroSection = () => {
                 filter: { duration: 3, repeat: Infinity }
               }}
             />
+            </div>
           </motion.div>
           
           <motion.h1
@@ -300,7 +304,7 @@ const HeroSection = () => {
                 className="mx-auto max-w-sm md:max-w-4xl"
               >
                 <div className="flex items-center justify-center gap-2 mb-4 md:mb-6">
-                  <Clock className="text-time-portal animate-pulse" size={20} />
+                  {/* <Clock className="text-time-portal animate-pulse" size={20} /> */}
                   <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-glow">
                     {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 
                       ? "Event is Live!" 
@@ -355,8 +359,8 @@ const HeroSection = () => {
                           <div 
                             className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl font-mono font-bold leading-none tracking-wider"
                             style={{
-                              color: '#00d9ff',
-                              textShadow: '0 0 5px #00d9ff',
+                              color: 'white',
+                              textShadow: '0 0 5px purple',
                               fontFamily: 'monospace, "Courier New"'
                             }}
                           >
