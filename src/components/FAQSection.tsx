@@ -24,15 +24,15 @@ const FAQSection = () => {
     },
     {
       question: "What are the participation fees?",
-      answer: "Participation fees vary for different events. Technical events generally have a registration fee of ₹200-500 per team, while non-technical events have fees ranging from ₹100-300 per team. Some workshops may have separate fees. Detailed fee structure is available in the registration forms."
+      answer: "You can register each and every event for free. There are no participation fees for any of the events in ZENISTA 2025."
     },
     {
       question: "Are there any prizes for winners?",
-      answer: "Yes! We have exciting cash prizes for winners of all events. Technical events offer prizes ranging from ₹5,000 to ₹12,000, while non-technical events offer prizes from ₹4,000 to ₹6,000. All participants receive certificates, and winners get additional winner certificates and trophies."
+      answer: "Yes! We have exciting cash prizes for winners of all events. All the Events have a prize pool of ₹3000. All participants receive certificates, and winners get additional winner certificates."
     },
     {
       question: "Will accommodation be provided?",
-      answer: "Limited accommodation can be arranged for outstation participants. Please contact our organizing committee at least one week in advance to make arrangements. We'll help you find suitable accommodation near the college campus at reasonable rates."
+      answer: "Yes food will be arranged for participants. Please contact our organizing committee at least 3-4 days in advance to make arrangements for outstation participants."
     },
     {
       question: "What should I bring on the event day?",
