@@ -32,8 +32,8 @@ import profile8 from '@/assets/organizers/leads/Event 4/lead2.jpg';
 import profile9 from '@/assets/organizers/leads/Event 5/lead1.jpg'
 import profile10 from '@/assets/organizers/leads/Event 5/lead2.jpg'; 
 
-import profile11 from '@/assets/organizers/leads/Event 7/lead2.jpg'
-import profile12 from '@/assets/organizers/leads/Event 7/lead1.png';
+import profile11 from '@/assets/organizers/leads/event7/lead2.jpg'
+import profile12 from '@/assets/organizers/leads/event7/lead1.png';
 
 import profile13 from '@/assets/organizers/leads/Event 6/lead1.jpg'
 import profile14 from '@/assets/organizers/leads/Event 6/lead2.jpg';
