@@ -22,6 +22,7 @@ interface EventModalProps {
   isOpen: boolean;
   onClose: () => void;
   event: {
+    logo:string,
     title: string;
     description: string;
     fullDescription: string;
@@ -74,8 +75,10 @@ if (!event) return null;
               >
               <DialogHeader className="pb-6 border-b border-time-portal/20 l">
                 <div className="flex justify-between items-start">
-                  <div>
-                    <DialogTitle className="text-3xl font-bold text-glow mb-2">
+                  <div className='flex items-center gap-4'>
+                    <img src={event.logo} className='rounded-md w-24 h-24 object-cover border-3 border-time-portal/40 group-hover:border-time-portal/80 transition-all duration-300 time-shadow' alt="" />
+                    <div className="">
+                      <DialogTitle className="text-3xl font-bold text-glow mb-2">
                       {event.title}
                     </DialogTitle>
                     <Badge 
@@ -87,6 +90,7 @@ if (!event) return null;
                     >
                       {event.category === 'technical' ? 'Technical Event' : 'Non-Technical Event'}
                     </Badge>
+                    </div>
                   </div>
                 </div>
               </DialogHeader>
@@ -149,6 +153,20 @@ if (!event) return null;
                   </ul>
                 </div>
 
+                {/* Registration Button */}
+                <div className="text-center pt-14 pb-6 border-t border-time-portal/20">
+                  <Button
+                    onClick={handleRegister}
+                    className="time-gradient hover:scale-105 transform transition-all duration-300 text-lg px-8 py-3"
+                  >
+                    <ExternalLink className="mr-2" size={20} />
+                    Register Now
+                  </Button>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Fill out our registration form
+                  </p>
+                </div>
+
                 {/* Coordinators */}
                 <div>
                   <h3 className="text-xl font-semibold text-time-portal mb-4">Event Coordinators</h3>
@@ -183,6 +201,8 @@ if (!event) return null;
                   </div>
                 </div>
 
+                
+
                 {/* Volunteers */}
                 {event.volunteers && event.volunteers.length > 0 && (
                   <div>
@@ -207,7 +227,7 @@ if (!event) return null;
                 )}
 
                 {/* Registration Button */}
-                <div className="text-center pt-6 border-t border-time-portal/20">
+                {/* <div className="text-center pt-6 border-t border-time-portal/20">
                   <Button
                     onClick={handleRegister}
                     className="time-gradient hover:scale-105 transform transition-all duration-300 text-lg px-8 py-3"
@@ -218,7 +238,7 @@ if (!event) return null;
                   <p className="text-sm text-muted-foreground mt-2">
                     Fill out our registration form
                   </p>
-                </div>
+                </div> */}
               </div>
               </motion.div>
             </div>

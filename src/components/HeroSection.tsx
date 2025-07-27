@@ -6,6 +6,7 @@ import collegeLogo from '@/assets/sec.png';
 import leoLogo from '@/assets/leo.png';
 import zenistaLogo from '@/assets/zenista1.png';
 import backgroundVideo from '@/assets/Space_Time_Travel_Video_Generated.mp4';
+import bg from '@/assets/web-bg1.jpg';
 
 const HeroSection = () => {
   // Countdown to August 8th, 2025 at 9:00 AM (IST)
@@ -326,7 +327,7 @@ const HeroSection = () => {
                       className="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-bold leading-none tracking-wider text-center"
                       style={{
                         color: '#00d9ff',
-                        textShadow: '0 0 10px #00d9ff, 0 0 20px #00d9ff',
+                        textShadow: '0 0 10px #00d9ff, 0 0 20px black',
                         fontFamily: 'monospace, "Courier New"'
                       }}
                     >
@@ -440,7 +441,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.5, duration: 0.8 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col mb-4 sm:flex-row gap-4 justify-center"
         >
           <Button
             onClick={scrollToEvents}
@@ -450,9 +451,9 @@ const HeroSection = () => {
           </Button>
           <Button
             variant="outline"
-            className="border-time-portal text-time-portal hover:bg-time-portal/10 hover:scale-105 transform transition-all duration-300 text-lg px-8 py-6"
+            className="border-time-portal text-time-portal hover:bg-time-portal/10 hover:scale-105 hover:text-white transform transition-all duration-300 text-lg px-8 py-6"
           >
-            Learn More
+            <a href="/brochure.pdf" download>Download Brochure</a>
           </Button>
         </motion.div>
 

@@ -85,7 +85,7 @@ const EventCard = ({
                   <motion.img
                     src={logo}
                     alt={`${title} logo`}
-                    className="w-16 h-16 rounded-full object-cover border-3 border-time-portal/40 group-hover:border-time-portal/80 transition-all duration-300 time-shadow"
+                    className="w-24 h-24 rounded-full object-cover border-3 border-time-portal/40 group-hover:border-time-portal/80 transition-all duration-300 time-shadow"
                     whileHover={{ scale: 1.15, rotate: 10 }}
                   />
                   <motion.div

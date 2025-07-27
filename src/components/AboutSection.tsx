@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Zap, Users, Target, Award } from 'lucide-react';
 
+
 const AboutSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -32,7 +33,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 relative overflow-hidden">
+    <section id="about" className="py-4 mt-24 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 time-portal opacity-20" />
@@ -140,6 +141,8 @@ const AboutSection = () => {
             </div>
           </div>
         </motion.div>
+
+        
       </div>
     </section>
   );
