@@ -17,29 +17,29 @@ import logo8 from '@/assets/logo8.jpg';
 import events from '@/assets/events.png';
 import eventsPoster from '@/assets/event-poster.jpg';
 
-import profile1 from '@/assets/organizers/leads/Event 1/Varshini G.jpg'
-import profile2 from '@/assets/organizers/leads/Event 1/vidhga.jpg';
+import profile1 from '@/assets/organizers/leads/event1/Varshini G.jpg'
+import profile2 from '@/assets/organizers/leads/event1/vidhga.jpg';
 
-import profile3 from '@/assets/organizers/leads/Event 2/lead1.jpg'
-import profile4 from '@/assets/organizers/leads/Event 2/lead2.jpg';
+import profile3 from '@/assets/organizers/leads/event2/lead1.jpg'
+import profile4 from '@/assets/organizers/leads/event2/lead2.jpg';
 
-import profile5 from '@/assets/organizers/leads/Event 3/Nivetha G.jpg'
-// import profile6 from '@/assets/organizers/leads/Event 3/Nivetha G.jpg'; no profile
+import profile5 from '@/assets/organizers/leads/event3/Nivetha G.jpg'
+// import profile6 from '@/assets/organizers/leads/event3/Nivetha G.jpg'; no profile
 
-import profile7 from '@/assets/organizers/leads/Event 4/lead1.jpg'
-import profile8 from '@/assets/organizers/leads/Event 4/lead2.jpg';
+import profile7 from '@/assets/organizers/leads/event4/lead1.jpg'
+import profile8 from '@/assets/organizers/leads/event4/lead2.jpg';
 
-import profile9 from '@/assets/organizers/leads/Event 5/lead1.jpg'
-import profile10 from '@/assets/organizers/leads/Event 5/lead2.jpg'; 
+import profile9 from '@/assets/organizers/leads/event5/lead1.jpg'
+import profile10 from '@/assets/organizers/leads/event5/lead2.jpg'; 
 
 import profile11 from '@/assets/organizers/leads/event7/lead2.jpg'
 import profile12 from '@/assets/organizers/leads/event7/lead1.png';
 
-import profile13 from '@/assets/organizers/leads/Event 6/lead1.jpg'
-import profile14 from '@/assets/organizers/leads/Event 6/lead2.jpg';
+import profile13 from '@/assets/organizers/leads/event6/lead1.jpg'
+import profile14 from '@/assets/organizers/leads/event6/lead2.jpg';
 
-import profile15 from '@/assets/organizers/leads/Event 8/lead1.jpg'
-import profile16 from '@/assets/organizers/leads/Event 8/lead2.jpg';
+import profile15 from '@/assets/organizers/leads/event8/lead1.jpg'
+import profile16 from '@/assets/organizers/leads/event8/lead2.jpg';
 
 
 
