@@ -1,4 +1,5 @@
 import { createRoot } from 'react-dom/client'
+import 'remixicon/fonts/remixicon.css'
 import App from './App.tsx'
 import './index.css'
 import { Toaster } from '@/components/ui/toaster'

@@ -53,10 +53,7 @@ const AboutSection = () => {
           </h2>
           <div className="w-24 h-1 time-gradient mx-auto mb-8" />
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            ZENISTA 2025 is a prestigious national-level technical symposium organized by the Department of 
-            Electronics and Communication Engineering at Sri Sairam Engineering College. This extraordinary 
-            event serves as a confluence of innovation, technology, and academic excellence, bringing together 
-            the brightest minds from across the nation.
+            ZENISTA 25 is a nationwide technical fest organized by the Department of Electronics and Communication Engineering at Sri Sairam Engineering College. This is the 28th time the festival is being hosted. The event challenges students from various colleges with real-world issues, helping them develop as engineers. The motto for ZENISTA 25 is COME, LET'S EXPERIMENT, ESTABLISH AND EXPAND!"
           </p>
         </motion.div>
 
@@ -70,10 +67,18 @@ const AboutSection = () => {
           <div className="bg-card/80 backdrop-blur-sm border border-time-portal/20 rounded-xl p-8 time-warp">
             <h3 className="text-2xl font-bold text-time-portal mb-4">Our Mission</h3>
             <p className="text-muted-foreground leading-relaxed">
-              To create an inspiring platform where engineering students can showcase their technical prowess, 
-              engage in meaningful discussions, and collaborate on innovative solutions that address real-world 
-              challenges. ZENISTA aims to bridge the gap between academic learning and industry requirements, 
-              fostering a culture of continuous learning and innovation.
+              <span className='text-white'>M1:</span> To curate engaging events that blend technical excellence with creative thinking and cultural relevance.
+
+            </p>
+
+             <p className="text-muted-foreground leading-relaxed">
+              <span className='text-white'>M2:</span>  To empower participants with real-world problem solving, communication and teamwork skills through gamified and immersive challenges.
+
+            </p>
+
+             <p className="text-muted-foreground leading-relaxed">
+              <span className='text-white'>M3:</span> To build a community where knowledge meets innovation and every student finds a space to shine, share and shape the future.
+
             </p>
           </div>
 
@@ -81,9 +86,7 @@ const AboutSection = () => {
           <div className="bg-card/80 backdrop-blur-sm border border-time-portal/20 rounded-xl p-8 time-warp">
             <h3 className="text-2xl font-bold text-time-glow mb-4">Our Vision</h3>
             <p className="text-muted-foreground leading-relaxed">
-              To establish ZENISTA as the premier technical symposium in South India, known for its excellence 
-              in organizing world-class events that inspire innovation, promote technical knowledge sharing, 
-              and create lasting professional networks among future engineers and technology leaders.
+              To ignite curiosity, foster innovation and celebrate interdisciplinary brilliance by creating a dynamic platform where students unite to learn, compete and lead all while reimagining the boundaries of technology, creativity and collaboration.
             </p>
           </div>
         </motion.div>

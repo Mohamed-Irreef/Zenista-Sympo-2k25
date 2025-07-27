@@ -3,6 +3,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, User } from 'lucide-react';
 import { useState } from 'react';
+import { a } from 'node_modules/framer-motion/dist/types.d-Bq-Qm38R';
 
 interface ProfileCardProps {
   name: string;
@@ -41,7 +42,7 @@ const ProfileCard = ({
 
   const handleLinkedInClick = () => {
     if (linkedinId) {
-      window.open(`https://linkedin.com/in/${linkedinId}`, '_blank');
+      window.open(`${linkedinId}`, '_blank');
     }
   };
 
@@ -117,7 +118,7 @@ const ProfileCard = ({
           </h3>
 
           {/* Role Badge */}
-          <Badge className={`mb-3 ${getCategoryColor()}`}>
+          <Badge className={`mb-4 ${getCategoryColor()}`}>
             {role}
           </Badge>
 
@@ -129,13 +130,13 @@ const ProfileCard = ({
           )}
           
           {department && (
-            <p className="text-xs text-muted-foreground">
+            <p className="text-xs text-muted-foreground ">
               {department}
             </p>
           )}
 
           {/* LinkedIn Info - Shows on Hover */}
-          {linkedinId && (
+          {/* {linkedinId && (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 10 }}
@@ -146,7 +147,15 @@ const ProfileCard = ({
                 linkedin.com/in/{linkedinId}
               </p>
             </motion.div>
+          )} */}
+          <br />
+
+          {linkedinId && (
+            <a href={linkedinId}><button className="bg-blue-600 text-sm md:mt-4 hover:bg-blue-700 text-white font-semibold   px-4 rounded-lg shadow-md transition duration-300">
+  LinkedIn <i className="ri-linkedin-fill font-thin text-white"></i>
+</button></a>
           )}
+
 
           {/* Hover Effect Border */}
           <motion.div

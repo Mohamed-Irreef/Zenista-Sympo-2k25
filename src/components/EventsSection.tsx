@@ -15,6 +15,32 @@ import logo6 from '@/assets/logo6.jpg';
 import logo7 from '@/assets/logo7.jpg';
 import logo8 from '@/assets/logo8.jpg';
 import events from '@/assets/events.png';
+import eventsPoster from '@/assets/event-poster.jpg';
+
+import profile1 from '@/assets/organizers/leads/Event 1/Varshini G.jpg'
+import profile2 from '@/assets/organizers/leads/Event 1/vidhga.jpg';
+
+import profile3 from '@/assets/organizers/leads/Event 2/lead1.jpg'
+import profile4 from '@/assets/organizers/leads/Event 2/lead2.jpg';
+
+import profile5 from '@/assets/organizers/leads/Event 3/Nivetha G.jpg'
+// import profile6 from '@/assets/organizers/leads/Event 3/Nivetha G.jpg'; no profile
+
+import profile7 from '@/assets/organizers/leads/Event 4/lead1.jpg'
+import profile8 from '@/assets/organizers/leads/Event 4/lead2.jpg';
+
+import profile9 from '@/assets/organizers/leads/Event 5/lead1.jpg'
+import profile10 from '@/assets/organizers/leads/Event 5/lead2.jpg'; 
+
+import profile11 from '@/assets/organizers/leads/Event 7/lead2.jpg'
+import profile12 from '@/assets/organizers/leads/Event 7/lead1.png';
+
+import profile13 from '@/assets/organizers/leads/Event 6/lead1.jpg'
+import profile14 from '@/assets/organizers/leads/Event 6/lead2.jpg';
+
+import profile15 from '@/assets/organizers/leads/Event 8/lead1.jpg'
+import profile16 from '@/assets/organizers/leads/Event 8/lead2.jpg';
+
 
 
 const EventsSection = () => {
@@ -73,8 +99,8 @@ Ready to rise, recall, and rule the GenZverse?
 Let the timeline chaos begin!`,
       category: 'technical' as const,
       participants: "2 members",
-      duration: "4 hours",
-      prize: "₹8,000 + Certificates",
+      duration: "3 hours",
+      prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have exactly 2 members",
         "Open to all departments - It's all about that GenZ energy!",
@@ -88,13 +114,13 @@ Let the timeline chaos begin!`,
           name: "Varshini G",
           role: "Lead" as const,
           phone: "+91 8754599496",
-          image: "/api/placeholder/100/100"
+          image: profile1
         },
         {
           name: "Vidhyashree V",
           role: "Lead" as const,
           phone: "+91 7708554298",
-          image: "/api/placeholder/100/100"
+          image: profile2
         }
       ],
       volunteers : [
@@ -215,8 +241,8 @@ Are you ready to crack codes, clash circuits, and collapse timelines?
 Step into the TESSERACT — where logic defies dimensions.`,
       category: 'technical' as const,
       participants: "2 to 3 members",
-      duration: "4 hours",
-      prize: "₹9,000 + Certificates",
+      duration: "2 hours",
+      prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have 2-3 members per team",
         "Open to all departments",
@@ -231,13 +257,13 @@ Step into the TESSERACT — where logic defies dimensions.`,
           name: "Varsha R",
           role: "Lead" as const,
           phone: "+91 9843929112",
-          image: "/api/placeholder/100/100"
+          image: profile3
         },
         {
           name: "Cyril Bendict P S",
           role: "Lead" as const,
           phone: "+91 9345309818",
-          image: "/api/placeholder/100/100"
+          image: profile4
         }
       ],
       volunteers :[
@@ -368,8 +394,8 @@ Get ready to spark the circuit inside you.
 Join CircuTricks – Where Logic Comes to Life!`,
       category: 'technical' as const,
       participants: "2 to 3 members",
-      duration: "4 hours",
-      prize: "₹7,000 + Certificates",
+      duration: "2 hours",
+      prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have 2-3 members per team",
         "Open to all tech enthusiasts - Circuits don't discriminate!",
@@ -384,7 +410,7 @@ Join CircuTricks – Where Logic Comes to Life!`,
           name: "Nivetha G",
           role: "Lead" as const,
           phone: "+91 8925067560",
-          image: "/api/placeholder/100/100"
+          image: profile5
         },
         {
           name: "Priyanka S",
@@ -508,8 +534,8 @@ Time is ticking... Do you have the code to crack it?
 Join TimeCypher and embark on a journey where logic transcends time!`,
       category: 'technical' as const,
       participants: "3 members",
-      duration: "4 hours",
-      prize: "₹8,500 + Certificates",
+      duration: "2 hours",
+      prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have exactly 3 members per team",
         "Open to all ECE enthusiasts & logic lovers",
@@ -524,13 +550,13 @@ Join TimeCypher and embark on a journey where logic transcends time!`,
           name: "Bhavadharene M",
           role: "Lead" as const,
           phone: "+91 9444521120",
-          image: "/api/placeholder/100/100"
+          image: profile7
         },
         {
           name: "DHAANISH AHMED J",
           role: "Lead" as const,
           phone: "+91 7305811665",
-          image: "/api/placeholder/100/100"
+          image: profile8
         }
       ],
       volunteers: [
@@ -645,7 +671,7 @@ Present the project that could've changed history — only at Past Forward.`,
       category: 'technical' as const,
       participants: "2 to 4 members",
       duration: "3 hours",
-      prize: "₹10,000 + Certificates",
+      prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have 2-4 members per team",
         "Open to all departments - Interdisciplinary & creative teams encouraged",
@@ -661,13 +687,13 @@ Present the project that could've changed history — only at Past Forward.`,
           name: "Thenmozhi A",
           role: "Lead" as const,
           phone: "+91 7200248449",
-          image: "/api/placeholder/100/100"
+          image: profile9
         },
         {
           name: "Solai Ganesh",
           role: "Lead" as const,
           phone: "+91 7904857230",
-          image: "/api/placeholder/100/100"
+          image: profile10,
         }
       ],
       volunteers: [
@@ -786,8 +812,8 @@ Prepare your board, ready your mind —
 Enter the Clocks & Kings arena and battle through timelines for glory.`,
       category: 'non-technical' as const,
       participants: "Solo Event",
-      duration: "4 hours",
-      prize: "₹10,000 + Certificates",
+      duration: "2 hours",
+      prize: "₹3,000 + Certificates",
       rules: [
         "Solo Event - Individual participation only",
         "Open to all strategists & chess enthusiasts",
@@ -814,13 +840,13 @@ Enter the Clocks & Kings arena and battle through timelines for glory.`,
           name: "Kaviya I",
           role: "Lead" as const,
           phone: "+91 9342455315",
-          image: "/api/placeholder/100/100"
+          image: profile11
         },
         {
           name: "Kishore Kumar D",
           role: "Lead" as const,
           phone: "+91 7358647144",
-          image: "/api/placeholder/100/100"
+          image: profile12
         }
       ],
       volunteers: [
@@ -953,7 +979,7 @@ Join the mandate — Chronos awaits.`,
       category: 'non-technical' as const,
       participants: "3 to 4 members",
       duration: "3.5 hours",
-      prize: "₹7,500 + Certificates",
+      prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have 3-4 members per team",
         "Open to all departments - Unleash the power of interdisciplinary minds!",
@@ -969,13 +995,13 @@ Join the mandate — Chronos awaits.`,
           name: "Aarthi V S",
           role: "Lead" as const,
           phone: "+91 9384842346",
-          image: "/api/placeholder/100/100"
+          image: profile16
         },
         {
           name: "Aakash P S",
           role: "Lead" as const,
           phone: "+91 7358107416",
-          image: "/api/placeholder/100/100"
+          image: profile15
         }
       ],
       volunteers: [
@@ -1091,7 +1117,7 @@ Step into the Act 0'Clock time machine — where every second is a scene to reme
       category: 'non-technical' as const,
       participants: "2 members",
       duration: "3 hours",
-      prize: "₹6,500 + Certificates",
+      prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have exactly 2 members per team",
         "Open to all departments - Movie lovers, actors, mimers — this one's for you!",
@@ -1107,13 +1133,13 @@ Step into the Act 0'Clock time machine — where every second is a scene to reme
           name: "Sasi kumar S",
           role: "Lead" as const,
           phone: "+91 8110970109",
-          image: "/api/placeholder/100/100"
+          image:profile13
         },
         {
           name: "Lochan Narayanan",
           role: "Lead" as const,
           phone: "+91 9940321809",
-          image: "/api/placeholder/100/100"
+          image: profile14
         }
       ],
       volunteers: [
@@ -1218,14 +1244,30 @@ Step into the Act 0'Clock time machine — where every second is a scene to reme
             expand your knowledge, and create unforgettable experiences.
           </p>
 
-          <motion.div
+          {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 1.2 }}
           className="text-center mt-16 md:mt-16  w-full flex justify-center items-center "
         >
           <img src={events} alt="" />
-        </motion.div>
+        </motion.div> */}
+        {/* event-poster.jpg */}
+
+        <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  animate={inView ? { opacity: 1, y: 0 } : {}}
+  transition={{ duration: 0.8, delay: 1.2 }}
+  className="flex justify-center items-center w-full mt-10 md:mt-16"
+>
+  <div className="w-full max-w-4xl px-4">
+    <img 
+      src={eventsPoster} 
+      alt="Events Poster" 
+      className="w-full h-auto object-contain" 
+    />
+  </div>
+</motion.div>
 
         </motion.div>
 

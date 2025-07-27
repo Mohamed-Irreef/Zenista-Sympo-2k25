@@ -180,7 +180,11 @@ if (!event) return null;
                         className="bg-card/80 border border-time-portal/20 rounded-lg p-4 text-center"
                       >
                         <div className="w-20 h-20 bg-gradient-to-br from-time-portal to-time-glow rounded-full mx-auto mb-3 flex items-center justify-center">
-                          <User className="text-white" size={32} />
+                          {/* <User className="text-white" size={32} /> */}
+                          {/* <img src={coordinator.image} className="w-full h-full object-cover rounded-full" alt="" /> */}
+                          {
+                            coordinator.image.toString().includes("/api/placeholder/100/100")?<User className="text-white" size={32} />: <img src={coordinator.image} className="w-full h-full object-cover center rounded-full" alt="" />
+                          }
                         </div>
                         <h4 className="font-semibold text-foreground mb-1">{coordinator.name}</h4>
                         <Badge 
