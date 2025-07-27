@@ -5,7 +5,8 @@ import { useCountdown } from '@/hooks/use-countdown';
 import collegeLogo from '@/assets/sec.png';
 import leoLogo from '@/assets/leo.png';
 import zenistaLogo from '@/assets/zenista1.png';
-import backgroundVideo from '@/assets/Space_Time_Travel_Video_Generated.mp4';
+// import backgroundVideo from '@/assets/Space_Time_Travel_Video_Generated.mp4';
+import backgroundVideo from '@/assets/bg.mp4';
 import bg from '@/assets/web-bg1.jpg';
 
 const HeroSection = () => {
