@@ -17,6 +17,18 @@ import gallery8 from '@/assets/gallery-8.jpg';
 import gallery9 from '@/assets/gallery-9.jpg';
 import gallery10 from '@/assets/gallery-10.jpg';
 
+import gall1 from '@/assets/gallery/gallery5.jpg';
+import gall2 from '@/assets/gallery/gallery6.jpg';
+import gall3 from '@/assets/gallery/gallery7.jpeg';
+
+import gall4 from '@/assets/gallery/gallery1.jpg';
+import gall5 from '@/assets/gallery/gallery2.jpg';
+import gall6 from '@/assets/gallery/gallery3.jpg';
+import gall7 from '@/assets/gallery/gallery4.jpg';
+import gall8 from '@/assets/gallery/gallery8.jpeg';
+import gall9 from '@/assets/gallery/gallery9.jpg';
+import gall10 from '@/assets/gallery/gallery10.jpg';
+
 const GallerySection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -28,19 +40,24 @@ const GallerySection = () => {
 
   // Gallery images - using local and department images for better performance
   const galleryImages = [
-    { src: eceDept1, alt: "ECE Department Lab - Circuit Analysis", title: "Advanced Circuit Analysis Lab" },
-    { src: eceDept2, alt: "Electronics Lab - Students Working", title: "Students Working on Projects" },
-    { src: eceDept3, alt: "Communication Lab Equipment", title: "Communication Systems Lab" },
-    { src: gallery1, alt: "Modern Computer Lab", title: "Computer Programming Lab" },
-    { src: gallery2, alt: "Circuit Board Design", title: "PCB Design & Testing" },
-    { src: gallery3, alt: "Java Programming Session", title: "Software Development Workshop" },
-    { src: gallery4, alt: "Students Collaborating", title: "Team Project Session" },
-    { src: gallery5, alt: "Electronics Workshop", title: "Hardware Development Lab" },
-    { src: gallery6, alt: "AI & Robotics Lab", title: "Artificial Intelligence Research" },
-    { src: gallery7, alt: "Digital Matrix Display", title: "Digital Systems Lab" },
-    { src: gallery8, alt: "Code Development", title: "Programming & Development" },
-    { src: gallery9, alt: "Tech Conference", title: "Technical Symposium Events" },
-    { src: gallery10, alt: "Engineering Workspace", title: "Modern Engineering Facility" }
+    { src: gall1, alt: "ECE Department - Sympo", title: "Zenista 2024" },
+    { src: gall2, alt: "ECE Department - Sympo", title: "Zenista 2023" },
+    { src: gall3, alt: "ECE Department - Sympo", title: "Zenista 2022" },
+    { src: gall8, alt: "ECE Department - Sympo", title: "Zenista 2019" },
+    { src: gall9, alt: "ECE Department - Sympo", title: "Zenista 2017" },
+    { src: gall10, alt: "ECE Department - Sympo", title: "Zenista 2015" },
+
+    { src: gall4, alt: "ECE Department", title: "4th International Conference on Communication" },
+    { src: gall5, alt: "ECE Department", title: "Meeting" },
+    { src: gall6, alt: "ECE Department", title: "Placement Training" },
+    { src: gall7, alt: "ECE Department", title: "Meeting" },
+
+    // { src: gallery5, alt: "Electronics Workshop", title: "Hardware Development Lab" },
+    // { src: gallery6, alt: "AI & Robotics Lab", title: "Artificial Intelligence Research" },
+    // { src: gallery7, alt: "Digital Matrix Display", title: "Digital Systems Lab" },
+    // { src: gallery8, alt: "Code Development", title: "Programming & Development" },
+    // { src: gallery9, alt: "Tech Conference", title: "Technical Symposium Events" },
+    // { src: gallery10, alt: "Engineering Workspace", title: "Modern Engineering Facility" }
   ];
 
   const openImage = (index: number) => {

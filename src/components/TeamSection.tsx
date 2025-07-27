@@ -35,6 +35,8 @@ import media2 from '@/assets/organizers/media/akilan.jpg';
 import media5 from '@/assets/organizers/media/sarvesh.jpg'; 
 
 import dev1 from '@/assets/organizers/develpoers/dev1.png';
+// import the correct image file
+import dev2 from '@/assets/organizers/develpoers/dev2.jpg';
 
 
 
@@ -70,7 +72,7 @@ const TeamSection = () => {
       image: key2
     },
     {
-      name: "Dr. R. Thamilselvi",
+      name: "Dr. J. Thamilselvi",
       role: "HOD - ECE Department",
       department: "Sri Sairam Engineering College",
       linkedinId: " https://www.linkedin.com/in/jthamilselvi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
@@ -81,7 +83,7 @@ const TeamSection = () => {
   const staffCoordinators = [
     {
       name: "Ms. S. GAYATHRI",
-      role: "Assistant Professor - ECE Department",
+      role: "Associate Professor - ECE Department",
 
       department: "Sri Sairam Engineering College",
       linkedinId: "https://in.linkedin.com/in/sgayathriece",
@@ -89,7 +91,7 @@ const TeamSection = () => {
     },
     {
       name: "Mr. K. Srinivasan ",
-      role: "Assistant Professor - ECE Department",
+      role: "Associate Professor - ECE Department",
       department: "Sri Sairam Engineering College",
       linkedinId: "https://www.linkedin.com/in/srinivasanenoch?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image: staff2
@@ -155,6 +157,14 @@ const TeamSection = () => {
       department: "+91 9345981303",
       linkedinId:"https://www.linkedin.com/in/thilak5746/",
       image: thilakImage
+    },
+    {
+      name: "Ahamed",
+      role: "Web Developer", 
+      designation: "Final Year - ECE Department",
+      department: "+91 88381 82609",
+      linkedinId:"https://www.linkedin.com/in/thilak5746/",
+      image: dev2
     }
   ];
 

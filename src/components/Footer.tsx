@@ -16,18 +16,18 @@ const Footer = () => {
       icon: Phone,
       title: "Contact",
       details: [
-        "+91 98765 43210",
-        "+91 98765 43211",
-        "Reception: +91 44 2251 2345"
+        "+91 99420 03192",
+        "+91 99626 61505",
+        "Reception: +91 81488 02753"
       ]
     },
     {
       icon: Mail,
       title: "Email",
       details: [
-        "zenista2025@sairam.edu.in",
-        "ece.department@sairam.edu.in",
-        "info@sairam.edu.in"
+        "zenista2k25@gmail.com",
+        "hod.ece@sairam.edu.in",
+        "sairam@sairam.edu.in"
       ]
     }
   ];
@@ -44,10 +44,10 @@ const Footer = () => {
   const importantLinks = [
     { name: "Sri Sairam Engineering College", href: "https://sairam.edu.in", external: true },
     { name: "ECE Department", href: "https://sairam.edu.in/ece", external: true },
-    { name: "Academic Calendar", href: "https://sairam.edu.in/calendar", external: true },
+    { name: "Academic Calendar", href: "https://sairam.edu.in/ece", external: true },
     { name: "Student Portal", href: "https://sairam.edu.in/student", external: true },
     { name: "Alumni Network", href: "https://sairam.edu.in/alumni", external: true },
-    { name: "Placement Cell", href: "https://sairam.edu.in/placements", external: true }
+    { name: "Placement Cell", href: "https://ece.sairam.edu.in/placement-statistics/", external: true }
   ];
 
   const eventHighlights = [
@@ -190,7 +190,7 @@ const Footer = () => {
                   For urgent queries during the event
                 </p>
                 <p className="text-sm font-semibold text-foreground">
-                  +91 98765 43210 (24/7)
+                  +91 99420 03192 (24/7)
                 </p>
               </div>
 
