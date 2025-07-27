@@ -94,7 +94,7 @@ const Footer = () => {
             >
               <div className="text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                  <Clock className="text-time-portal" size={32} />
+                  {/* <Clock className="text-time-portal" size={32} /> */}
                   <div>
                     <h3 className="text-2xl font-bold text-glow">ZENISTA</h3>
                     <p className="text-time-glow">2025</p>
