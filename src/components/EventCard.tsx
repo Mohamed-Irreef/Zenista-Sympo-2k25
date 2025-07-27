@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Calendar, Users, Trophy, Clock, Eye } from 'lucide-react';
+import { Calendar, Users, Trophy, Clock, Eye, Monitor } from 'lucide-react';
 
 interface EventCardProps {
   title: string;
   description: string;
   category: 'technical' | 'non-technical';
   participants: string;
-  duration: string;
+  mode: string;
   prize: string;
   logo?: string;
   onClick: () => void;
@@ -21,7 +21,7 @@ const EventCard = ({
   description, 
   category, 
   participants, 
-  duration, 
+  mode, 
   prize, 
   logo,
   onClick, 
@@ -130,8 +130,8 @@ const EventCard = ({
               <span className="text-muted-foreground font-medium">Team Size: <span className="text-foreground font-semibold">{participants}</span></span>
             </div>
             <div className="flex items-center gap-3 text-sm bg-time-glow/5 rounded-lg p-3 group-hover:bg-time-glow/10 transition-colors">
-              <Calendar className="text-time-portal" size={18} />
-              <span className="text-muted-foreground font-medium">Duration: <span className="text-foreground font-semibold">{duration}</span></span>
+              <Monitor className="text-time-portal" size={18} />
+              <span className="text-muted-foreground font-medium">Mode: <span className="text-foreground font-semibold">{mode}</span></span>
             </div>
             <div className="flex items-center gap-3 text-sm bg-energy-yellow/5 rounded-lg p-3 group-hover:bg-energy-yellow/10 transition-colors">
               <Trophy className="text-energy-yellow" size={18} />

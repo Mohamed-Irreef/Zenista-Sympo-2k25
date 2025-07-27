@@ -231,51 +231,18 @@ const HeroSection = () => {
             </div>
           </motion.div>
           
-          {/* Zenista Title with Clean Purple Aura */}
           <motion.h1
-            className="relative text-6xl md:text-8xl font-black mb-4 tracking-wider"
-            style={{
-              fontFamily: 'Impact, "Arial Black", sans-serif',
-              color: '#cbd5e1', // Duller but whiter silver-gray color
-              textShadow: `
-                0 0 20px rgba(147, 51, 234, 0.8),
-                0 0 40px rgba(147, 51, 234, 0.6),
-                0 0 60px rgba(147, 51, 234, 0.4),
-                0 0 80px rgba(147, 51, 234, 0.3),
-                0 0 100px rgba(147, 51, 234, 0.2),
-                0 4px 8px rgba(0,0,0,0.8),
-                2px 2px 4px rgba(0,0,0,0.9)
-              `,
-              filter: 'drop-shadow(2px 2px 6px rgba(0,0,0,0.8))',
-            }}
+            className="text-6xl md:text-7xl font-bold text-glow mb-4 tracking-wider"
             animate={{
               textShadow: [
-                `0 0 20px rgba(147, 51, 234, 0.8),
-                 0 0 40px rgba(147, 51, 234, 0.6),
-                 0 0 60px rgba(147, 51, 234, 0.4),
-                 0 0 80px rgba(147, 51, 234, 0.3),
-                 0 0 100px rgba(147, 51, 234, 0.2),
-                 0 4px 8px rgba(0,0,0,0.8),
-                 2px 2px 4px rgba(0,0,0,0.9)`,
-                `0 0 25px rgba(147, 51, 234, 1),
-                 0 0 45px rgba(147, 51, 234, 0.7),
-                 0 0 65px rgba(147, 51, 234, 0.5),
-                 0 0 85px rgba(147, 51, 234, 0.4),
-                 0 0 105px rgba(147, 51, 234, 0.3),
-                 0 4px 8px rgba(0,0,0,0.8),
-                 2px 2px 4px rgba(0,0,0,0.9)`,
-                `0 0 20px rgba(147, 51, 234, 0.8),
-                 0 0 40px rgba(147, 51, 234, 0.6),
-                 0 0 60px rgba(147, 51, 234, 0.4),
-                 0 0 80px rgba(147, 51, 234, 0.3),
-                 0 0 100px rgba(147, 51, 234, 0.2),
-                 0 4px 8px rgba(0,0,0,0.8),
-                 2px 2px 4px rgba(0,0,0,0.9)`
+                '0 0 20px hsl(188 100% 60% / 0.6)',
+                '0 0 40px hsl(276 100% 70% / 0.8)',
+                '0 0 20px hsl(188 100% 60% / 0.6)'
               ]
             }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3, repeat: Infinity }}
           >
-            ZENISTA' 25
+            ZENISTA
           </motion.h1>
           
           <motion.div
@@ -284,6 +251,7 @@ const HeroSection = () => {
             transition={{ delay: 1, duration: 0.8 }}
             className="text-2xl md:text-3xl text-time-glow mb-2"
           >
+            2025
           </motion.div>
           
           <motion.p

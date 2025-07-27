@@ -99,7 +99,7 @@ Ready to rise, recall, and rule the GenZverse?
 Let the timeline chaos begin!`,
       category: 'technical' as const,
       participants: "2 members",
-      duration: "3 hours",
+      mode: "Hybrid",
       prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have exactly 2 members",
@@ -241,7 +241,7 @@ Are you ready to crack codes, clash circuits, and collapse timelines?
 Step into the TESSERACT — where logic defies dimensions.`,
       category: 'technical' as const,
       participants: "2 to 3 members",
-      duration: "2 hours",
+      mode: "Hybrid",
       prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have 2-3 members per team",
@@ -394,7 +394,7 @@ Get ready to spark the circuit inside you.
 Join CircuTricks – Where Logic Comes to Life!`,
       category: 'technical' as const,
       participants: "2 to 3 members",
-      duration: "2 hours",
+      mode: "Hybrid",
       prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have 2-3 members per team",
@@ -534,7 +534,7 @@ Time is ticking... Do you have the code to crack it?
 Join TimeCypher and embark on a journey where logic transcends time!`,
       category: 'technical' as const,
       participants: "3 members",
-      duration: "2 hours",
+      mode: "Hybrid",
       prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have exactly 3 members per team",
@@ -670,7 +670,7 @@ Ready to send your tech through time?
 Present the project that could've changed history — only at Past Forward.`,
       category: 'technical' as const,
       participants: "2 to 4 members",
-      duration: "3 hours",
+      mode: "Offline",
       prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have 2-4 members per team",
@@ -812,7 +812,7 @@ Prepare your board, ready your mind —
 Enter the Clocks & Kings arena and battle through timelines for glory.`,
       category: 'non-technical' as const,
       participants: "Solo Event",
-      duration: "2 hours",
+      mode: "Hybrid",
       prize: "₹3,000 + Certificates",
       rules: [
         "Solo Event - Individual participation only",
@@ -978,7 +978,7 @@ Ready to fix time?
 Join the mandate — Chronos awaits.`,
       category: 'non-technical' as const,
       participants: "3 to 4 members",
-      duration: "3.5 hours",
+      mode: "Offline",
       prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have 3-4 members per team",
@@ -1116,7 +1116,7 @@ Are you ready to rewind, perform, and conquer the clock?
 Step into the Act 0'Clock time machine — where every second is a scene to remember!`,
       category: 'non-technical' as const,
       participants: "2 members",
-      duration: "3 hours",
+      mode: "Offline",
       prize: "₹3,000 + Certificates",
       rules: [
         "Teams must have exactly 2 members per team",
