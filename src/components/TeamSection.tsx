@@ -66,7 +66,7 @@ const TeamSection = () => {
     },
     {
       name: "Dr. J. Raja",
-      role: "Principal - Sri Sairam Engineering",
+      role: "Principal - Sri Sairam Engineering College",
       
       linkedinId: "https://www.linkedin.com/in/raja-j-32b44164?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image: key2
@@ -108,7 +108,7 @@ const TeamSection = () => {
 
   const studentCoordinators = [
     {
-      name: "Udaya MR",
+      name: "Udaya M R",
       role: "Chairperson",
       designation: "Final Year - ECE Department",
       department: "+91 9942003192",
@@ -116,7 +116,7 @@ const TeamSection = () => {
       image: leader1
     },
     {
-      name: "Vivitha MG ",
+      name: "Vivitha M G ",
       role: "Vice - Chairperson",
       designation: "Final Year - ECE Department",
       department: "+91 8148802753",
@@ -132,7 +132,7 @@ const TeamSection = () => {
       image: leader3
     },
     {
-      name: "Mirudhubasnee RS",
+      name: "Mirudhubasnee R S",
       role: "Treasurer",
       designation: "Final Year - ECE Department",
       department: "+91 6382163948",
@@ -170,7 +170,7 @@ const TeamSection = () => {
 
   const designTeam = [
     {
-      name: "Diksha RS",
+      name: "Diksha R S",
       role: "Graphic Designer",
       designation: "Final Year - ECE Department",
       department: "Design Team",
@@ -258,7 +258,7 @@ const TeamSection = () => {
 
 
     {
-      name: "Reshmen RA",
+      name: "Reshmen R A",
       role: "Media Team",
       designation: "3rd Year - ECE Department",
    

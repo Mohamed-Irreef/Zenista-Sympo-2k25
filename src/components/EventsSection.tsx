@@ -24,7 +24,7 @@ import profile3 from '@/assets/organizers/leads/event2/lead1.jpg'
 import profile4 from '@/assets/organizers/leads/event2/lead2.jpg';
 
 import profile5 from '@/assets/organizers/leads/event3/Nivetha G.jpg'
-// import profile6 from '@/assets/organizers/leads/event3/Nivetha G.jpg'; no profile
+import profile6 from '@/assets/organizers/leads/event3/Priyanka_S.png';
 
 import profile7 from '@/assets/organizers/leads/event4/lead1.jpg'
 import profile8 from '@/assets/organizers/leads/event4/lead2.jpg';
@@ -416,7 +416,7 @@ Join CircuTricks – Where Logic Comes to Life!`,
           name: "Priyanka S",
           role: "Lead" as const,
           phone: "+91 8248756885",
-          image: "/api/placeholder/100/100"
+          image: profile6
         }
       ],
       volunteers : [

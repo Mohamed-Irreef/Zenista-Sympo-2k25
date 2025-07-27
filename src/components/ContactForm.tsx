@@ -207,7 +207,7 @@ const ContactForm = () => {
             </div>
             <div className="bg-card/60 backdrop-blur-sm border border-time-portal/20 rounded-lg p-6">
               <h3 className="text-xl font-bold text-foreground mb-4">Email</h3>
-              <p className="text-muted-foreground">mdirreef@gmail.com</p>
+              <p className="text-muted-foreground">zenista2k25@gmail.com</p>
             </div>
           </div>
         </motion.div>
