@@ -266,7 +266,7 @@ Step into the TESSERACT — where logic defies dimensions.`,
           image: profile4
         }
       ],
-      volunteers :[
+      volunteers: [
   {
     name: "Narmatha V",
     role: "4th Year" as const,
@@ -304,7 +304,7 @@ Step into the TESSERACT — where logic defies dimensions.`,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Anu Shree M",
+    name: "Ragul A S",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
@@ -329,7 +329,7 @@ Step into the TESSERACT — where logic defies dimensions.`,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Alagappan",
+    name: "Alagappan A",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
@@ -419,7 +419,7 @@ Join CircuTricks – Where Logic Comes to Life!`,
           image: profile6
         }
       ],
-      volunteers : [
+      volunteers: [
   {
     name: "Aarthi K",
     role: "4th Year" as const,
@@ -436,7 +436,7 @@ Join CircuTricks – Where Logic Comes to Life!`,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Jenita Regi K G",
+    name: "Jenita Regi KG",
     role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
@@ -451,16 +451,6 @@ Join CircuTricks – Where Logic Comes to Life!`,
     image: "/api/placeholder/100/100"
   },
 
-  {
-    name: "Devendranath G",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Muthu Selvi S",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
   {
     name: "PL Arunachalam",
     role: "3rd Year" as const,
@@ -477,7 +467,12 @@ Join CircuTricks – Where Logic Comes to Life!`,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Raghav G S",
+    name: "Sriram Karthick S",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Devendranath G",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
@@ -490,8 +485,15 @@ Join CircuTricks – Where Logic Comes to Life!`,
     name: "Madhumitha",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
+  },
+
+  {
+    name: "Ashwinth M",
+    role: "2nd Year" as const,
+    image: "/api/placeholder/100/100"
   }
 ],
+
 
       registrationLink: import.meta.env.VITE_CIRCUTRICKS_FORM_URL || "https://forms.gle/YOUR_CIRCUTRICKS_FORM_ID"
     },
@@ -562,70 +564,82 @@ Join TimeCypher and embark on a journey where logic transcends time!`,
       volunteers: [
   {
     name: "Ashwathy S",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Deepika D",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Swetha A",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Anandraj N",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Biswajith Ghatuary",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
+
   {
     name: "Shanmathi SN",
-    role: "3rd Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Gayathri C",
-    role: "3rd Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Samyuktha K S",
-    role: "3rd Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Devadharshini",
-    role: "3rd Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Janani Sriram",
-    role: "3rd Year",
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "S J Hemapriya",
-    role: "3rd Year",
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Yuvabharathi R",
-    role: "3rd Year",
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Mamitha M",
-    role: "3rd Year",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Gayathri C",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Harine K S",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Vimal Raj",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Samyuktha K S",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Janani Sriram",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Dhilip Kumar",
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   }
 ]
+
 ,
 
       registrationLink: import.meta.env.VITE_TIMECYPHER_FORM_URL || "https://forms.gle/YOUR_TIMECYPHER_FORM_ID"
@@ -699,75 +713,77 @@ Present the project that could've changed history — only at Past Forward.`,
       volunteers: [
   {
     name: "Krishnaja S",
-    role: "4th Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Pavithra S",
-    role: "3rd Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Shanthini S",
-    role: "3rd Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Sujithra R",
-    role: "3rd Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Thiriphura Sundari C S",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Thrisha Sri C",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Nithya Shree L",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Sai Sandhiya G",
-    role: "4th Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Tharani V",
-    role: "3rd Year",
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Suguna A K",
-    role: "3rd Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Janani E",
-    role: "4th Year",
+    role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Pavita S",
-    role: "4th Year",
+    role: "4th Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+
+  {
+    name: "Pavithra S",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Shanthini S",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Sujithra R",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Tharani V",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Vigneshwaran J",
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Padma Priya B",
-    role: "3rd Year",
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
     name: "Pavithra M",
-    role: "3rd Year",
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   }
-],
+]
+,
 
       registrationLink: import.meta.env.VITE_PAST_FORWARD_FORM_URL || "https://forms.gle/YOUR_PAST_FORWARD_FORM_ID"
     }
@@ -880,16 +896,7 @@ Enter the Clocks & Kings arena and battle through timelines for glory.`,
     role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
-  {
-    name: "Porkodi P",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Malini K",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
+
   {
     name: "Theneeshwari P",
     role: "3rd Year" as const,
@@ -911,16 +918,27 @@ Enter the Clocks & Kings arena and battle through timelines for glory.`,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Deepthi P",
+    name: "Malini K",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Divya A",
+    name: "Porkodi P",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Deepthi",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Divya",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   }
 ]
+
 ,
       registrationLink: import.meta.env.VITE_CLOCKS_AND_KINGS_FORM_URL || "https://forms.gle/YOUR_CLOCKS_AND_KINGS_FORM_ID"
     },
@@ -1016,7 +1034,22 @@ Join the mandate — Chronos awaits.`,
     image: "/api/placeholder/100/100"
   },
   {
+    name: "Maneesha S",
+    role: "4th Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
     name: "Santhosh S",
+    role: "4th Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Vijaya Lakshmi DS",
+    role: "4th Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Deepak Kumar V",
     role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
@@ -1025,23 +1058,24 @@ Join the mandate — Chronos awaits.`,
     role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
+
   {
-    name: "Divya A",
+    name: "Hemamalar D",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Vijayalakshmi D S",
+    name: "Boomiga ER",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Deepthi P",
+    name: "Kaviya K",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Maneesha S",
+    name: "Kaviya",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
@@ -1059,23 +1093,9 @@ Join the mandate — Chronos awaits.`,
     name: "Keerthiha",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Hemamalar D",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Boomiga ER",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Kaviya K",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
   }
-],
+]
+,
 
       registrationLink: import.meta.env.VITE_CHRONOS_MANDATE_FORM_URL || "https://forms.gle/YOUR_CHRONOS_MANDATE_FORM_ID"
     },
@@ -1154,40 +1174,11 @@ Step into the Act 0'Clock time machine — where every second is a scene to reme
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Rudramoorthy L",
-    role: "4th Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
     name: "Keerthana S",
     role: "4th Year" as const,
     image: "/api/placeholder/100/100"
   },
-  {
-    name: "Abhinesh V",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Praneet M S",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Sasi Celestina G",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Maneesha S",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
-  {
-    name: "Vijaya Lakshmi D S",
-    role: "3rd Year" as const,
-    image: "/api/placeholder/100/100"
-  },
+
   {
     name: "Aishwarya Y",
     role: "3rd Year" as const,
@@ -1207,8 +1198,44 @@ Step into the Act 0'Clock time machine — where every second is a scene to reme
     name: "Sageetha C",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Sanjana N",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Vishwajet Kumar JR",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Nafisha R",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Nisha M",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Sasi Celestina G",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Baby Sri",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
+  },
+  {
+    name: "Sanay Sahil S",
+    role: "3rd Year" as const,
+    image: "/api/placeholder/100/100"
   }
 ]
+
 ,
       registrationLink: import.meta.env.VITE_ACT_OCLOCK_FORM_URL || "https://forms.gle/YOUR_ACT_OCLOCK_FORM_ID"
     }
