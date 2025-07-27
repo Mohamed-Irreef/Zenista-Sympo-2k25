@@ -153,7 +153,7 @@ const TeamSection = () => {
       role: "Web Developer", 
       designation: "Final Year - ECE Department",
       department: "+91 9345981303",
-      linkedinId:"https://www.linkedin.com/in/-mohamed-ireef-s-23-/",
+      linkedinId:"https://www.linkedin.com/in/thilak5746/",
       image: thilakImage
     }
   ];
