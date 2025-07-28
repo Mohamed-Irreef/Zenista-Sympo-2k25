@@ -234,7 +234,7 @@ const HeroSection = () => {
           </motion.div>
           
           <motion.h1
-            className="text-6xl md:text-7xl font-bold text-glow mb-4 tracking-wider"
+            className="text-5xl md:text-7xl font-bold text-glow mb-4 tracking-wider"
             style={{ fontFamily: "Cinzel Decorative, serif" }}
             animate={{
               textShadow: [
