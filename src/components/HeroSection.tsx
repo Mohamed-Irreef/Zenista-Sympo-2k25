@@ -185,6 +185,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-lg text-muted-foreground mb-0 text-center"
+            style={{fontFamily: "Rajdhani, sans-serif"}}
           >
             Department of Electronics and Communication Engineering
             
@@ -234,6 +235,7 @@ const HeroSection = () => {
           
           <motion.h1
             className="text-6xl md:text-7xl font-bold text-glow mb-4 tracking-wider"
+            style={{ fontFamily: "Cinzel Decorative, serif" }}
             animate={{
               textShadow: [
                 '0 0 20px hsl(188 100% 60% / 0.6)',
@@ -243,7 +245,7 @@ const HeroSection = () => {
             }}
             transition={{ duration: 3, repeat: Infinity }}
           >
-            ZENISTA
+            ZENISTA 
           </motion.h1>
           
           <motion.div
@@ -251,6 +253,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
             className="text-2xl md:text-3xl text-time-glow mb-2"
+            style={{ fontFamily: "Cinzel Decorative, serif" }}
           >
             2025
           </motion.div>
@@ -260,6 +263,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8"
+            style={{fontFamily: "Rajdhani, sans-serif"}}
           >
             National Level Technical Symposium
           </motion.p>
@@ -270,6 +274,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4, duration: 0.8 }}
             className="text-lg md:text-xl text-time-glow mb-12 font-medium"
+          style={{fontFamily: "Rajdhani, sans-serif"}}
           >
             Where Time Bends, Talent Ascends
           </motion.p>
@@ -307,7 +312,7 @@ const HeroSection = () => {
               >
                 <div className="flex items-center justify-center gap-2 mb-4 md:mb-6">
                   {/* <Clock className="text-time-portal animate-pulse" size={20} /> */}
-                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-glow">
+                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-glow" style={{fontFamily: "Rajdhani, sans-serif"}}>
                     {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 
                       ? "Event is Live!" 
                       : "Event Begins In"

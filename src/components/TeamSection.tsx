@@ -82,6 +82,13 @@ const TeamSection = () => {
 
   const staffCoordinators = [
     {
+      name: "Mr. K. Srinivasan ",
+      role: "Associate Professor - ECE Department",
+      department: "Sri Sairam Engineering College",
+      linkedinId: "https://www.linkedin.com/in/srinivasanenoch?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image: staff2
+    },
+    {
       name: "Ms. S. GAYATHRI",
       role: "Associate Professor - ECE Department",
 
@@ -89,13 +96,7 @@ const TeamSection = () => {
       linkedinId: "https://in.linkedin.com/in/sgayathriece",
       image: staff1
     },
-    {
-      name: "Mr. K. Srinivasan ",
-      role: "Associate Professor - ECE Department",
-      department: "Sri Sairam Engineering College",
-      linkedinId: "https://www.linkedin.com/in/srinivasanenoch?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image: staff2
-    },
+    
     // {
     //   name: "Prof. Sangeetha Ravi",
     //   role: "Event Coordinator",
