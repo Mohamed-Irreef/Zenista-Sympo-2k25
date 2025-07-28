@@ -663,7 +663,6 @@ EVENT FORMAT:
 📝 Single Round – Presentation Round (Offline)
 📋 Type: Paper with optional prototype or visual aid (model, simulation, or storyboard)
 ⏰ Presentation time: ~6-8 minutes per team
-📢 No filtration or prelims
 
 SAMPLE CONCEPTS:
 • GPS in World War II
@@ -686,7 +685,14 @@ Why Participate?
 🤝 Collaborate with like-minded thinkers and creators
 
 Ready to send your tech through time?
-Present the project that could've changed history — only at Past Forward.`,
+Present the project that could've changed history — only at Past Forward.
+
+`, additional: <span>
+  Note: Make sure the ideas align with at least one of the 
+  <a href="https://sdgs.un.org/goals" className='text-blue-400' target="_blank" rel="noopener noreferrer">
+     &nbsp; Sustainable Development Goals
+  </a>.
+</span>,
       category: 'technical' as const,
       participants: "2 to 4 members",
       mode: "Offline",
@@ -697,7 +703,6 @@ Present the project that could've changed history — only at Past Forward.`,
         "Single presentation round - No preliminary filtering required",
         "Presentation duration: 6-8 minutes per team",
         "Paper presentation with optional prototype/visual aid (model, simulation, storyboard)",
-        "Registration fee: ₹100 per team",
         "Online registration open until slots fill",
         "Focus on technical feasibility, creativity, and time-travel theme relevance"
       ],

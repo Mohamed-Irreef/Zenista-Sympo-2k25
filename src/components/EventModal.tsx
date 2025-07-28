@@ -27,6 +27,7 @@ interface EventModalProps {
     title: string;
     description: string;
     fullDescription: string;
+    additional:string,
     category: 'technical' | 'non-technical';
     participants: string;
     duration: string;
@@ -123,6 +124,9 @@ if (!event) return null;
                     <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
                       {event.fullDescription}
                     </p>
+                    {
+                      event.additional&& <p>{event.additional}</p>
+                    }
                   </div>
                 </div>
 
