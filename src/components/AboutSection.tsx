@@ -67,7 +67,7 @@ const AboutSection = () => {
           <div className="bg-card/80 backdrop-blur-sm border border-time-portal/20 rounded-xl p-8 time-warp">
             <h3 className="text-2xl font-bold text-time-portal mb-4">Our Mission</h3>
             <p className="text-muted-foreground leading-relaxed">
-              <span className='text-white'>M1:</span> To curate engaging events that blend technical excellence with creative thinking and cultural relevance.
+              <span className='text-white'>M1:</span> To accurate engaging events that blend technical excellence with creative thinking and cultural relevance.
 
             </p>
 

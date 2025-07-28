@@ -40,6 +40,7 @@ import profile14 from '@/assets/organizers/leads/event6/lead2.jpg';
 
 import profile15 from '@/assets/organizers/leads/event8/lead1.jpg'
 import profile16 from '@/assets/organizers/leads/event8/lead2.jpg';
+import { Linkedin } from 'lucide-react';
 
 
 
@@ -114,13 +115,15 @@ Let the timeline chaos begin!`,
           name: "Varshini G",
           role: "Lead" as const,
           phone: "+91 8754599496",
-          image: profile1
+          image: profile1,
+          linkedinId:"https://www.linkedin.com/in/varshini-g-521b78257"
         },
         {
           name: "Vidhyashree V",
           role: "Lead" as const,
           phone: "+91 7708554298",
-          image: profile2
+          image: profile2,
+          linkedinId:"https://www.linkedin.com/in/vidhya-shree-vaithilingam-1777042a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         }
       ],
       volunteers : [
@@ -257,13 +260,15 @@ Step into the TESSERACT — where logic defies dimensions.`,
           name: "Varsha R",
           role: "Lead" as const,
           phone: "+91 9843929112",
-          image: profile3
+          image: profile3,
+          linkedinId:"https://www.linkedin.com/in/varsha-ravichandran-78a025260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         },
         {
           name: "Cyril Bendict P S",
           role: "Lead" as const,
           phone: "+91 9345309818",
-          image: profile4
+          image: profile4,
+          linkedinId:"https://www.linkedin.com/in/cyril-bendict-ps-697a58257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         }
       ],
       volunteers: [
@@ -410,13 +415,15 @@ Join CircuTricks – Where Logic Comes to Life!`,
           name: "Nivetha G",
           role: "Lead" as const,
           phone: "+91 8925067560",
-          image: profile5
+          image: profile5,
+          linkedinId:"https://www.linkedin.com/in/nivetha-ganapathy-710a9b1bb"
         },
         {
           name: "Priyanka S",
           role: "Lead" as const,
           phone: "+91 8248756885",
-          image: profile6
+          image: profile6,
+          linkedinId:"https://www.linkedin.com/in/priyanka-srinivasan-31a23232b"
         }
       ],
       volunteers: [
@@ -515,15 +522,11 @@ ROUND 2: Connection Craze
 "Link the Clues. Unlock the Time."
 📱 Mode: Offline
 🔗 Type: Connections Game
-🔧 Task: Identify the common link between a set of clues (images, symbols, components, or terms) — all related to ECE and time-travel concepts.
 🎯 Goal: Spot patterns, form logical links, and decode the hidden theme.
 
 ROUND 3: Cypher Jam
 "Decode the Past. Act the Future."
 📱 Mode: Offline
-🎭 Activities:
-• Morse Code Decode — Interpret and translate hidden messages
-• Tech Dumb Charades — Act out and guess technical terms without words!
 🎯 Goal: Showcase teamwork, creativity, and technical understanding in this dynamic, high-energy round.
 
 Why Join TimeCypher?
@@ -552,13 +555,15 @@ Join TimeCypher and embark on a journey where logic transcends time!`,
           name: "Bhavadharene M",
           role: "Lead" as const,
           phone: "+91 9444521120",
-          image: profile7
+          image: profile7,
+          linkedinId:"https://www.linkedin.com/in/bhavadharene-manokaran-b5b782257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         },
         {
           name: "DHAANISH AHMED J",
           role: "Lead" as const,
           phone: "+91 7305811665",
-          image: profile8
+          image: profile8,
+          linkedinId:"https://www.linkedin.com/in/dhaanish-ahmed-114436257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         }
       ],
       volunteers: [
@@ -629,7 +634,7 @@ Join TimeCypher and embark on a journey where logic transcends time!`,
     image: "/api/placeholder/100/100"
   },
   {
-    name: "Janani Sriram",
+    name: "Pooja",
     role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
@@ -701,13 +706,15 @@ Present the project that could've changed history — only at Past Forward.`,
           name: "Thenmozhi A",
           role: "Lead" as const,
           phone: "+91 7200248449",
-          image: profile9
+          image: profile9,
+          linkedinId:"https://www.linkedin.com/in/thenmozhi-a-81542b374/"
         },
         {
           name: "Solai Ganesh",
           role: "Lead" as const,
           phone: "+91 7904857230",
           image: profile10,
+          linkedinId:"https://www.linkedin.com/in/solaiganesh-s?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         }
       ],
       volunteers: [
@@ -856,13 +863,16 @@ Enter the Clocks & Kings arena and battle through timelines for glory.`,
           name: "Kaviya I",
           role: "Lead" as const,
           phone: "+91 9342455315",
-          image: profile11
+          image: profile11,
+          linkedinId:"https://www.linkedin.com/in/kaviya-i-163953257"
+          
         },
         {
           name: "Kishore Kumar D",
           role: "Lead" as const,
           phone: "+91 7358647144",
-          image: profile12
+          image: profile12,
+          linkedinId:"https://www.linkedin.com/in/dkishorekumar57"
         }
       ],
       volunteers: [
@@ -1013,13 +1023,15 @@ Join the mandate — Chronos awaits.`,
           name: "Aarthi V S",
           role: "Lead" as const,
           phone: "+91 9384842346",
-          image: profile16
+          image: profile16,
+          linkedinId:"https://www.linkedin.com/in/aarthi-vs"
         },
         {
           name: "Aakash P S",
           role: "Lead" as const,
           phone: "+91 7358107416",
-          image: profile15
+          image: profile15,
+          linkedinId:"https://www.linkedin.com/in/aakash-p-s-886a1b2a2"
         }
       ],
       volunteers: [
@@ -1153,13 +1165,15 @@ Step into the Act 0'Clock time machine — where every second is a scene to reme
           name: "Sasi kumar S",
           role: "Lead" as const,
           phone: "+91 8110970109",
-          image:profile13
+          image:profile13,
+          linkedinId:"https://www.linkedin.com/in/sasikumar-s-1b058b257"
         },
         {
           name: "Lochan Narayanan",
           role: "Lead" as const,
           phone: "+91 9940321809",
-          image: profile14
+          image: profile14,
+          linkedinId:"https://www.linkedin.com/in/lochan-narayan-49a756311/"
         }
       ],
       volunteers: [

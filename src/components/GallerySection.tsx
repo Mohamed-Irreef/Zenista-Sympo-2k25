@@ -3,30 +3,18 @@ import { useInView } from 'react-intersection-observer';
 import { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import eceDept1 from '@/assets/ece-dept-1.jpg';
-import eceDept2 from '@/assets/ece-dept-2.jpg';
-import eceDept3 from '@/assets/ece-dept-3.jpg';
-import gallery1 from '@/assets/gallery-1.jpg';
-import gallery2 from '@/assets/gallery-2.jpg';
-import gallery3 from '@/assets/gallery-3.jpg';
-import gallery4 from '@/assets/gallery-4.jpg';
-import gallery5 from '@/assets/gallery-5.jpg';
-import gallery6 from '@/assets/gallery-6.jpg';
-import gallery7 from '@/assets/gallery-7.jpg';
-import gallery8 from '@/assets/gallery-8.jpg';
-import gallery9 from '@/assets/gallery-9.jpg';
-import gallery10 from '@/assets/gallery-10.jpg';
 
-import gall1 from '@/assets/gallery/gallery5.jpg';
-import gall2 from '@/assets/gallery/gallery6.jpg';
-import gall3 from '@/assets/gallery/gallery7.jpeg';
 
-import gall4 from '@/assets/gallery/gallery1.jpg';
-import gall5 from '@/assets/gallery/gallery2.jpg';
-import gall6 from '@/assets/gallery/gallery3.jpg';
-import gall7 from '@/assets/gallery/gallery4.jpg';
-import gall8 from '@/assets/gallery/gallery8.jpeg';
-import gall9 from '@/assets/gallery/gallery9.jpg';
+import gall1 from '@/assets/gallery/gallery1.jpg';
+import gall2 from '@/assets/gallery/gallery3.jpg';
+import gall3 from '@/assets/gallery/yashica.jpeg';
+
+import gall4 from '@/assets/gallery/sight.jpg';
+import gall5 from '@/assets/gallery/gate.jpg';
+import gall6 from '@/assets/gallery/isro.jpeg';
+import gall7 from '@/assets/gallery/prototype.jpg';
+import gall8 from '@/assets/gallery/scouts.jpg';
+import gall9 from '@/assets/gallery/gallery5.jpg';
 import gall10 from '@/assets/gallery/gallery10.jpg';
 
 const GallerySection = () => {
@@ -39,25 +27,34 @@ const GallerySection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Gallery images - using local and department images for better performance
-  const galleryImages = [
-    { src: gall1, alt: "ECE Department - Sympo", title: "Zenista 2024" },
-    { src: gall2, alt: "ECE Department - Sympo", title: "Zenista 2023" },
-    { src: gall3, alt: "ECE Department - Sympo", title: "Zenista 2022" },
-    { src: gall8, alt: "ECE Department - Sympo", title: "Zenista 2019" },
-    { src: gall9, alt: "ECE Department - Sympo", title: "Zenista 2017" },
-    { src: gall10, alt: "ECE Department - Sympo", title: "Zenista 2015" },
+  // const galleryImages = [
+  //   { src: gall1, alt: "ECE Department - Sympo", title: "Zenista 2024" },
+  //   { src: gall2, alt: "ECE Department - Sympo", title: "Zenista 2023" },
+  //   { src: gall3, alt: "ECE Department - Sympo", title: "Zenista 2022" },
+  //   { src: gall8, alt: "ECE Department - Sympo", title: "Zenista 2019" },
+  //   { src: gall9, alt: "ECE Department - Sympo", title: "Zenista 2017" },
+  //   { src: gall10, alt: "ECE Department - Sympo", title: "Zenista 2015" },
 
-    { src: gall4, alt: "ECE Department", title: "4th International Conference on Communication" },
-    { src: gall5, alt: "ECE Department", title: "Meeting" },
-    { src: gall6, alt: "ECE Department", title: "Placement Training" },
-    { src: gall7, alt: "ECE Department", title: "Meeting" },
+  //   { src: gall4, alt: "ECE Department", title: "4th International Conference on Communication" },
+  //   { src: gall5, alt: "ECE Department", title: "Meeting" },
+  //   { src: gall6, alt: "ECE Department", title: "Placement Training" },
+  //   { src: gall7, alt: "ECE Department", title: "Meeting" },
 
-    // { src: gallery5, alt: "Electronics Workshop", title: "Hardware Development Lab" },
-    // { src: gallery6, alt: "AI & Robotics Lab", title: "Artificial Intelligence Research" },
-    // { src: gallery7, alt: "Digital Matrix Display", title: "Digital Systems Lab" },
-    // { src: gallery8, alt: "Code Development", title: "Programming & Development" },
-    // { src: gallery9, alt: "Tech Conference", title: "Technical Symposium Events" },
-    // { src: gallery10, alt: "Engineering Workspace", title: "Modern Engineering Facility" }
+  // ];
+
+   const galleryImages = [
+    { src: gall1, alt: "ECE Department - Sympo", title: "4th International Conference on Communication" },
+    { src: gall2, alt: "ECE Department - Sympo", title: "Placement Training" },
+    { src: gall3, alt: "ECE Department - Sympo", title: "Scholorship Awarded" },
+    { src: gall4, alt: "ECE Department - Sympo", title: "IEEE Sight" },
+    { src: gall5, alt: "ECE Department - Sympo", title: "Gate Achievers 2025" },
+    { src: gall6, alt: "ECE Department - Sympo", title: "Isro Rover Challenge" },
+
+    { src: gall7, alt: "ECE Department", title: "Best Prototype Award" },
+    { src: gall8, alt: "ECE Department", title: "Gate Toppers" },
+    { src: gall9, alt: "ECE Department", title: "Zenista 24" },
+    { src: gall10, alt: "ECE Department", title: "Meeting" },
+
   ];
 
   const openImage = (index: number) => {

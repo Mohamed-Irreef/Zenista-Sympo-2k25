@@ -170,70 +170,68 @@ const TeamSection = () => {
   ];
 
   const designTeam = [
-    {
-      name: "Diksha R S",
-      role: "Graphic Designer",
-      designation: "Final Year - ECE Department",
-      department: "Design Team",
-      linkedinId: "/",
-      image: design1
-    },
-    {
-      name: "Gunavathi D",
-      role: "Graphic Designer",
-      designation: "Final Year - ECE Department",
-      department: "Design Team",
-      linkedinId: "/",
-      image: design2
-    },
-    {
-      name: "Harini S",
-      role: "Graphic Designer",
-      designation: "Final Year - ECE Department",
-      department: "Design Team",
-      linkedinId: "/",
-      image: design3
-    },
+  {
+    name: "Diksha R S",
+    role: "Graphic Designer",
+    designation: "Final Year - ECE Department",
+    department: "Design Team",
+    linkedinId: "https://www.linkedin.com/in/diksha-sivakumar-a50867257",
+    image: design1
+  },
+  {
+    name: "Gunavathi D",
+    role: "Graphic Designer",
+    designation: "Final Year - ECE Department",
+    department: "Design Team",
+    linkedinId: "https://www.linkedin.com/in/gunavathi-durai-491954257",
+    image: design2
+  },
+  {
+    name: "Harini S",
+    role: "Graphic Designer",
+    designation: "Final Year - ECE Department",
+    department: "Design Team",
+    linkedinId: "https://www.linkedin.com/in/harini-s-47a635257",
+    image: design3
+  },
+  {
+    name: "Pavithran M",
+    role: "Graphic Designer",
+    designation: "3rd Year - ECE Department",
+    department: "Design Team",
+    linkedinId: "https://www.linkedin.com/in/pavithran-m-a77b20296",
+    image: design7
+  },
+  {
+    name: "Sailendravel S",
+    role: "Graphic Designer",
+    designation: "3rd Year - ECE Department",
+    department: "Design Team",
+    linkedinId: "https://www.linkedin.com/in/sailendravel-s-7764b1297",
+    image: design4
+  },
+  {
+    name: "Srivatsan M",
+    role: "Graphic Designer",
+    designation: "3rd Year - ECE Department",
+    department: "Design Team",
+    linkedinId: "https://www.linkedin.com/in/srivatsan-murugan-415119299",
+    image: design5
+  },
+  {
+    name: "Vikash",
+    role: "Graphic Designer",
+    designation: "3rd Year - ECE Department",
+    department: "Design Team",
+    linkedinId: "https://www.linkedin.com/in/vikash-palani-844972298",
+    image: design6
+  }
+];
 
-
-    {
-      name: "Pavithran M",
-      role: "Graphic Designer",
-      designation: "3rd Year - ECE Department",
-      department: "Design Team",
-      linkedinId: "/",
-      image: design7
-    },
-    {
-      name: "Sailendravel S",
-      role: "Graphic Designer",
-      designation: "3rd Year - ECE Department",
-      department: "Design Team",
-      linkedinId: "/",
-      image: design4
-    },
-    {
-      name: "Srivatsan M",
-      role: "Graphic Designer",
-      designation: "3rd Year - ECE Department",
-      department: "Design Team",
-      linkedinId: "/",
-      image: design5
-    }
-    ,
-    {
-      name: "Viaksh",
-      role: "Graphic Designer",
-      designation: "3rd Year - ECE Department",
-      department: "Design Team",
-      linkedinId: "/",
-      image: design6
-    }
-  ];
 
    const mediaTeam = [
     {
-      name: "Senthur Velan",
+      name: "Senthur Velan S",
       role: "Media Team",
       designation: "Final Year - ECE Department",
       
@@ -243,7 +241,7 @@ const TeamSection = () => {
     {
       name: "Akilan",
       role: "Media Team",
-      designation: "3rd Year - ECE Department",
+      designation: "2nd Year - ECE Department",
       
       linkedinId: "/",
       image: media2
@@ -251,7 +249,7 @@ const TeamSection = () => {
     {
       name: "Nithish K",
       role: "Media Team",
-      designation: "3rd Year - ECE Department",
+      designation: "2nd Year - ECE Department",
      
       linkedinId: "/",
       image: media3
@@ -261,7 +259,7 @@ const TeamSection = () => {
     {
       name: "Reshmen R A",
       role: "Media Team",
-      designation: "3rd Year - ECE Department",
+      designation: "2nd Year - ECE Department",
    
       linkedinId: "/",
       image: media4
@@ -269,7 +267,7 @@ const TeamSection = () => {
     {
       name: "Sarvesh",
       role: "Media Team",
-      designation: "3rd Year - ECE Department",
+      designation: "2nd Year - ECE Department",
     
       linkedinId: "/",
       image: media5
@@ -278,18 +276,18 @@ const TeamSection = () => {
   ];
 
   const magazeneTeam = [
-  { name: "Gopika R N - IV Yr", linkedinId: "/" },
-  { name: "Sasmitha - III Yr", linkedinId: "/" },
-  { name: "Devadharshini S - III Yr", linkedinId: "/" },
-  { name: "Vinothini - III Yr", linkedinId: "/" },
-  { name: "Hemadharshani - III Yr", linkedinId: "/" },
-  { name: "Deepa - III Yr", linkedinId: "/" },
-  { name: "Nethiya Priya - III Yr", linkedinId: "/" },
-  { name: "Hajira R N - III Yr", linkedinId: "/" }
+  { name: "Gopika R N - IV Yr", linkedinId: "https://www.linkedin.com/in/gopika-r-n-9a65b8257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
+  { name: "Sasmitha - III Yr", linkedinId: "https://www.linkedin.com/in/sasmitha-rajasekharan06?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+  { name: "Devadharshini S - III Yr", linkedinId: "https://www.linkedin.com/in/hajira-r-n-547975298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+  { name: "Vinothini - III Yr", linkedinId: "https://www.linkedin.com/in/vinothini-mh-b970962b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+  { name: "Hemadharshani - III Yr", linkedinId: "https://www.linkedin.com/in/hemadharshani-m?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+  { name: "Deepa - III Yr", linkedinId: " https://www.linkedin.com/in/deepa-a-p-8021022b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+  { name: "Nethiya Priya - III Yr", linkedinId: "https://www.linkedin.com/in/nethiyapriya-manikandan-61592629a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+  { name: "Hajira R N - III Yr", linkedinId: "https://www.linkedin.com/in/hajira-r-n-547975298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
 ];
 
 const artTeam = [
-  { name: "Sahana V - IV Yr", linkedinId: "/" },
+  { name: "Sahana V N - IV Yr", linkedinId: "/" },
   { name: "Kaviyarasi - IV Yr", linkedinId: "/" },
   { name: "Hare Varshan J - IV Yr", linkedinId: "/" },
   { name: "Charan K - IV Yr", linkedinId: "/" },
@@ -300,7 +298,8 @@ const artTeam = [
   { name: "Yogeshwari J - III Yr", linkedinId: "/" },
   { name: "Poovizhi E - III Yr", linkedinId: "/" },
   { name: "Priyanka B - III Yr", linkedinId: "/" },
-  { name: "Parvadha V K - III Yr", linkedinId: "/" }
+  { name: "Parvadha V K - III Yr", linkedinId: "/" },
+  { name: "Pooja  - III Yr", linkedinId: "/" }
 ];
 
 const logisticsTeam = [
@@ -426,7 +425,7 @@ const logisticsTeam = [
           transition={{ duration: 0.8, delay: 1 }}
           className="mb-16"
         >
-          <h3 className="text-3xl font-bold text-cosmic-blue text-center mb-8">Web Developer</h3>
+          <h3 className="text-3xl font-bold text-cosmic-blue text-center mb-8">Web Developers</h3>
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {webDeveloper.map((person, index) => (
               <ProfileCard

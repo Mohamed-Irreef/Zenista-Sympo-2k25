@@ -10,6 +10,7 @@ interface Coordinator {
   role: 'Lead' | 'Co-Lead';
   phone: string;
   image: string;
+  linkedinId:string;
 }
 
 interface Volunteer {
@@ -200,6 +201,13 @@ if (!event) return null;
                           <Phone size={14} />
                           <span>{coordinator.phone}</span>
                         </div>
+                        {/* linkedinId */}
+
+                        {coordinator.linkedinId && (
+                                    <a href={coordinator.linkedinId}><button className="bg-blue-600 text-sm mt-2 md:mt-4 hover:bg-blue-700 text-white font-semibold   px-4 rounded-lg shadow-md transition duration-300">
+                          LinkedIn <i className="ri-linkedin-fill font-thin text-white"></i>
+                        </button></a>
+                                  )}
                       </motion.div>
                     ))}
                   </div>
