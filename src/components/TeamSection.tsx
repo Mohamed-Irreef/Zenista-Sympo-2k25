@@ -237,7 +237,7 @@ const TeamSection = () => {
       role: "Media Team",
       designation: "Final Year - ECE Department",
       
-      linkedinId: "/",
+      linkedinId: "https://www.linkedin.com/in/senthurvelansakthivel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image: media1
     },
     {
@@ -245,7 +245,7 @@ const TeamSection = () => {
       role: "Media Team",
       designation: "3rd Year - ECE Department",
       
-      linkedinId: "/",
+      linkedinId: "https://www.linkedin.com/in/akilan-a-865573328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image: media2
     },
     {
@@ -253,7 +253,7 @@ const TeamSection = () => {
       role: "Media Team",
       designation: "3rd Year - ECE Department",
      
-      linkedinId: "/",
+      linkedinId: "https://www.linkedin.com/in/nithishkumar-k-716a20328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       image: media3
     },
 
@@ -263,7 +263,7 @@ const TeamSection = () => {
       role: "Media Team",
       designation: "3rd Year - ECE Department",
    
-      linkedinId: "/",
+      linkedinId: "https://www.linkedin.com/in/reshmen-ra-198a20328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image: media4
     },
     {
@@ -271,7 +271,7 @@ const TeamSection = () => {
       role: "Media Team",
       designation: "3rd Year - ECE Department",
     
-      linkedinId: "/",
+      linkedinId: "https://www.linkedin.com/in/sarveshwars01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image: media5
     },
     
@@ -387,15 +387,17 @@ const logisticsTeam = [
           className="mb-16"
         >
           <h3 className="text-3xl font-bold text-time-glow text-center mb-8">Staff Coordinators</h3>
-          <div className="grid md:grid-cols-3 md:justify-center  md:items-center lg:grid-cols-3 md gap-6">
-            {staffCoordinators.map((person, index) => (
-              <ProfileCard
-                key={person.name}
-                {...person}
-                index={index}
-                category="staff"
-              />
-            ))}
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 gap-6 max-w-2xl">
+              {staffCoordinators.map((person, index) => (
+                <ProfileCard
+                  key={person.name}
+                  {...person}
+                  index={index}
+                  category="staff"
+                />
+              ))}
+            </div>
           </div>
         </motion.div>
 
@@ -427,7 +429,7 @@ const logisticsTeam = [
           className="mb-16"
         >
           <h3 className="text-3xl font-bold text-cosmic-blue text-center mb-8">Web Developer</h3>
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {webDeveloper.map((person, index) => (
               <ProfileCard
                 key={person.name}

@@ -658,7 +658,6 @@ EVENT FORMAT:
 📝 Single Round – Presentation Round (Offline)
 📋 Type: Paper with optional prototype or visual aid (model, simulation, or storyboard)
 ⏰ Presentation time: ~6-8 minutes per team
-📢 No filtration or prelims
 
 SAMPLE CONCEPTS:
 • GPS in World War II
@@ -692,7 +691,6 @@ Present the project that could've changed history — only at Past Forward.`,
         "Single presentation round - No preliminary filtering required",
         "Presentation duration: 6-8 minutes per team",
         "Paper presentation with optional prototype/visual aid (model, simulation, storyboard)",
-        "Registration fee: ₹100 per team",
         "Online registration open until slots fill",
         "Focus on technical feasibility, creativity, and time-travel theme relevance"
       ],

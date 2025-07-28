@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Users, Award, Clock } from 'lucide-react';
+import { Calendar, MapPin, Users, Award, Clock, Weight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCountdown } from '@/hooks/use-countdown';
 import collegeLogo from '@/assets/sec.png';
 import leoLogo from '@/assets/leo.png';
 import zenistaLogo from '@/assets/zenista1.png';
-// import backgroundVideo from '@/assets/Space_Time_Travel_Video_Generated.mp4';
-import backgroundVideo from '@/assets/bg.mp4';
+import backgroundVideo from '@/assets/videobg- Made with Clipchamp.mp4';
 import bg from '@/assets/web-bg1.jpg';
 
 const HeroSection = () => {
@@ -51,11 +50,11 @@ const HeroSection = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
         style={{ 
-          filter: 'brightness(0.4) contrast(1.2)'
+          filter: 'brightness(0.7) contrast(1.2) opacity(0.9)',
         }}
         ref={(video) => {
           if (video) {
-            video.playbackRate = 0.65;
+            video.playbackRate = 1;
           }
         }}
       >
@@ -187,11 +186,41 @@ const HeroSection = () => {
             className="text-lg text-muted-foreground mb-0 text-center"
             style={{fontFamily: "Rajdhani, sans-serif"}}
           >
-            Department of Electronics and Communication Engineering
+            <motion.span
+              className="text-sm md:text-2xl font-bold tracking-wider"
+              style={{ 
+                fontFamily: "Cinzel Decorative, serif",
+                color: "#cbd5e1"
+              }}
+              animate={{
+                textShadow: [
+                  '0 0 15px hsl(276 100% 70% / 0.8), 0 0 30px hsl(188 100% 60% / 0.6)',
+                  '0 0 25px hsl(188 100% 60% / 0.8), 0 0 40px hsl(276 100% 70% / 0.6)',
+                  '0 0 15px hsl(276 100% 70% / 0.8), 0 0 30px hsl(188 100% 60% / 0.6)'
+                ]
+              }}
+              transition={{ duration: 3, repeat: Infinity }}
+            >
+              Department of Electronics and Communication Engineering
+            </motion.span>
             
-           <small className="block text-sm md:text-xl  text-muted-foreground">
-    Presents
-  </small>
+           <motion.small 
+             className="block text-xs md:text-xl font-bold tracking-wider mt-4"
+             style={{ 
+               fontFamily: "Cinzel Decorative, serif",
+               color: "#cbd5e1"
+             }}
+             animate={{
+               textShadow: [
+                 '0 0 10px hsl(188 100% 60% / 0.7), 0 0 20px hsl(276 100% 70% / 0.5)',
+                 '0 0 20px hsl(276 100% 70% / 0.7), 0 0 30px hsl(188 100% 60% / 0.5)',
+                 '0 0 10px hsl(188 100% 60% / 0.7), 0 0 20px hsl(276 100% 70% / 0.5)'
+               ]
+             }}
+             transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
+           >
+             Presents
+           </motion.small>
           
           </motion.p>
           
