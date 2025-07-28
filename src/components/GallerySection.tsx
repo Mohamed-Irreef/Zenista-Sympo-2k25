@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
-
+import gall0 from '@/assets/gallery/msme.jpg';
 import gall1 from '@/assets/gallery/gallery1.jpg';
 import gall2 from '@/assets/gallery/gallery3.jpg';
 import gall3 from '@/assets/gallery/yashica.jpeg';
@@ -43,12 +43,13 @@ const GallerySection = () => {
   // ];
 
    const galleryImages = [
-    { src: gall1, alt: "ECE Department - Sympo", title: "4th International Conference on Communication" },
-    { src: gall2, alt: "ECE Department - Sympo", title: "Placement Training" },
-    { src: gall3, alt: "ECE Department - Sympo", title: "Scholorship Awarded" },
-    { src: gall4, alt: "ECE Department - Sympo", title: "IEEE Sight" },
-    { src: gall5, alt: "ECE Department - Sympo", title: "Gate Achievers 2025" },
-    { src: gall6, alt: "ECE Department - Sympo", title: "Isro Rover Challenge" },
+    { src: gall0, alt: "ECE Department", title: "MSME Idea Hackathon 2.0" },
+    { src: gall1, alt: "ECE Department", title: "4th International Conference on Communication" },
+    { src: gall2, alt: "ECE Department", title: "Placement Training" },
+    { src: gall3, alt: "ECE Department", title: "Scholorship Awarded" },
+    { src: gall4, alt: "ECE Department", title: "IEEE Sight" },
+    { src: gall5, alt: "ECE Department", title: "Gate Achievers 2025" },
+    { src: gall6, alt: "ECE Department", title: "Isro Rover Challenge" },
 
     { src: gall7, alt: "ECE Department", title: "Best Prototype Award" },
     { src: gall8, alt: "ECE Department", title: "Gate Toppers" },

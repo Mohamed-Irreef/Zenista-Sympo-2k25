@@ -37,6 +37,7 @@ import media5 from '@/assets/organizers/media/sarvesh.jpg';
 import dev1 from '@/assets/organizers/develpoers/dev1.png';
 // import the correct image file
 import dev2 from '@/assets/organizers/develpoers/dev2.jpg';
+import dev3 from '@/assets/organizers/develpoers/dev3.jpg';
 
 
 
@@ -166,6 +167,13 @@ const TeamSection = () => {
       department: "+91 88381 82609",
       linkedinId:"https://www.linkedin.com/in/thilak5746/",
       image: dev2
+    },{
+      name: "Rudramoorthy",
+      role: "Web Developer", 
+      designation: "Final Year - ECE Department",
+      department: "+91 8056056201",
+      linkedinId:"https://www.linkedin.com/in/thilak5746/",
+      image: dev3
     }
   ];
 
@@ -429,7 +437,7 @@ const logisticsTeam = [
         >
 
           <h3 className="text-3xl font-bold text-cosmic-blue text-center mb-8">Web Developers</h3>
-          <div className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
 
             {webDeveloper.map((person, index) => (
               <ProfileCard
