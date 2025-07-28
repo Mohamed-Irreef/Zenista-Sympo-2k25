@@ -48,7 +48,7 @@ const GallerySection = () => {
     { src: gall2, alt: "ECE Department", title: "Placement Training" },
     { src: gall3, alt: "ECE Department", title: "Scholorship Awarded" },
     { src: gall4, alt: "ECE Department", title: "IEEE Sight" },
-    { src: gall5, alt: "ECE Department", title: "Gate Achievers 2025" },
+    { src: gall5, alt: "ECE Department", title: "Jamboree Event" },
     { src: gall6, alt: "ECE Department", title: "Isro Rover Challenge" },
 
     { src: gall7, alt: "ECE Department", title: "Best Prototype Award" },
