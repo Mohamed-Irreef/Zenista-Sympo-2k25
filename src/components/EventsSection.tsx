@@ -1052,7 +1052,7 @@ Join the mandate — Chronos awaits.`,
   },
   {
     name: "Maneesha S",
-    role: "4th Year" as const,
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {
@@ -1062,7 +1062,7 @@ Join the mandate — Chronos awaits.`,
   },
   {
     name: "Vijaya Lakshmi DS",
-    role: "4th Year" as const,
+    role: "3rd Year" as const,
     image: "/api/placeholder/100/100"
   },
   {

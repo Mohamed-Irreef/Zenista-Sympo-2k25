@@ -5,6 +5,8 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 import gall0 from '@/assets/gallery/msme.jpg';
+import gall11 from '@/assets/gallery/ieee-sight.jpg';
+import gall12 from '@/assets/gallery/ug-scholorship.jpg';
 import gall1 from '@/assets/gallery/gallery1.jpg';
 import gall2 from '@/assets/gallery/gallery3.jpg';
 import gall3 from '@/assets/gallery/yashica.jpeg';
@@ -44,17 +46,20 @@ const GallerySection = () => {
 
    const galleryImages = [
     { src: gall0, alt: "ECE Department", title: "MSME Idea Hackathon 2.0" },
+    { src: gall12, alt: "ECE Department", title: "Undergraduate Scholorship" },
+     { src: gall3, alt: "ECE Department", title: "IEEE AESS Engineering Scholorship Awarded" },
+    { src: gall11, alt: "ECE Department", title: "IEEE Sight (Tech 4 Good)" },
     { src: gall1, alt: "ECE Department", title: "4th International Conference on Communication" },
     { src: gall2, alt: "ECE Department", title: "Placement Training" },
-    { src: gall3, alt: "ECE Department", title: "Scholorship Awarded" },
+   
     { src: gall4, alt: "ECE Department", title: "IEEE Sight" },
-    { src: gall5, alt: "ECE Department", title: "Jamboree Event" },
+    { src: gall5, alt: "ECE Department", title: "Gate Achievers" },
     { src: gall6, alt: "ECE Department", title: "Isro Rover Challenge" },
 
     { src: gall7, alt: "ECE Department", title: "Best Prototype Award" },
-    { src: gall8, alt: "ECE Department", title: "Gate Toppers" },
+    { src: gall8, alt: "ECE Department", title: "Jamboree Event" },
     { src: gall9, alt: "ECE Department", title: "Zenista 24" },
-    { src: gall10, alt: "ECE Department", title: "Meeting" },
+    // { src: gall10, alt: "ECE Department", title: "Meeting" },
 
   ];
 

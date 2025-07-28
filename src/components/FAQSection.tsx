@@ -114,11 +114,11 @@ const FAQSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
               <div className="bg-time-portal/10 px-6 py-3 rounded-lg">
                 <p className="text-time-portal font-semibold">Email</p>
-                <p className="text-muted-foreground">zenista2025@sairam.edu.in</p>
+                <p className="text-muted-foreground">zenista2k25@gmail.comn</p>
               </div>
               <div className="bg-time-glow/10 px-6 py-3 rounded-lg">
                 <p className="text-time-glow font-semibold">Phone</p>
-                <p className="text-muted-foreground">+91 98765 43210</p>
+                <p className="text-muted-foreground">+91 99626 61505</p>
               </div>
             </div>
           </div>
