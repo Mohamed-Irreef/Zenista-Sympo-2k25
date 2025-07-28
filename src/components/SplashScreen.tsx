@@ -80,6 +80,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
 
         {/* Title */}
         <motion.h1
+        style={{ fontFamily: "Cinzel Decorative, serif" }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
