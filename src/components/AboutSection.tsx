@@ -53,7 +53,17 @@ const AboutSection = () => {
           </h2>
           <div className="w-24 h-1 time-gradient mx-auto mb-8" />
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            ZENISTA 25 is a nationwide technical fest organized by the Department of Electronics and Communication Engineering at Sri Sairam Engineering College. This is the 28th time the festival is being hosted. The event challenges students from various colleges with real-world issues, helping them develop as engineers. The motto for ZENISTA 25 is COME, LET'S EXPERIMENT, ESTABLISH AND EXPAND!"
+            ZENISTA 25 – A Legacy of Innovation Continues! Get ready for the
+            28th edition of ZENISTA, the flagship national-level technical fest
+            hosted by the Department of Electronics and Communication
+            Engineering, Sri Sairam Engineering College. This electrifying event
+            brings together brilliant minds from across the country to tackle
+            real-world engineering challenges, ignite creativity, and spark
+            innovation.<br></br> <br></br> <span className='text-white font-thin text-glow'>"Come, Let's Experiment,
+            Establish, and Expand!" </span> <br></br> <br></br>
+             ZENISTA 25 isn't just a fest — it's a
+            launchpad for future innovators. Gear up to learn, compete,
+            collaborate, and transform ideas into reality!
           </p>
         </motion.div>
 
@@ -65,28 +75,38 @@ const AboutSection = () => {
         >
           {/* Mission */}
           <div className="bg-card/80 backdrop-blur-sm border border-time-portal/20 rounded-xl p-8 time-warp">
-            <h3 className="text-2xl font-bold text-time-portal mb-4">Our Mission</h3>
+            <h3 className="text-2xl font-bold text-time-portal mb-4">
+              Our Mission
+            </h3>
             <p className="text-muted-foreground leading-relaxed">
-              <span className='text-white'>M1:</span> To accurate engaging events that blend technical excellence with creative thinking and cultural relevance.
-
+              <span className="text-white">M1:</span> To accurate engaging
+              events that blend technical excellence with creative thinking and
+              cultural relevance.
             </p>
 
-             <p className="text-muted-foreground leading-relaxed">
-              <span className='text-white'>M2:</span>  To empower participants with real-world problem solving, communication and teamwork skills through gamified and immersive challenges.
-
+            <p className="text-muted-foreground leading-relaxed">
+              <span className="text-white">M2:</span> To empower participants
+              with real-world problem solving, communication and teamwork skills
+              through gamified and immersive challenges.
             </p>
 
-             <p className="text-muted-foreground leading-relaxed">
-              <span className='text-white'>M3:</span> To build a community where knowledge meets innovation and every student finds a space to shine, share and shape the future.
-
+            <p className="text-muted-foreground leading-relaxed">
+              <span className="text-white">M3:</span> To build a community where
+              knowledge meets innovation and every student finds a space to
+              shine, share and shape the future.
             </p>
           </div>
 
           {/* Vision */}
           <div className="bg-card/80 backdrop-blur-sm border border-time-portal/20 rounded-xl p-8 time-warp">
-            <h3 className="text-2xl font-bold text-time-glow mb-4">Our Vision</h3>
+            <h3 className="text-2xl font-bold text-time-glow mb-4">
+              Our Vision
+            </h3>
             <p className="text-muted-foreground leading-relaxed">
-              To ignite curiosity, foster innovation and celebrate interdisciplinary brilliance by creating a dynamic platform where students unite to learn, compete and lead all while reimagining the boundaries of technology, creativity and collaboration.
+              To ignite curiosity, foster innovation and celebrate
+              interdisciplinary brilliance by creating a dynamic platform where
+              students unite to learn, compete and lead all while reimagining
+              the boundaries of technology, creativity and collaboration.
             </p>
           </div>
         </motion.div>
@@ -133,19 +153,26 @@ const AboutSection = () => {
               Join the Time Travel Experience
             </h3>
             <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
-              Be part of an extraordinary journey where past innovations meet future possibilities. 
-              ZENISTA 2025 promises to be an unforgettable experience that will shape your engineering journey.
+              Be part of an extraordinary journey where past innovations meet
+              future possibilities. ZENISTA 2025 promises to be an unforgettable
+              experience that will shape your engineering journey.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-time-portal">
-              <span className="bg-time-portal/10 px-4 py-2 rounded-full">Technical Competitions</span>
-              <span className="bg-time-glow/10 px-4 py-2 rounded-full">Workshops</span>
-              <span className="bg-time-portal/10 px-4 py-2 rounded-full">Industry Talks</span>
-              <span className="bg-time-glow/10 px-4 py-2 rounded-full">Networking</span>
+              <span className="bg-time-portal/10 px-4 py-2 rounded-full">
+                Technical Competitions
+              </span>
+              <span className="bg-time-glow/10 px-4 py-2 rounded-full">
+                Workshops
+              </span>
+              <span className="bg-time-portal/10 px-4 py-2 rounded-full">
+                Industry Talks
+              </span>
+              <span className="bg-time-glow/10 px-4 py-2 rounded-full">
+                Networking
+              </span>
             </div>
           </div>
         </motion.div>
-
-        
       </div>
     </section>
   );

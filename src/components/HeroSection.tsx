@@ -457,7 +457,7 @@ const HeroSection = () => {
           </Button>
           <Button
             variant="outline"
-            className="border-time-portal text-time-portal hover:bg-time-portal/10 hover:scale-105 hover:text-white transform transition-all duration-300 text-lg px-8 py-6"
+            className="border-time-portal mb-8 text-time-portal hover:bg-time-portal/10 hover:scale-105 hover:text-white transform transition-all duration-300 text-lg px-8 py-6"
           >
             <a href="/brochure.pdf" download>Download Brochure</a>
           </Button>
