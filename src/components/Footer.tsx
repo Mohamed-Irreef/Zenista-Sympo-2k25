@@ -1,3 +1,4 @@
+import { log } from 'console';
 import { motion } from 'framer-motion';
 import { Clock, MapPin, Phone, Mail, ExternalLink, Calendar, Users, Award, MessageCircle } from 'lucide-react';
 
@@ -31,6 +32,7 @@ const Footer = () => {
       ]
     }
   ];
+  
 
   const quickLinks = [
     { name: "About ZENISTA", href: "#about" },
@@ -228,10 +230,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-sm text-muted-foreground">
-                © 2025 ZENISTA. All rights reserved.
+                {/* © 2025 ZENISTA. All rights reserved. */}
               </p>
               <p className="text-xs text-muted-foreground">
-                Department of Electronics and Communication Engineering, Sri Sairam Engineering College
+                {/* Department of Electronics and Communication Engineering, Sri Sairam Engineering College */}
               </p>
             </div>
             

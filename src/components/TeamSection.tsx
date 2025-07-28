@@ -429,7 +429,7 @@ const logisticsTeam = [
         >
 
           <h3 className="text-3xl font-bold text-cosmic-blue text-center mb-8">Web Developers</h3>
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
 
             {webDeveloper.map((person, index) => (
               <ProfileCard
