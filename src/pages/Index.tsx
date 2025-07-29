@@ -8,6 +8,7 @@ import EventsSection from '@/components/EventsSection';
 import GallerySection from '@/components/GallerySection';
 import TeamSection from '@/components/TeamSection';
 import FAQSection from '@/components/FAQSection';
+import RegistrationPopup from '@/components/RegistrationPopup';
 import Footer from '@/components/Footer';
 import ChatBot from '@/components/ChatBot';
 import ContactForm from '@/components/ContactForm';
@@ -76,6 +77,7 @@ const Index = () => {
               
               {/* Interactive Components */}
               <ChatBot />
+              <RegistrationPopup />
             </motion.div>
           )}
         </AnimatePresence>

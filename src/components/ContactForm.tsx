@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
-import emailjs from '@emailjs/browser';
+import { sendContactEmail } from '@/lib/emailService';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -28,11 +28,12 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    
+    console.log('Form data being submitted:', formData);
 
     try {
-      // Initialize EmailJS (you would need to set up your EmailJS account)
-      // For now, we'll simulate the email sending
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const { queryNumber } = await sendContactEmail(formData);
+      console.log('Email sent successfully with query number:', queryNumber);
 
       // Reset form
       setFormData({
@@ -44,13 +45,32 @@ const ContactForm = () => {
 
       toast({
         title: "Message Sent Successfully!",
-        description: "Thank you for contacting us. We'll get back to you soon.",
+        description: (
+          <div className="space-y-2">
+            <p>Thank you for contacting us. We'll get back to you soon.</p>
+            <p className="text-sm font-medium text-time-portal">Query Reference: {queryNumber}</p>
+          </div>
+        ),
       });
     } catch (error) {
+      console.error("Contact form error details:", {
+        error,
+        message: error instanceof Error ? error.message : 'Unknown error',
+        formData
+      });
+      
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again or contact us directly.",
+        title: "Error Sending Message",
+        description: (
+          <div className="space-y-2">
+            <p>Failed to send message. Please try again or contact us directly.</p>
+            <p className="text-xs text-destructive font-mono">
+              {error instanceof Error ? error.message : 'Unknown error occurred'}
+            </p>
+          </div>
+        ),
         variant: "destructive",
+        duration: 5000,
       });
     } finally {
       setIsSubmitting(false);

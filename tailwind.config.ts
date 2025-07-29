@@ -18,6 +18,15 @@ export default {
 			}
 		},
 		extend: {
+      keyframes: {
+        progress: {
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' }
+        }
+      },
+      animation: {
+        progress: 'progress 10s linear'
+      },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
