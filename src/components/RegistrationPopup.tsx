@@ -87,7 +87,7 @@ const RegistrationPopup = () => {
         className="fixed inset-0 bg-black/50" 
         onClick={() => setIsOpen(false)} 
       />
-      <div className="relative z-[101] bg-background/95 backdrop-blur-md p-6 rounded-lg shadow-xl max-w-md mx-4 border border-time-portal/20">
+      <div className="relative z-[101] bg-background/95 backdrop-blur-md p-6 rounded-lg shadow-xl max-w-md mx-4 border border-purple-300">
         <div className="absolute top-0 left-0 h-1 bg-time-portal/20 w-full overflow-hidden">
           <div 
             className="h-full bg-time-portal w-full animate-progress"
@@ -105,19 +105,19 @@ const RegistrationPopup = () => {
         </button>
 
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-glow mb-4">
-            Join Zenista 2025!
+          <h2 className="text-2xl font-bold text-red-500 mb-4">
+            Registrations Closed
           </h2>
           
-          <div className="w-16 h-1 time-gradient mx-auto mb-6" />
+          <div className="w-16 h-1 bg-red-500 mx-auto mb-6" />
           
           <p className="text-muted-foreground mb-4">
-            Be part of the biggest technical symposium of the year! Register now to showcase your talents and win exciting prizes.
+            Thank you for your interest in ZENISTA 2025! Registration for all events has been closed.
           </p>
 
-          <div className="mb-6 p-3 bg-time-portal/10 border border-time-portal/30 rounded-lg">
-            <p className="text-sm font-semibold text-time-portal animate-pulse">
-              🔥 Registrations are filling fast! Register soon to book your spot in your preferred events
+          <div className="mb-6 p-3 bg-red-500/10 border border-red-500/30 rounded-lg">
+            <p className="text-sm font-semibold text-red-500">
+              ⚠️ Registration has been closed. For further details, contact Admins
             </p>
           </div>
 
@@ -142,28 +142,28 @@ const RegistrationPopup = () => {
 
           <div className="space-y-4">
             <button
-              className="w-full py-2 px-4 bg-time-portal text-white rounded-lg hover:bg-time-portal/90 transition-colors"
-              onClick={() => {
-                setIsOpen(false);
-                const eventsSection = document.getElementById('events');
-                if (eventsSection) {
-                  eventsSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              className="w-full py-2 px-4 bg-gray-500 text-white rounded-lg cursor-not-allowed opacity-50"
+              disabled
             >
-              Register Now
+              Registration Closed
             </button>
 
             <button
-              className="w-full py-2 px-4 border border-time-portal/50 rounded-lg hover:bg-time-portal/10 transition-colors"
-              onClick={handleDownloadBrochure}
+              className="w-full py-2 px-4 bg-time-portal text-white rounded-lg hover:bg-time-portal/90 transition-colors"
+              onClick={() => {
+                setIsOpen(false);
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
-              Download Brochure
+              Contact Admins
             </button>
           </div>
 
           <p className="mt-4 text-sm text-muted-foreground">
-            Event starts in {days} days. Register now for early bird benefits!
+            Event starts in {days} days. Contact admins for any queries!
           </p>
         </div>
       </div>

@@ -54,11 +54,8 @@ const EventModal = ({ isOpen, onClose, event }: EventModalProps) => {
 }, [isOpen]);
 if (!event) return null;
   const handleRegister = () => {
-    if (event.registrationLink) {
-      window.open(event.registrationLink, '_blank');
-    } else {
-      console.warn('No registration link found for event:', event.title);
-    }
+    // Registration is closed
+    console.warn('Registration is closed for all events');
   };
 
   
@@ -161,14 +158,14 @@ if (!event) return null;
                 {/* Registration Button */}
                 <div className="text-center pt-14 pb-6 border-t border-time-portal/20">
                   <Button
-                    onClick={handleRegister}
-                    className="time-gradient hover:scale-105 transform transition-all duration-300 text-lg px-8 py-3"
+                    disabled
+                    className="bg-gray-500 text-white cursor-not-allowed opacity-50 text-lg px-8 py-3"
                   >
                     <ExternalLink className="mr-2" size={20} />
-                    Register Now
+                    Registration Closed
                   </Button>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Fill out our registration form
+                  <p className="text-sm text-red-500 mt-2 font-semibold">
+                    Registration has been closed. Contact admins for details.
                   </p>
                 </div>
 

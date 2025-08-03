@@ -17,7 +17,7 @@ const ChatBot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Welcome to ZENISTA 2025! I'm your intelligent assistant. I can help you with real-time information about events, registration, team details, and much more. What would you like to know?",
+      text: "Welcome to ZENISTA 2025! I'm your intelligent assistant. Please note that registration for all events has been closed. I can still help you with event information, contact details, and other queries. What would you like to know?",
       isBot: true,
       timestamp: new Date()
     }
@@ -250,7 +250,7 @@ const ChatBot = () => {
 
   const quickOptions = [
     "Show all events",
-    "Registration help",
+    "Registration status",
     "Prize information", 
     "Contact coordinators",
     "Event schedule",
@@ -278,7 +278,7 @@ const ChatBot = () => {
       }
       
       if (intents.includes('registration')) {
-        return `To register for ${event.title}: This is a ${event.category.toLowerCase()} event (${event.teamSize}). Duration: ${event.duration}. Prize: ${event.prizes}. Contact: ${event.contactNumber || 'Available on event page'}. Click on the event card on our website to register!`;
+        return `⚠️ Registration for ${event.title} has been closed. Please contact our admins for further details about the event. Admin contact: zenista2k25@gmail.com`;
       }
       
       if (intents.includes('rules')) {
@@ -353,7 +353,7 @@ const ChatBot = () => {
     
     // Registration general
     if (intents.includes('registration')) {
-      return `Registration is easy! Click on any event card on our website to get the registration link. Team sizes vary: Individual to 4 members depending on the event. Bring your college ID on event day. Need help with a specific event?`;
+      return `⚠️ Registration for all ZENISTA 2025 events has been closed. For any queries or assistance, please contact our admins at zenista2k25@gmail.com or use the contact form on our website.`;
     }
     
     // Default intelligent response
